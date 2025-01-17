@@ -104,11 +104,6 @@ const QuickFactsSection = () => {
           <p>
             The journey toward clean water begins with scalable, forward-thinking solutions that benefit communities and the environment alike.
           </p>
-
-          {/* <p>
-            By energizing oxygen in states beyond ozone, we bind to harmful compounds and elements, removing them from
-            water efficiently and sustainably.
-          </p> */}
         </div>
       </div>
     </section>
