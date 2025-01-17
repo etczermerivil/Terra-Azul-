@@ -1,0 +1,62 @@
+.value-proposition-section {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.box-container {
+  display: flex;
+  width: 100%; /* Ensure full width */
+  height: 100%; /* Ensure full height */
+}
+
+.left-box,
+.right-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the left */
+  color: white;
+  padding: 40px;
+  height:450px;
+}
+
+.left-box {
+  background-color: #3659c0;
+}
+
+.right-box {
+  background-color: #222;
+}
+
+.left-box h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.left-box p,
+.right-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .value-proposition-section {
+    flex-direction: column;
+    height: auto; /* Allow content height on smaller screens */
+  }
+
+  .left-box,
+  .right-box {
+    flex: none;
+    width: 100%;
+    text-align: left; /* Ensure left alignment on smaller screens */
+    align-items: flex-start; /* Maintain left alignment */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}

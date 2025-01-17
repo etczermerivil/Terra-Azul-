@@ -1,0 +1,28 @@
+.explore-more-section {
+    background-color: #fff3e0;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .explore-more-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .explore-more-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .button-group button {
+    margin: 0 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button-group button:hover {
+    opacity: 0.8;
+  }

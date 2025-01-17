@@ -1,0 +1,24 @@
+.section {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  .section p {
+    font-size: 1.2rem;
+    color: #555;
+  }

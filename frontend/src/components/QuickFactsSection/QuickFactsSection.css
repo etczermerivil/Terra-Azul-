@@ -1,0 +1,97 @@
+.quick-facts-section {
+  padding: 2rem 2rem;
+  background-color: white  ;
+}
+
+
+.section-title {
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color:  #525252;
+  margin: 0;
+}
+
+
+  .counters-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .counter {
+    flex: 1;
+    /* margin: 0 1rem; */
+  }
+
+  .counter-number {
+    font-size: 100px;
+    font-weight: bold;
+    color: #3659c0 ;
+    margin: 45px 0;
+  }
+
+  .counter-label {
+    font-size: 18px;
+    color: #525252;
+    margin: 0;
+    padding: 0;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .problems, .solutions {
+    flex: 1;
+    background: #ffffff;
+    line-height: 1.8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 290px;
+  }
+
+  .problems h3, .solutions h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #3659c0;
+  }
+
+  .problems ul {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .solutions p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #525252;
+    font-size: 1rem;
+  }
+
+
+.problems ul, .solutions p {
+  margin: 1rem 0;
+}
+
+.problems ul li {
+  margin-bottom: 0.8rem;
+  color: #525252;
+  font-size: 1rem;
+}
+
+
+.solutions p:last-of-type {
+  margin-bottom: 0;
+}
