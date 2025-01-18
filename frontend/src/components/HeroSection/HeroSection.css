@@ -61,7 +61,7 @@
 
   .cta-button {
     position: relative;
-    padding: 9px 18px;
+    padding: 12px 24px;
     font-size: 17px;
     font-weight: 500;
     color: white;
@@ -79,8 +79,9 @@
   }
 
   .cta-button:hover {
-    background-color: #7ED957;
-    color: white;
+    background-color: whitesmoke;
+    color: #3659c0;
+    font-weight: 650;
     /* #CFC4BE */
   }
 

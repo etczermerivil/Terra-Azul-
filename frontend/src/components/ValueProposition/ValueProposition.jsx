@@ -4,6 +4,7 @@ import Plyr from 'plyr';
 import 'plyr/dist/plyr.css';
 import './Droplet.css';
 import DropletAnimation from './DropletAnimation';
+import { scrollEffects } from "../Animation/Animation";
 
 const ValueProposition = () => {
   useEffect(() => {
@@ -12,6 +13,8 @@ const ValueProposition = () => {
       controls: ['play', 'progress', 'current-time', 'fullscreen'], // Customize controls
       settings: ['quality', 'speed'], // Optional settings
     });
+
+    scrollEffects();
 
     // Optional: Cleanup Plyr instance on component unmount
     return () => {
@@ -22,16 +25,16 @@ const ValueProposition = () => {
   return (
     <section className="value-proposition-section">
       {/* Header */}
-      <div className="section-header">
-        <h2>Where We Come In</h2>
-      </div>
+      {/* <div className="section-header">
+        <h2>How We Make a Difference</h2>
+      </div> */}
 
       {/* Box Container */}
       <div className="box-container">
         {/* Left Box */}
-        <div className="left-box">
+        <div className="left-box blur-in-element">
 
-          <h3>20 years of experience</h3>
+          <h3>What Sets Us Apart</h3>
 
           <p>
             Over the past 20 years, we’ve developed, tested, patented, and deployed a new technology that relies on oxygen to purify water more completely, faster, and at substantially less expense than any other technology currently available in the market.
