@@ -39,11 +39,17 @@
   flex-direction: column;
   justify-content:center;
   align-items: center;
+
+}
+
+.droplet {
+  max-height: 350px;
+  max-width: 100%;
 }
 
 .left-box {
   background-color: whitesmoke;
-  border: 1px dotted #222;
+  /* border: 1px dotted #222; */
   /* background: linear-gradient(100deg, #1B8632, #219D3C); */
   /* background: linear-gradient(180deg, #3659C0, #2D4BA2); */
 }
@@ -60,20 +66,19 @@
 }
 
 .right-box {
-  background-color: #3659C0;
+  background-color: whitesmoke;
   /* width: 200px; */
-  /* height: 500px; */
   padding: 0;
   margin: 0;
 }
 
-.right-box iframe {
+/* .right-box iframe {
   display: block;
   width: 400px;
   height: 300px;
   object-fit: cover;
   border: none;
-}
+} */
 
 
 .left-box p,
@@ -87,6 +92,12 @@
 }
 
 
+.right-box svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* transform: scale(1.5);  */
+}
 
 @media (max-width: 768px) {
   .value-proposition-section {
