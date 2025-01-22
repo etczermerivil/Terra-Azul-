@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import ProfileButton from "./ProfileButton";
 import "./Navigation.css";
-import logo from "/Images/Logo.png";
+import logo from "/Images/Logo2.png";
 
 function Navigation() {
   return (
@@ -18,21 +18,24 @@ function Navigation() {
         {/* Links Section */}
         <nav className="nav-links">
           <ul>
-            <li>
-              <NavLink to="/" exact activeClassName="active">
-                Home
-              </NavLink>
-            </li>
-            <li>
+          <li>
               <NavLink to="/about" activeClassName="active">
                 About
               </NavLink>
             </li>
+
             <li>
               <NavLink to="/contact" activeClassName="active">
                 Contact
               </NavLink>
             </li>
+
+            <li>
+              <NavLink to="/" exact activeClassName="active">
+                Our Technology
+              </NavLink>
+            </li>
+
           </ul>
         </nav>
 

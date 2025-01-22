@@ -33,17 +33,15 @@ const ValueProposition = () => {
       <div className="box-container">
         {/* Left Box */}
         <div className="left-box">
-
           <h3>What Sets Us Apart</h3>
-
           <p>
-            Over the past 20 years, we’ve developed, tested, patented, and deployed a new technology that relies on oxygen to purify water more completely, faster, and at substantially less expense than any other technology currently available in the market.
+            At Terra Azul Tech, we’ve spent over two decades developing and refining our patented, solar-powered ozone generator, a groundbreaking technology that purifies water more efficiently and sustainably than ever before. Harnessing solar energy, our compact system produces 350% more ozone gas, lasting 450% longer than conventional methods, as confirmed by independent university research.
           </p>
-
           <p>
-            With small amounts of power, we have found a way to energize oxygen in states beyond ozone, binding to harmful compounds and elements, removing them from water efficiently and at lower cost.
+            By energizing oxygen in states beyond ozone, our innovative mechanism removes harmful compounds and elements from water with unmatched efficiency, addressing pollutant loads of all sizes. Successfully tested in compliance with the Clean Water Act, our system is designed for scalability, restoring water quality while fostering a healthier planet. With 15 years of on-site data and a commitment to sustainability, we’re revolutionizing wastewater management on a global scale.
           </p>
         </div>
+
 
         {/* Right Box */}
         <div className="right-box">

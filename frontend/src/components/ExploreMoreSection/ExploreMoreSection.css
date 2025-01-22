@@ -1,18 +1,23 @@
 .explore-more-section {
-    background-color: #222;
+    background-color: rgb(236, 236, 236);
     padding: 2rem;
     text-align: center;
+    height: 300px;
+
   }
 
   .explore-more-section h2 {
-    font-size: 2rem;
+    font-size: 30px;
+    font-weight: 900;
     margin-bottom: 1rem;
-    color: #222;
+    color: rgb(62,62,62);
+    text-transform: uppercase;
   }
 
   .explore-more-section p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    color: #222;
   }
 
   .button-group button {
