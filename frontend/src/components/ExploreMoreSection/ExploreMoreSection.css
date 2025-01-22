@@ -1,5 +1,5 @@
 .explore-more-section {
-    background-color: #fff3e0;
+    background-color: #222;
     padding: 2rem;
     text-align: center;
   }
@@ -7,6 +7,7 @@
   .explore-more-section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #222;
   }
 
   .explore-more-section p {

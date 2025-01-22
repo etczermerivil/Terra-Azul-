@@ -32,7 +32,7 @@ const ValueProposition = () => {
       {/* Box Container */}
       <div className="box-container">
         {/* Left Box */}
-        <div className="left-box blur-in-element">
+        <div className="left-box">
 
           <h3>What Sets Us Apart</h3>
 

@@ -1,0 +1,84 @@
+.proven-track-record {
+  /* padding: 1px 0; */
+  background-color: whitesmoke;
+  /* height: 100vh; */
+}
+
+.proven-track-record h2{
+  font-size: 30px;
+  font-weight: 900;
+  color: #525252;
+  padding: 0;
+  margin: 0;
+}
+
+.proven-track-record {
+    max-width: 100%;
+    margin: 0 auto;
+
+    /* padding: 2rem; */
+  }
+
+  .horizontal-swiper {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    align-items: center;
+  }
+
+  .category-slide .slide-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.975);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.text-box h3 {
+  margin-bottom: .5rem;
+  color: #525252;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  align-self: flex-start
+}
+
+.text-box p {
+  font-size: 16px;
+  line-height: 1.6; /* Improve readability */
+  margin: 0; /* Remove unnecessary margins */
+  text-align: justify; /* Justify paragraph text */
+}
+
+  .image-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* The image fills the entire container */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

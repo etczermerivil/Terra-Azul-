@@ -10,7 +10,7 @@ export const scrollEffects = () => {
           start: "top 100%", // Trigger when the element enters the viewport
           end: "top 70%",   // End animation when the element is 70% of the way in
           scrub: false,
-          markers: true,    // Debugging markers
+          markers: false,    // Debugging markers
         },
         opacity: 0,         // Start invisible
         duration: 1,        // 1-second fade-in
