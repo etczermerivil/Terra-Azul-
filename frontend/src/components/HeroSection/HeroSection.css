@@ -1,7 +1,7 @@
 .hero-section {
     height: 100vh; /* Full viewport height */
     /* background: linear-gradient(to right, #0056b3, #00b0ff); */
-    background-image: url('../../../public/Images/image.jpg');
+    background-image: url('/Images/image.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -22,6 +22,7 @@
     height: 100%;
     /* background-color: #015c1e3f; */
     background-color: #252525ab;
+    /* background-color: rgba(37, 147, 0, 0.071); */
     z-index: 1;
     margin: 0;
     padding: 0;
