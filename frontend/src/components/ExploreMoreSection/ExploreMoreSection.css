@@ -1,34 +1,46 @@
 .explore-more-section {
-    background-color: rgb(236, 236, 236);
-    padding: 2rem;
-    text-align: center;
-    height: 300px;
-
-  }
+  background-color: rgb(236, 236, 236);
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Aligns content vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 300px; /* Ensure this is the desired height */
+  text-align: center; /* Centers the text within each block */
+  box-sizing: border-box;
+}
 
   .explore-more-section h2 {
-    font-size: 30px;
-    font-weight: 900;
-    margin-bottom: 1rem;
-    color: rgb(62,62,62);
+    font-size: 36px;
+    font-weight: 700;
+    color: #525252;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
   }
 
   .explore-more-section p {
-    font-size: 1.2rem;
+    font-size: 16px;
     margin-bottom: 1.5rem;
     color: #222;
   }
 
   .button-group button {
     margin: 0 0.5rem;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    padding: 12px 24px;
+    font-size: 17px;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
+    background-color: #3659c0;
+    color:white;
+    padding: 12px 24px;
+    font-size: 17px;
+    font-weight: 500;
   }
 
   .button-group button:hover {
-    opacity: 0.8;
+    background-color: white;
+    color: rgb(62,62,62);
+    font-weight: 550;
   }

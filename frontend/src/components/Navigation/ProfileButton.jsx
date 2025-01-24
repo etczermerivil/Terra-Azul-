@@ -1,17 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { FaUserCircle } from 'react-icons/fa';
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
-// import { FaBars } from "react-icons/fa";
 import { thunkLogout } from "../../redux/session";
 import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
 import SignupFormModal from "../SignupFormModal";
-import "./ProfileButton.css"
+import "./ProfileButton.css";
 
 function ProfileButton() {
   const dispatch = useDispatch();
@@ -19,9 +14,8 @@ function ProfileButton() {
   const user = useSelector((store) => store.session.user);
   const ulRef = useRef();
 
-  const toggleMenu = (e) => {
-    e.stopPropagation(); // Keep from bubbling up to document and triggering closeMenu
-    setShowMenu(!showMenu);
+  const toggleMenu = () => {
+    setShowMenu((prev) => !prev);
   };
 
   useEffect(() => {
@@ -33,51 +27,57 @@ function ProfileButton() {
       }
     };
 
-    document.addEventListener("click", closeMenu);
+    document.addEventListener("mousedown", closeMenu);
 
-    return () => document.removeEventListener("click", closeMenu);
+    return () => {
+      document.removeEventListener("mousedown", closeMenu);
+    };
   }, [showMenu]);
-
-  const closeMenu = () => setShowMenu(false);
 
   const logout = (e) => {
     e.preventDefault();
     dispatch(thunkLogout());
-    closeMenu();
+    setShowMenu(false);
   };
 
   return (
-    <>
+    <div className="profile-button-container">
       <button className="profile-icon-button" onClick={toggleMenu}>
-      <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faBars} />
       </button>
       {showMenu && (
-        <ul className={"profile-dropdown"} ref={ulRef}>
+        <ul className="profile-dropdown" ref={ulRef}>
           {user ? (
             <>
-              <li>{user.username}</li>
-              <li>{user.email}</li>
-              <li>
-                <button onClick={logout}>Log Out</button>
+              <li className="profile-item">{user.username}</li>
+              <li className="profile-item">{user.email}</li>
+              <li className="profile-item">
+                <button className="logout-button" onClick={logout}>
+                  Log Out
+                </button>
               </li>
             </>
           ) : (
             <>
-              <OpenModalMenuItem
-                itemText="Log In"
-                onItemClick={closeMenu}
-                modalComponent={<LoginFormModal />}
-              />
-              <OpenModalMenuItem
-                itemText="Sign Up"
-                onItemClick={closeMenu}
-                modalComponent={<SignupFormModal />}
-              />
+              <li className="profile-item">
+                <OpenModalMenuItem
+                  itemText="Log In"
+                  onItemClick={() => setShowMenu(false)}
+                  modalComponent={<LoginFormModal />}
+                />
+              </li>
+              <li className="profile-item">
+                <OpenModalMenuItem
+                  itemText="Sign Up"
+                  onItemClick={() => setShowMenu(false)}
+                  modalComponent={<SignupFormModal />}
+                />
+              </li>
             </>
           )}
         </ul>
       )}
-    </>
+    </div>
   );
 }
 

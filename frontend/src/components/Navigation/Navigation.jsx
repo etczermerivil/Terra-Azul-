@@ -18,6 +18,13 @@ function Navigation() {
         {/* Links Section */}
         <nav className="nav-links">
           <ul>
+
+          <li>
+              <NavLink to="/" exact activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+
           <li>
               <NavLink to="/about" activeClassName="active">
                 About
@@ -31,7 +38,7 @@ function Navigation() {
             </li>
 
             <li>
-              <NavLink to="/" exact activeClassName="active">
+              <NavLink to="/our-technology" exact activeClassName="active">
                 Our Technology
               </NavLink>
             </li>

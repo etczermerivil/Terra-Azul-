@@ -24,48 +24,56 @@ const ProvenTrackRecord = () => {
 
   return (
     <section className="proven-track-record">
-      <h2 className='proven-header'>Shaping the future with renewable energy</h2>
-      <p className="proven-paragraph">
-  We have a long history of development with dozens of devices and installations that have revitalized water systems across diverse environments. Here are some of our notable past clients:
-</p>
-  <div className="proven-client-list">
-    <ul>
-      <li>Shrimp Pond Testing (Sinaloa, Mexico)</li>
-      <li>Salton Sea Wastewater (Salton City, CA)</li>
-      <li>North Creek, Dana Point (Doheny State Park)</li>
-      <li>Lindero Creek (Agoura Hills)</li>
-      <li>Del Mar Thoroughbred Club</li>
-      <li>Encinitas Ranch Golf Course</li>
-      <li>Manchester Wastewater (City of Encinitas)</li>
-      <li>Aviara Golf Club – Hole 16 Pond (Carlsbad)</li>
-      <li>Sundial Nurseries Hydroponics (San Marcos)</li>
-      <li>Barona Resort & Casino (Barona Rancheria)</li>
-      <li>Great Park Reflection Ponds (City of Irvine)</li>
-      <li>Discovery Lake (City of San Marcos)</li>
-      <li>EDCO, Stormwater Discharge</li>
-      <li>Whiteleg Shrimp Pond Testing (Vietnam)</li>
-    </ul>
-    </div>
-      {categories.map((category, index) => (
-        <div key={index} className="category-section">
+      <div className="proven-track">
+      <h2 className="proven-header">A Track Record of Success</h2>
+      <div className="proven-intro">
+        <p className="proven-paragraph">
+        With over 14 successful water projects spanning city parks, lakes, ponds, hotels, agriculture, and clubs, we deliver innovative solutions that enhance agriculture, restore ecosystems, and solve complex water treatment challenges worldwide.
+        </p>
+      </div>
 
-          <div
-            className="category-image"
-            style={{ backgroundImage: `url(${category.image})` }}
-          >
-            <div className="image-overlay">
-              <h3 className="overlay-title">{category.title}</h3>
+
+      {/* Category Sections */}
+      <div className="proven-categories">
+        {categories.map((category, index) => (
+          <div key={index} className="category-section">
+            <div
+              className="category-image"
+              style={{ backgroundImage: `url(${category.image})` }}
+            >
+              <div className="image-overlay">
+                <h3 className="overlay-title">{category.title}</h3>
+              </div>
             </div>
-
-
+            <div className="category-text">
+              <p>{category.description}</p>
+            </div>
           </div>
+        ))}
+      </div>
 
-          <div className="category-text">
-            {/* <h3>{category.title}</h3> */}
-            <p>{category.description}</p>
-          </div>
+            {/* Client List Section */}
+      {/* <div className="proven-client-container">
+        <div className="proven-client-list">
+          <ul>
+            <li>Shrimp Pond Testing (Sinaloa, Mexico)</li>
+            <li>Salton Sea Wastewater (Salton City, CA)</li>
+            <li>North Creek, Dana Point (Doheny State Park)</li>
+            <li>Lindero Creek (Agoura Hills)</li>
+            <li>Del Mar Thoroughbred Club</li>
+            <li>Encinitas Ranch Golf Course</li>
+            <li>Manchester Wastewater (City of Encinitas)</li>
+            <li>Aviara Golf Club – Hole 16 Pond (Carlsbad)</li>
+            <li>Sundial Nurseries Hydroponics (San Marcos)</li>
+            <li>Barona Resort & Casino (Barona Rancheria)</li>
+            <li>Great Park Reflection Ponds (City of Irvine)</li>
+            <li>Discovery Lake (City of San Marcos)</li>
+            <li>EDCO, Stormwater Discharge</li>
+            <li>Whiteleg Shrimp Pond Testing (Vietnam)</li>
+          </ul>
         </div>
-      ))}
+      </div> */}
+      </div>
     </section>
   );
 };

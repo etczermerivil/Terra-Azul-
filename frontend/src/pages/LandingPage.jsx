@@ -4,6 +4,8 @@ import QuickFactsSection from '../components/QuickFactsSection/QuickFactsSection
 import ValueProposition from '../components/ValueProposition/ValueProposition';
 import ExploreMoreSection from '../components/ExploreMoreSection/ExploreMoreSection';
 import ProvenTrackRecord from '../components/ProvenTrackRecord/ProvenTrackRecord';
+import BragSection from '../components/BragSection/BragSection';
+
 const LandingPage = () => {
   return (
     <>
@@ -18,6 +20,9 @@ const LandingPage = () => {
 
       {/* Proven Track Record*/}
       <ProvenTrackRecord/>
+
+      {/* BragSection */}
+      <BragSection />
 
       {/* Explore More Section */}
       <ExploreMoreSection />
