@@ -3,10 +3,10 @@ import './ValueProposition.css';
 import Plyr from 'plyr';
 import 'plyr/dist/plyr.css';
 import './Droplet.css';
-import DropletAnimation from './DropletAnimation';
+// import DropletAnimation from './DropletAnimation';
 import { scrollEffects } from "../Animation/Animation";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faLightbulb, faCogs, faWifi, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLightbulb, faCogs, faWifi, faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 const ValueProposition = () => {
   useEffect(() => {
@@ -36,12 +36,12 @@ const ValueProposition = () => {
     {/* Bottom Left Box */}
     <div className="box bottom-left-box">
     <h3>
-    Monitoring & Maintenance
-        {/* <FontAwesomeIcon
-          icon={faWifi}
-          style={{ color: "grey", marginLeft: "14.75rem" }}
-        /> */}
 
+        <FontAwesomeIcon
+          icon={faWifi}
+          style={{ color: " #3659c0", marginRight: "1rem" }}
+        />
+      Monitoring & Maintenance
       </h3>
         <p>Our real-time and monthly service to clients:</p>
         <ul>
@@ -58,12 +58,12 @@ const ValueProposition = () => {
     {/* Bottom Right Box */}
     <div className="box bottom-right-box">
     <h3>
-    Equipment Leasing
-        {/* <FontAwesomeIcon
-          icon={faHandshake}
-          style={{ color: "grey", marginLeft: "21.5rem" }}
-        /> */}
 
+        <FontAwesomeIcon
+          icon={faHandshake}
+          style={{ color: "green", marginRight: "1rem" }}
+        />
+      Equipment Leasing
       </h3>
         <p>For clients that need options to reduce paperwork and risk:</p>
         <ul>
@@ -81,12 +81,12 @@ const ValueProposition = () => {
     {/* Top Left Box */}
     <div className="box left-box">
     <h3>
-    About Our Technology
-        {/* <FontAwesomeIcon
-          icon={faLightbulb}
-          style={{ color: "grey", marginLeft: "19.75rem" }} // Orange color for the icon
-        /> */}
 
+        <FontAwesomeIcon
+          icon={faLightbulb}
+          style={{ color: "orange", marginRight: "1rem" }} // Orange color for the icon
+        />
+ About Our Technology
       </h3>
       <ul>
         <li>Over two decades refining solar-powered ozone generators.</li>
@@ -100,12 +100,12 @@ const ValueProposition = () => {
     {/* Top Right Box */}
     <div className="box right-box">
     <h3>
-    Our Innovations
-        {/* <FontAwesomeIcon
-          icon={faCogs}
-          style={{ color: "grey", marginLeft: "24.75rem" }}
-        /> */}
 
+        <FontAwesomeIcon
+          icon={faCogs}
+          style={{ color: "grey", marginRight: "1rem" }}
+        />
+      Our Innovations
       </h3>
       <ul>
         <li>Scalable and sustainable solutions.</li>

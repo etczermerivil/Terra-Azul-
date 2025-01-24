@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import './QuickFactsSection.css';
 
 import './Droplet.css';
-import DropletAnimation from './DropletAnimation';
+// import DropletAnimation from './DropletAnimation';
 
 const AnimatedCounter = ({ targetNumber, label }) => {
   const [count, setCount] = useState(0);
