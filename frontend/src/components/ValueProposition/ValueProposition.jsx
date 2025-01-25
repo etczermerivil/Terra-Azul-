@@ -26,11 +26,51 @@ const ValueProposition = () => {
 
   return (
     <section className="value-proposition-section">
-      <div className='bigger-box'>
+
       <div className="section-header">
-        <h2>What Sets Us Apart</h2>
+        <h2>A Smarter Way to Clean Water</h2>
       </div>
 
+      <div className="box-container">
+    {/* Top Left Box */}
+    <div className="box left-box">
+    <h3>
+
+        <FontAwesomeIcon
+          icon={faLightbulb}
+          style={{ color: "orange", marginRight: "1rem" }} // Orange color for the icon
+        />
+      Our Technology
+      </h3>
+      <ul>
+        <li>Produces 350% more ozone gas, lasting 450% longer.</li>
+        <li>Prevents ozone loss for maximum cleaning power and efficiency.</li>
+        <li>Stabilized ozone (O3) targets that removes contaminants efficiently.</li>
+        <li>Tested and compliant with the Clean Water Act.</li>
+        <li>Improves water quality at scale while fostering a healthier planet.</li>
+
+      </ul>
+    </div>
+
+    {/* Top Right Box */}
+    <div className="box right-box">
+    <h3>
+
+        <FontAwesomeIcon
+          icon={faCogs}
+          style={{ color: "grey", marginRight: "1rem" }}
+        />
+      Our Innovations
+      </h3>
+      <ul>
+        <li>Scalable and sustainable solutions.</li>
+        <li>Packaged with long-term warranties.</li>
+        <li>Remote monitoring and real-time maintenance.</li>
+        <li>Serving small municipalities and enterprises.</li>
+        <li>Cleaned over 700 million gallons globally!</li>
+      </ul>
+    </div>
+  </div>
 
     <div className="box-container">
     {/* Bottom Left Box */}
@@ -77,47 +117,54 @@ const ValueProposition = () => {
 
 </div>
 
-    <div className="box-container">
-    {/* Top Left Box */}
-    <div className="box left-box">
-    <h3>
+    </section>
+  );
 
-        <FontAwesomeIcon
-          icon={faLightbulb}
-          style={{ color: "orange", marginRight: "1rem" }} // Orange color for the icon
-        />
- About Our Technology
-      </h3>
-      <ul>
-        <li>Over two decades refining solar-powered ozone generators.</li>
-        <li>Purifies water efficiently and sustainably.</li>
-        <li>Produces 350% more ozone gas, lasting 450% longer.</li>
-        <li>Tested and compliant with the Clean Water Act.</li>
-        <li>Revolutionizing wastewater management on a global scale.</li>
-      </ul>
-    </div>
+};
 
-    {/* Top Right Box */}
-    <div className="box right-box">
-    <h3>
+export default ValueProposition;
 
-        <FontAwesomeIcon
-          icon={faCogs}
-          style={{ color: "grey", marginRight: "1rem" }}
-        />
-      Our Innovations
-      </h3>
-      <ul>
-        <li>Scalable and sustainable solutions.</li>
-        <li>Packaged with long-term warranties.</li>
-        <li>Remote monitoring and real-time maintenance.</li>
-        <li>Serving small municipalities and enterprises.</li>
-        <li>Cleaned over 700 million gallons globally!</li>
-      </ul>
-    </div>
-  </div>
 
-        {/* Droplet Container */}
+
+
+
+
+
+
+
+{/* Header */}
+{/* <div className="section-header">
+  <h2>How We Make a Difference</h2>
+</div> */}
+
+
+
+
+{/* <h2>What Sets Us Apart</h2>
+<p>
+  At Terra Azul Tech, we’ve spent over two decades developing and refining our patented, solar-powered ozone generator, a groundbreaking technology that purifies water more efficiently and sustainably than ever before. Harnessing solar energy, our compact system produces 350% more ozone gas, lasting 450% longer than conventional methods, as confirmed by independent university research.
+</p>
+<p>
+  By energizing oxygen in states beyond ozone, our innovative mechanism removes harmful compounds and elements from water with unmatched efficiency, addressing pollutant loads of all sizes. Successfully tested in compliance with the Clean Water Act, our system is designed for scalability, restoring water quality while fostering a healthier planet. With 15 years of on-site data and a commitment to sustainability, we’re revolutionizing wastewater management on a global scale.
+</p> */}
+
+
+
+
+
+{/* <iframe
+  width="100%"
+  height="100%"
+  src="https://www.youtube.com/embed/sEaKrsNeLfQ?enablejsapi=1&modestbranding=1&rel=0&showinfo=0&controls=1"
+  title="YouTube video"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe> */}
+
+
+
+       {/* Droplet Container */}
 {/* <div className="middle-container">
 
 <div className="droplet"
@@ -224,49 +271,3 @@ const ValueProposition = () => {
   />
   <DropletAnimation />
         </div> */}
-
-</div>
-    </section>
-  );
-
-};
-
-export default ValueProposition;
-
-
-
-
-
-
-
-
-
-{/* Header */}
-{/* <div className="section-header">
-  <h2>How We Make a Difference</h2>
-</div> */}
-
-
-
-
-{/* <h2>What Sets Us Apart</h2>
-<p>
-  At Terra Azul Tech, we’ve spent over two decades developing and refining our patented, solar-powered ozone generator, a groundbreaking technology that purifies water more efficiently and sustainably than ever before. Harnessing solar energy, our compact system produces 350% more ozone gas, lasting 450% longer than conventional methods, as confirmed by independent university research.
-</p>
-<p>
-  By energizing oxygen in states beyond ozone, our innovative mechanism removes harmful compounds and elements from water with unmatched efficiency, addressing pollutant loads of all sizes. Successfully tested in compliance with the Clean Water Act, our system is designed for scalability, restoring water quality while fostering a healthier planet. With 15 years of on-site data and a commitment to sustainability, we’re revolutionizing wastewater management on a global scale.
-</p> */}
-
-
-
-
-
-{/* <iframe
-  width="100%"
-  height="100%"
-  src="https://www.youtube.com/embed/sEaKrsNeLfQ?enablejsapi=1&modestbranding=1&rel=0&showinfo=0&controls=1"
-  title="YouTube video"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-></iframe> */}

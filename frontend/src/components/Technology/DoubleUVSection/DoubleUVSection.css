@@ -1,0 +1,33 @@
+:root {
+    --blue: #3659c0;
+    --gray-dark: #525252;
+    --box-radius: 3px;
+    --img-radius: 8px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .box {
+    background: #fff;
+    border-radius: var(--box-radius);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    color: var(--blue);
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: var(--gray-dark);
+  }
+
+  .img-rounded {
+    border-radius: var(--img-radius);
+  }

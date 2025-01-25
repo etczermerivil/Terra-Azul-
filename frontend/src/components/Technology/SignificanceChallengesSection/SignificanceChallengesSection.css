@@ -1,0 +1,23 @@
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .box {
+    background: #f0f0f0;
+    border-radius: var(--box-radius);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    color: var(--blue);
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: var(--gray-dark);
+  }

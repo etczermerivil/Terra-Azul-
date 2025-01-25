@@ -13,7 +13,7 @@ const BragSection = () => {
     <section className="brag">
         <div className="brag-section">
       <div className="brag-header">
-        <h2>Terra in the News</h2>
+        <h2>Meet The Team</h2>
         <p className="brag-paragraph">
           The Terra Azul Tech team is a synergistic blend of passion, innovation, and dedication. Backed by two decades of
           pioneering work in sustainable technology, our researchers, scientists, and field experts never cease their quest

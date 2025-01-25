@@ -1,48 +1,47 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import ProfileButton from "./ProfileButton";
 import "./Navigation.css";
 import logo from "/Images/Logo2.png";
 
 function Navigation() {
+  const location = useLocation();
+
+  // Check if the current page is the home page ("/")
+  const isHomePage = location.pathname === "/";
+
   return (
-    <header className="navigation-header">
+    <header className={`navigation-header ${isHomePage ? "transparent" : "solid"}`}>
       <div className="navigation-container">
         {/* Logo Section */}
-
         <div className="logo">
           <NavLink to="/">
             <img src={logo} alt="Terra Azul Tech Logo" className="logo-image" />
           </NavLink>
         </div>
 
-        {/* Links Section */}
+        {/* Navigation Links Section */}
         <nav className="nav-links">
           <ul>
-
-          <li>
-              <NavLink to="/" exact activeClassName="active">
+            <li>
+              <NavLink to="/" exact="true" activeclassname="active">
                 Home
               </NavLink>
             </li>
-
-          <li>
-              <NavLink to="/about" activeClassName="active">
+            <li>
+              <NavLink to="/about" activeclassname="active">
                 About
               </NavLink>
             </li>
-
             <li>
-              <NavLink to="/contact" activeClassName="active">
+              <NavLink to="/contact" activeclassname="active">
                 Contact
               </NavLink>
             </li>
-
             <li>
-              <NavLink to="/our-technology" exact activeClassName="active">
+              <NavLink to="/technology" activeclassname="active">
                 Our Technology
               </NavLink>
             </li>
-
           </ul>
         </nav>
 
@@ -53,6 +52,7 @@ function Navigation() {
       </div>
     </header>
   );
+
 }
 
 export default Navigation;
