@@ -1,11 +1,11 @@
 .explore-more-section {
-  background-color: rgb(236, 236, 236);
+  background-color: white;
   display: flex; /* Enables Flexbox */
-  flex-direction: column; /* Aligns content vertically */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
-  height: 300px; /* Ensure this is the desired height */
-  text-align: center; /* Centers the text within each block */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  text-align: center;
   box-sizing: border-box;
 }
 

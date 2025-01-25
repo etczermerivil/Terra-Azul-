@@ -1,14 +1,17 @@
+
+
 /* Navigation Header */
 .navigation-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 70px;
   transition: background-color 0.3s ease, height 0.3s ease;
+  /* border-radius: 8px; */
 }
 
 .navigation-header.transparent {
@@ -18,9 +21,15 @@
 
 .navigation-header.solid {
   background-color: #3659c0;
-  ; /* Blue for other pages */
-  color: white; /* White text for contrast */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: white;
+  /* border-bottom: 0.25px solid white; */
+}
+
+/* Navigation Container */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navigation Container */
@@ -28,20 +37,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1350px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+  height: 100%;
   box-sizing: border-box;
-  height: 40px;
+  margin: 0 auto;
+  overflow: visible;
 }
+
 
 /* Logo Section */
 .logo {
   display: flex;
-  align-items: center; /* Vertical centering */
-  justify-content: center; /* Horizontal centering */
-  height: 100%; /* Ensure the container's height is sufficient for centering */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .logo-image {
@@ -49,7 +60,6 @@
   height: 35px;
   width: auto;
 }
-
 
 /* Navigation Links Section */
 .nav-links {
@@ -89,11 +99,9 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #f0f0f0; /* Subtle hover effect */
+  color: #f0f0f0;
   font-weight: 410;
 }
-
-
 
 /* Profile Button Section */
 .profile-button {
@@ -101,9 +109,6 @@
   align-items: center;
   justify-content: flex-end;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  margin-top: 3.25px;
 }
 
 .profile-icon-button {
@@ -116,7 +121,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .navigation-header.transparent .profile-icon-button {
   color: white;

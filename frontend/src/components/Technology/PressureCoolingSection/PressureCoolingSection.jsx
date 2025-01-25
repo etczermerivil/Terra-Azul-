@@ -7,7 +7,6 @@ const PressureCoolingSection = () => {
       <h2 className="section-title">
         6. Pressure &amp; Cooling (Essential Ingredients)
       </h2>
-      <div className="section-two-column">
         <div className="section-text">
           <p>
             Controlled pressure and a built-in cooling system maintain optimal
@@ -15,14 +14,6 @@ const PressureCoolingSection = () => {
             to internal components.
           </p>
         </div>
-        <div className="section-img">
-          <img
-            src="https://via.placeholder.com/600x400"
-            alt="Pressure & Cooling Placeholder"
-            className="img-rounded"
-          />
-        </div>
-      </div>
     </section>
   );
 };

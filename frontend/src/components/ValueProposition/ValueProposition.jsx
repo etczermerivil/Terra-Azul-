@@ -31,9 +31,9 @@ const ValueProposition = () => {
         <h2>A Smarter Way to Clean Water</h2>
       </div>
 
-      <div className="box-container">
+      <div className="boxes-container">
     {/* Top Left Box */}
-    <div className="box left-box">
+    <div className="boxes left-box">
     <h3>
 
         <FontAwesomeIcon
@@ -53,7 +53,7 @@ const ValueProposition = () => {
     </div>
 
     {/* Top Right Box */}
-    <div className="box right-box">
+    <div className="boxes right-box">
     <h3>
 
         <FontAwesomeIcon
@@ -72,9 +72,9 @@ const ValueProposition = () => {
     </div>
   </div>
 
-    <div className="box-container">
+    <div className="boxes-container">
     {/* Bottom Left Box */}
-    <div className="box bottom-left-box">
+    <div className="boxes bottom-left-box">
     <h3>
 
         <FontAwesomeIcon
@@ -96,7 +96,7 @@ const ValueProposition = () => {
     </div>
 
     {/* Bottom Right Box */}
-    <div className="box bottom-right-box">
+    <div className="boxes bottom-right-box">
     <h3>
 
         <FontAwesomeIcon
