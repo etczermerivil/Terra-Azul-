@@ -20,9 +20,9 @@
 }
 
 .navigation-header.solid {
-  background-color: #3659c0;
-  color: white;
-  /* border-bottom: 0.25px solid white; */
+  background-color: white;
+  color:white;
+  border-bottom: 1px solid  #3659c0;
 }
 
 /* Navigation Container */
@@ -94,7 +94,7 @@
 }
 
 .navigation-header.solid .nav-links a {
-  color: white;
+  color: #3659c0;
 }
 
 .nav-links a:hover,
