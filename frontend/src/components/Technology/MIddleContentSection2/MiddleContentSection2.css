@@ -1,0 +1,91 @@
+.middle-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1350px;
+    margin: 40px auto;
+    gap: 20px;
+    height: 500px;
+  }
+
+  .tabs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; /* Centers the buttons vertically */
+    align-items: center; /* Centers the buttons horizontally */
+    height: 100%; /* Matches the height of the box */
+  }
+
+  .tab {
+    background-color: rgb(230, 230, 230);
+    color: #525252;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .tab:hover {
+    background-color: rgb(200, 200, 200);
+  }
+
+  .active-tab {
+    background-color: white;
+    color: #3659c0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .step {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 500px;
+  }
+
+  .step-number {
+    background-color: rgb(230, 230, 230);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    flex-shrink: 0;
+  }
+
+  .step-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .step-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #525252;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #ececec;
+    padding-bottom: 10px;
+  }
+
+  .step-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+  }

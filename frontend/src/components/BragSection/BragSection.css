@@ -1,81 +1,103 @@
 .brag-section {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 3rem 0;
-    text-align: left;
-    box-sizing: border-box;
-    background-color: #3659c0;
-    height:800px;
-
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  text-align: left;
+  box-sizing: border-box;
+  background-color: #3659c0;
 }
 
 .brag {
-    background-color: #3659c0;
-  }
+  background-color: #3659c0;
+}
 
-  .brag-header {
-    margin-bottom: 2rem;
-  }
+.brag-header {
+  margin-bottom: 2rem;
+  text-align: left;
+}
 
-  .brag-header h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: white;
-    margin: 0 0 1rem;
-    text-transform: uppercase;
-  }
+.brag-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
 
-  .brag-header .brag-paragraph {
-    font-size: 18px;
-    color: white;
-    line-height: 1.6;
-    margin: 0;
-  }
+.brag-header .brag-paragraph {
+  font-size: 17px;
+  font-weight: 300;
+  color: white;
+  line-height: 1.6;
+  margin: 0;
+}
 
+.brag-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* Use auto to maintain consistent box width */
+  gap: 1rem; /* Reduce spacing between boxes */
+  justify-content: start; /* Align boxes to the left */
+}
+
+.brag-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content inside the box to the left */
+  justify-content: flex-start;
+  background: transparent;
+  text-align: left;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.brag-image-placeholder {
+  width: 312px;
+  height: 375px;
+  background-color: #d8d8d8;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.brag-info {
+  width: 100%;
+  text-align: left;
+}
+
+.brag-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.5rem;
+  text-align: left;
+}
+
+.brag-info p {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
   .brag-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, auto); /* Adjust columns for medium screens */
   }
 
   .brag-item {
-    padding: 2rem;
-    background: #f9f9f9;
-    border-radius: 3px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brag-grid {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
   }
 
-  .brag-item h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 1rem;
+  .brag-item {
+    height: auto;
   }
-
-  .brag-item p {
-    font-size: 16px;
-    color: #525252;
-    line-height: 1.5;
-  }
-
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .brag-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .brag-header h2 {
-      font-size: 32px;
-    }
-
-    .brag-item {
-      padding: 1.5rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .brag-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+}

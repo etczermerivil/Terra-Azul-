@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "react-router-dom"; // Import useLocation
 import { thunkLogout } from "../../redux/session";
 import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
@@ -13,6 +14,9 @@ function ProfileButton() {
   const [showMenu, setShowMenu] = useState(false);
   const user = useSelector((store) => store.session.user);
   const ulRef = useRef();
+  const location = useLocation(); // Access the current route
+
+  const isServicesPage = location.pathname === "/services"; // Check if the current page is the services page
 
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
@@ -42,7 +46,12 @@ function ProfileButton() {
 
   return (
     <div className="profile-button-container">
-      <button className="profile-icon-button" onClick={toggleMenu}>
+      <button
+        className={`profile-icon-button ${
+          isServicesPage ? "services-profile-icon" : ""
+        }`}
+        onClick={toggleMenu}
+      >
         <FontAwesomeIcon icon={faBars} />
       </button>
       {showMenu && (

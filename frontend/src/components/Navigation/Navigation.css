@@ -20,9 +20,10 @@
 }
 
 .navigation-header.solid {
-  background-color: white;
+  background-color: #3659c0;
+  background-color: transparent;
   color:white;
-  border-bottom: 1px solid  #3659c0;
+  /* border-bottom: 1px solid  white; */
 }
 
 /* Navigation Container */
@@ -94,13 +95,30 @@
 }
 
 .navigation-header.solid .nav-links a {
-  color: #3659c0;
+  color: white;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
   color: #f0f0f0;
   font-weight: 410;
+}
+
+/* Specific Styling for Services Page */
+.navigation-header.services-active {
+  color: #525252; /* Change font color */
+}
+
+.navigation-header.services-active .nav-links a {
+  color: #525252;
+}
+
+.navigation-header.services-active .nav-links a.active {
+  font-weight: bold;
+}
+
+.navigation-header.services-active .profile-button {
+  color: #525252; /* Update profile button color */
 }
 
 /* Profile Button Section */
@@ -120,7 +138,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: pink;
 }
+
+
 
 .navigation-header.transparent .profile-icon-button {
   color: white;
@@ -133,6 +154,16 @@
 .profile-icon-button:hover {
   color: #f0f0f0;
 }
+
+/* Investors-specific styles */
+.navigation-header.investors-active .nav-links a {
+  color: #5d5d5d; /* Font color for navigation links */
+}
+
+.navigation-header.investors-active .profile-button .profile-icon-button svg {
+  color: #5d5d5d; /* Font color for profile button icon */
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

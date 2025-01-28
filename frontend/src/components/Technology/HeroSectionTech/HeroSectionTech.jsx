@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="hero">
       <div className="hero-container">
         <div className="hero-title">
-          <h1>Our Technology</h1>
+          <h1>Terra Technology</h1>
         </div>
 
         <div className="hero-text">

@@ -98,11 +98,10 @@
 .boxes h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  /* color: #3659c0; */
   color: #525252;
   text-align: left;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #ececec; /* Add an underline for separation */
+  border-bottom: 2px solid #ececec;
   padding-bottom: 0.5rem;
 }
 

@@ -1,0 +1,199 @@
+/* General styling for steps container */
+.middle-content {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-sizing: border-box;
+
+}
+
+/* Summary Box */
+.summary-box {
+  /* margin: 50px 0; */
+  margin-top: 70px;
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.middle-header {
+  margin:0;
+  padding: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* margin-bottom: 20px; */
+  color:#3659c0;
+  color: #5d5d5d;
+}
+
+.summary-box p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #525252;
+  margin: 0;
+  text-align: justify;
+  max-width: 800px;
+}
+
+/* Step styling */
+.step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  /* border-radius: 3px; */
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  padding: 20px;
+  gap: 20px;
+  transition: opacity 0.5s ease, filter 0.5s ease;
+  opacity: 0.5;
+  filter: blur(5px);
+  margin-bottom: 100px;
+}
+
+.step.in-view {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* Step alignment */
+.step-left {
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.step-right {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+/* Borders */
+.step-left {
+  border-left: 3px solid rgb(230, 230, 230);
+
+}
+
+.step-right {
+  border-right: 3px solid rgb(230, 230, 230);
+
+}
+
+.first-step {
+  border-left: 3px solid rgb(230, 230, 230);
+  border-radius: 3px;
+}
+
+.last-step {
+  border-right: 3px solid rgb(230, 230, 230);
+}
+
+/* Step number styling */
+.step-number {
+  color: #3659c0;
+  font-size: 80px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+
+/* Step content styling */
+.step-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.step-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #525252;
+  text-transform: uppercase;
+  margin: 0;
+  border-bottom: 2px solid #ececec;
+  padding-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Blue Box */
+.blue-box {
+  background-color: #3659c0;
+  width: 50%;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.blue-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .step {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .step-left, .step-right {
+    margin: 0;
+  }
+
+  .step-number {
+    width: 100%;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .step-content {
+    padding: 15px;
+  }
+
+  .step-title {
+    font-size: 1.5rem;
+  }
+
+  .step-content p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Default Borders */
+.step-left,
+.step-right,
+.first-step,
+.last-step {
+  border-color: rgb(230, 230, 230); /* Default color */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition */
+}

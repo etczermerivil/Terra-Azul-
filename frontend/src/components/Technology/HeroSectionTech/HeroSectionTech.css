@@ -1,12 +1,15 @@
 /* Hero Section */
 .hero {
-  background-color: white !important; /* Ensure background color works */
+  /* background-color: #3659c0 !important;  */
+  background: linear-gradient(250deg, #3659c0, #2a47b0) !important;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 700px;
+  height: 600px;
   width: 100%;
+
+
   /* border-bottom: .1px solid #525252; */
 }
 
@@ -21,7 +24,7 @@
   /* border-top: .1px solid rgb(200,200,200); */
   /* border-right: .1px solid rgb(200,200,200); */
   /* border-bottom: .1px solid rgb(200,200,200); */
-  border-left: .1px solid rgb(200, 200, 200);
+  /* border-left: .1px solid rgb(200, 200, 200); */
 
 }
 
@@ -35,16 +38,23 @@
   justify-content: center;
   text-align: center;
   height: 500px;
-  border-top: .1px solid rgb(200, 200, 200) ;
-  border-bottom: .1px solid rgb(200, 200, 200) ;
+    /* border-top: .1px solid rgb(200,200,200); */
+  /* border-right: .1px solid rgb(200,200,200); */
+  /* border-bottom: .1px solid rgb(200,200,200); */
+  /* border-left: .1px solid rgb(200, 200, 200); */
   /* background-color:  #3659c0 ; */
 }
 
 .hero-container .hero-title h1 {
-  font-size: 35px;
-  font-weight: 700;
+  /* font-size: 35px;
+  font-weight: 700; */
+  font-size: 50px; /* Larger font size */
+  font-weight: 800; /* Bold and impactful */
+  letter-spacing: 1.2px; /* Slight spacing */
   /* color:white; */
   color: #676767;
+  color: white;
+  color: #f4f4f4;
   text-transform: uppercase;
   margin: 0;
 }
@@ -59,17 +69,18 @@
   justify-content: center;
   height: 500px;
   padding: 1rem;
-  /* border-bottom: .1px solid rgb(200,200,200); */
-  /* border-right: 1px solid rgb(230, 230, 230) ; */
+  /* border-bottom: .1px solid rgb(200,200,200);
+  border-right: .11px solid rgb(200, 200, 200) ; */
 }
 
 .hero-text p {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 399;
-  line-height: 1.8;
+  line-height: 1.9;
   margin: 0 !important;
   padding: 0;
-  color: #525252;
+  color: white;
+  color: #d1d1d1;
   /* color: #3659c0; */
 
 }
@@ -77,8 +88,8 @@
 /* Divider Between Paragraphs */
 .divider {
   width: 100%;
-  height: .1px;
-  background-color: rgb(200, 200, 200) ;
+  height: 1px;
+  background-color: white ;
   margin: 20px 0;
   padding: 0;
 }
@@ -96,4 +107,5 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  padding: 0 15px ;
 } */

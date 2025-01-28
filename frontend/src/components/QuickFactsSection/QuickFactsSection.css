@@ -28,21 +28,23 @@
 }
 
 .section-title {
-  text-align: left;
   margin-bottom: 0;
   padding: 0;
   background-color: transparent;
+  text-align: left; /* Ensure text alignment is set to left */
 }
 
-.section-title h2 {
+.quick-section-title h2 {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  color:  #525252;
+  color: #525252;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  text-align: left; /* Optional: Set text alignment explicitly for h2 */
 }
+
 
   .counters-container {
     display: flex;

@@ -74,7 +74,7 @@ const QuickFactsSection = () => {
 
     <div className="quick-facts">
       {/* Title */}
-      <div className="section-title">
+      <div className="quick-section-title">
         <h2>The Water Crisis in Numbers</h2>
       </div>
 

@@ -1,0 +1,76 @@
+/* CTA Section Styling */
+.cta-container .services-cta-section {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+  }
+
+  /* CTA Section Layout */
+  .services-cta-section {
+    background-color: rgb(251, 251, 251);
+
+    display: flex; /* Enable Flexbox */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Consistent height */
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+  }
+
+  /* Text Section */
+  .services-cta-section .cta-text {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    color: #525252; /* Slightly dark gray */
+  }
+
+  /* Title Styling */
+  .services-cta-section .cta-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3659c0;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
+  }
+
+  /* Button Styling */
+  .cta-button-services {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #3659c0;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button-services:hover {
+    background-color: #2c4fa6; /* Slightly darker blue */
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .services-cta-section {
+      padding: 1rem;
+      height: auto; /* Allow dynamic height for smaller screens */
+    }
+
+    .cta-title {
+      font-size: 24px;
+    }
+
+    .cta-text {
+      font-size: 14px;
+    }
+
+    .cta-button-services {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }

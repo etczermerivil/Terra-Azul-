@@ -1,16 +1,17 @@
-
 import './ConclusionCTASection.css';
 
 const ConclusionCTASection = () => {
   return (
-    <section className="container cta-section">
-      <div className="section-text">
-      <p>
-        Ready to see how our Multiple Oxygen Allotrope Generator can enhance your
-        water treatment processes?
-      </p>
+    <section className="cta-container unique-cta-section">
+      <div className="cta-text">
+        <h2 className='cta-closer'>
+          Become An Investor
+        </h2>
+        <p>
+          Ready to enhance your water treatment processes?
+        </p>
       </div>
-      <a href="/contact" className="cta-button">Contact Us</a>
+      <a href="/contact" className="cta-button-unique">Contact Us</a>
     </section>
   );
 };

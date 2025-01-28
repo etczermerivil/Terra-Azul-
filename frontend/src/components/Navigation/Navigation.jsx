@@ -6,11 +6,17 @@ import logo from "/Images/Logo2.png";
 function Navigation() {
   const location = useLocation();
 
-  // Check if the current page is the home page ("/")
+  // Check if the current page is the home page ("/") or the services page ("/services")
   const isHomePage = location.pathname === "/";
+  const isServicesPage = location.pathname === "/services";
+  const isInvestorsPage = location.pathname === "/investors";
 
   return (
-    <header className={`navigation-header ${isHomePage ? "transparent" : "solid"}`}>
+    <header
+      className={`navigation-header ${isHomePage ? "transparent" : "solid"} ${
+        isServicesPage ? "services-active" : ""
+      } ${isInvestorsPage ? "investors-active" : ""}`}
+    >
       <div className="navigation-container">
         {/* Logo Section */}
         <div className="logo">
@@ -38,21 +44,34 @@ function Navigation() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/services" activeclassname="active">
+                Services
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/technology" activeclassname="active">
                 Our Technology
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/investors" activeclassname="active">
+                Investors
               </NavLink>
             </li>
           </ul>
         </nav>
 
         {/* Profile Button Section */}
-        <div className="profile-button">
+        <div
+          className={`profile-button ${
+            isServicesPage ? "services-profile" : ""
+          } ${isInvestorsPage ? "investors-profile" : ""}`}
+        >
           <ProfileButton />
         </div>
       </div>
     </header>
   );
-
 }
 
 export default Navigation;

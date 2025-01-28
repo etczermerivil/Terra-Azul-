@@ -1,0 +1,58 @@
+/* Unique CTA Section */
+
+.cta-container .unique-cta-section {
+  margin: 0;
+  padding: 0;
+  background-color: #3659c0;
+}
+
+.unique-cta-section {
+   background-color: #3659c0;
+   display: flex; /* Enables Flexbox */
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+   text-align: center;
+   box-sizing: border-box;
+
+  }
+
+  /* Unique Text */
+  .unique-cta-section .cta-text {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+
+  /* Unique CTA Button */
+  .cta-button-unique {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button-unique:hover {
+    background-color: #2c4fa6; /* Slightly darker blue */
+  }
+
+  /* Ensure spacing if needed */
+  .cta-closer {
+  font-size: 30px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+  }
+
+  .cta-button-unique {
+    color: #525252;
+  }

@@ -1,0 +1,113 @@
+/* Hero Section */
+.hero-services {
+    /* background-color: rgb(250, 250, 250); */
+    background: linear-gradient(250deg, rgb(245,245, 245), rgb(230, 230, 230));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+
+    /* background-image: url('/Images/Techpage/14.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  }
+
+  /* .hero-services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.669);
+    z-index: 1;
+  } */
+
+  /* Hero Container */
+  .hero-services-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    max-width: 1350px;
+  }
+
+  /* Hero Title */
+  .hero-services-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    /* background-color: rgb(250, 250, 250); */
+    /* border-left: 0.1px solid rgba(200, 200, 200); */
+  }
+
+  .hero-services-title h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: #3659c0 ;
+    /* color:#5d5d5d; */
+    /* color: white; */
+    text-transform: uppercase;
+    margin: 0;
+    z-index: 2;
+  }
+
+  /* Hero Text */
+  .hero-services-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    height: 500px;
+    padding: 1rem;
+
+  }
+
+  .hero-services-text p {
+    font-size: 17px;
+    font-weight: 399;
+    line-height: 1.9;
+    margin: 0 0 1rem;
+    padding: 0;
+    color: #525252;
+    /* color: white; */
+    z-index: 2;
+  }
+
+  /* Divider Between Paragraphs */
+  .divider-dark {
+    width: 100%;
+    height: 1px;
+    background-color: #525252;
+    margin: 20px 0;
+    z-index: 2;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-services-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-services-title,
+    .hero-services-text {
+      height: auto;
+    }
+
+    .hero-services-title h1 {
+      font-size: 28px;
+    }
+
+    .hero-services-text p {
+      font-size: 16px;
+    }
+  }
