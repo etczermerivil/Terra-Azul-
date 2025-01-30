@@ -6,7 +6,6 @@ const InvestorsHero = () => {
       <div className="hero-investors-container">
         <div className="hero-investors-title">
           <h1>Investors</h1>
-
         </div>
 
 

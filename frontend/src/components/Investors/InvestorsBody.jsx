@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChartLine, faInfinity, faBuilding, faGlobe, faFlagUsa } from '@fortawesome/free-solid-svg-icons';
+
 import './InvestorsBody.css';
 
 const InvestorsBody = () => {
@@ -15,43 +18,62 @@ const InvestorsBody = () => {
 </div>
 
 
-
 {/* Section 1: Market Opportunity */}
 <div className="market-opportunity-wrapper">
   <div className="market-opportunity-container">
     <div className="market-opportunity-content">
+
       {/* Left Side */}
       <div className="market-opportunity-left">
         <div className="market-opportunity-inner">
-          <h2 className="market-opportunity-title">Market Opportunity</h2>
+          <h2 className="market-opportunity-title">
+            <FontAwesomeIcon icon={faChartLine} style={{ marginRight: '10px', color: '#3659c0' }} />
+            Market Opportunity
+          </h2>
           <p className="market-opportunity-description">
             From municipal systems to industrial enterprises, the global demand for advanced water treatment solutions is on the rise.
           </p>
-          {/* <button className="market-opportunity-cta">Investment Opportunity</button> */}
         </div>
       </div>
 
       {/* Right Side */}
       <div className="market-opportunity-right">
+
         <div className="market-opportunity-box">
-          <h3>Endless Market</h3>
+          <h3>
+            <FontAwesomeIcon icon={faInfinity} style={{ marginRight: '8px', color: '#3659c0' }} />
+            Endless Market
+          </h3>
           <p>If the market is water, there’s no end. Fluids, even bigger.</p>
         </div>
+
         <div className="market-opportunity-box">
-          <h3>Enterprise Focus</h3>
+          <h3>
+            <FontAwesomeIcon icon={faBuilding} style={{ marginRight: '8px', color: '#3659c0' }} />
+            Enterprise Focus
+          </h3>
           <p>
             Our target market over the next 3 years is <span>enterprise (municipal & industrial)</span>, regulated by
             state, national, and international environmental protections.
           </p>
         </div>
+
         <div className="market-opportunity-box">
-          <h3>Global Growth</h3>
+          <h3>
+            <FontAwesomeIcon icon={faGlobe} style={{ marginRight: '8px', color: '#3659c0' }} />
+            Global Growth
+          </h3>
           <p>Global water and wastewater treatment will grow to <span>$956 billion by 2032</span>.</p>
         </div>
+
         <div className="market-opportunity-box">
-          <h3>U.S. Market</h3>
+          <h3>
+            <FontAwesomeIcon icon={faFlagUsa} style={{ marginRight: '8px', color: '#3659c0' }} />
+            U.S. Market
+          </h3>
           <p>Wastewater treatment in the United States alone: <span>$121 billion in 2024</span>.</p>
         </div>
+
       </div>
     </div>
   </div>
