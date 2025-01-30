@@ -8,138 +8,154 @@
   border-radius: 3px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 3rem 0;
-    border-top: .1px solid #525252;
-}
-
-
-
-.boxes-container {
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  box-sizing: border-box;
-}
-
-.boxes-container:last-of-type {
-  margin-bottom: 0; /* Remove bottom margin for the last row */
+    border-top: .1px solid #3659c0;
 }
 
 .section-header {
   max-width: 1500px;
   margin: 0 auto;
   box-sizing: border-box;
+  text-align: center; /* Centers child elements horizontally */
 }
 
 .section-header h2 {
   font-size: 36px;
   font-weight: 700;
-  color: #525252;
-  text-align: left;
-  margin: 0;
+  color: #5d5d5d;
+  text-align: center; /* Centers the h2 text */
+  margin: 0 auto; /* Centers the element itself */
   padding: 0;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
 
-.boxes {
-  flex: 1;
-  padding: 2rem;
-  text-align: left;
-  border-radius: 3px;
-  background-color: whitesmoke;
-  background-color: rgb(250, 250, 250) ;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.044);
-  border: 1px solid rgb(230, 230, 230);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.boxes:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
-}
-
-.middle-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
+.quick-p {
+  font-size: 18px;
+  color: #525252;
+  font-weight: 300;
+  margin: 0 auto;
   padding: 0;
-  background-color: transparent;
-  border-radius: 3px;
-  /* border: 1px dashed #222; */
+  text-align: justify; /* Centers the text inside the paragraph */
+  padding-bottom: 60px;
+  max-width: 800px; /* Keeps the paragraph content narrow */
 }
 
-.droplet-container {
+
+/* Section Styling */
+.value-proposition-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 1500px; /* Container width */
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Value Proposition Box */
+.value-proposition-box {
   display: flex;
-  justify-content: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
   align-items: center;
-  width: 100%;
-  padding:0;
-  margin:0;
-
+  height: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
 }
 
-.droplet svg {
-  width: 550px;
-  height: 550px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+.value-proposition-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
-#Droplet {
-  width: 200px; /* Adjust size */
-  height: auto; /* Maintain aspect ratio */
+/* Icon Container */
+.val-proposition-icon-container {
+  flex: 0 0 20%; /* Fixed width for the icon container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Rounded corners */
+  height: 100%; /* Full height of the box */
 }
 
-.boxes h3 {
-  font-size: 1.8rem;
+/* Icon Styling */
+.val-proposition-icon-container svg {
+  font-size: 50px; /* Adjust icon size */
+}
+
+/* Content Container */
+.content-container {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column; /* Stack title and content vertically */
+  justify-content: center;
+  padding-left: 20px; /* Spacing between icon and content */
+}
+
+/* Title (h3) */
+.content-container h3 {
+  margin: 0;
+  font-size: 25px;
   font-weight: 700;
-  color: #525252;
-  text-align: left;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #ececec;
-  padding-bottom: 0.5rem;
+  color: #5d5d5d;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.boxes p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #525252;
-  /* margin-bottom: 1rem; */
-}
-
-ul {
-  padding-left: 1.5rem;
-}
-
-ul li {
-  font-size: 1rem;
+/* Paragraph (p) */
+.content-container p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
   color: #666;
-  margin-bottom: 0.8rem;
+  margin-bottom: 10px; /* Space below the paragraph */
 }
 
-.icon {
-  margin-left: 200px;
-  color: #3659c0; /* Matches the heading color */
-  font-size: 1.5rem;
+/* Unordered List (ul) */
+.content-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  padding-left: 20px; /* Indent list items */
 }
 
+/* List Items (li) */
+.content-container ul li {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6; /* Space between list items */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .value-proposition-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .val-proposition-icon-container {
+    margin-bottom: 10px; /* Add spacing below the icon */
+  }
+}
 
 @media (max-width: 768px) {
-  .box-container {
-    flex-direction: column;
-    gap: 2rem;
+  .value-proposition-container {
+    padding: 0 1rem;
   }
 
-  .box {
-    width: 100%;
+  .value-proposition-box {
+    height: auto; /* Adjust height for smaller screens */
+    flex-direction: column; /* Stack icon and content vertically */
   }
 
-  .droplet svg {
-    width: 150px; /* Adjust size for smaller screens */
+  .val-proposition-icon-container {
+    width: 100%; /* Full width for the icon container */
+    height: auto;
+  }
+
+  .content-container {
+    padding-left: 0; /* Remove left padding for smaller screens */
   }
 }

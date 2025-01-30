@@ -1,58 +1,93 @@
-/* Unique CTA Section */
-
-.cta-container .unique-cta-section {
-  margin: 0;
-  padding: 0;
+/* Conclusion CTA Section */
+.cta-section {
   background-color: #3659c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjusted height for spacing */
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px; /* Added padding for mobile responsiveness */
 }
 
-.unique-cta-section {
-   background-color: #3659c0;
-   display: flex; /* Enables Flexbox */
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 400px;
-   text-align: center;
-   box-sizing: border-box;
+/* Container for all elements */
+.cta-section-container {
+  max-width: 700px; /* Sets max width for better layout */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Creates space between elements */
+}
 
-  }
-
-  /* Unique Text */
-  .unique-cta-section .cta-text {
-    font-size: 16px;
-    margin-bottom: 1.5rem;
-    color: white;
-  }
-
-  /* Unique CTA Button */
-  .cta-button-unique {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-  }
-
-  .cta-button-unique:hover {
-    background-color: #2c4fa6; /* Slightly darker blue */
-  }
-
-  /* Ensure spacing if needed */
-  .cta-closer {
+/* Title Styling */
+.cta-section-container h2 {
   font-size: 30px;
   font-weight: 700;
-
+  color: White;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  margin-bottom: 14px;
-  }
+  text-align: left;
+}
 
-  .cta-button-unique {
-    color: #525252;
-  }
+/* Paragraph Styling */
+.cta-section-container p {
+  font-size: 16px;
+  font-weight: 399;
+  margin: 0;
+  color: whitesmoke;
+  text-align: left; /* Aligns text to the left */
+  line-height: 1.8; /* Better readability */
+  width: 100%;
+}
+
+/* Form Group */
+.cta-section-form-group {
+  width: 100%; /* Stretches to container width */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start; /* Aligns form fields to the left */
+}
+
+/* Input Fields */
+.cta-section-input-field {
+  width: 100%;
+  max-width: 100%; /* Matches container width */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section-input-field:focus {
+  outline: none;
+  border-color: #3659c0;
+  box-shadow: 0 0 5px rgba(54, 89, 192, 0.5);
+}
+
+/* Button Group */
+.cta-section-button-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cta-section-button-group button {
+  margin: 0;
+  padding: 14px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: white;
+  color: #525252;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-section-button-group button:hover {
+  transform: translateY(-2px);
+}

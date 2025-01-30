@@ -6,7 +6,6 @@ const BragSection = () => {
     { title: 'Strategy', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
     { title: 'Management', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
     { title: 'Financial', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { title: 'Secure', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
   ];
 
   return (

@@ -1,26 +1,41 @@
 /* Hero Section */
 .hero {
   /* background-color: #3659c0 !important;  */
-  background: linear-gradient(250deg, #3659c0, #2a47b0) !important;
-  color: white;
+  /* background: linear-gradient(250deg, #3659c0, #2a47b0) !important; */
   display: flex;
   align-items: center;
   justify-content: center;
   height: 600px;
   width: 100%;
-
-
-  /* border-bottom: .1px solid #525252; */
+  background-image: url('./Images/Techpage/12.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #353535ad;
+  z-index: 1;
+}
+
 
 /* Hero Container */
 .hero-container {
-  /* padding: 0 .2rem ; */
   display: flex;
   width: 100%;
   align-items: center;
   position: relative;
   max-width: 1350px;
+
+  /* padding: 0 .2rem ; */
   /* border-top: .1px solid rgb(200,200,200); */
   /* border-right: .1px solid rgb(200,200,200); */
   /* border-bottom: .1px solid rgb(200,200,200); */
@@ -38,7 +53,8 @@
   justify-content: center;
   text-align: center;
   height: 500px;
-    /* border-top: .1px solid rgb(200,200,200); */
+  /* background-color: #f4f4f4ee; */
+  /* border-top: .1px solid rgb(200,200,200); */
   /* border-right: .1px solid rgb(200,200,200); */
   /* border-bottom: .1px solid rgb(200,200,200); */
   /* border-left: .1px solid rgb(200, 200, 200); */
@@ -48,15 +64,16 @@
 .hero-container .hero-title h1 {
   /* font-size: 35px;
   font-weight: 700; */
-  font-size: 50px; /* Larger font size */
+  font-size: 110px; /* Larger font size */
   font-weight: 800; /* Bold and impactful */
   letter-spacing: 1.2px; /* Slight spacing */
   /* color:white; */
-  color: #676767;
-  color: white;
-  color: #f4f4f4;
+  color: #ffffff;
+  /* color: white;
+  color: #f4f4f4; */
   text-transform: uppercase;
   margin: 0;
+  z-index: 2;
 }
 
 /* Hero Text */
@@ -69,6 +86,8 @@
   justify-content: center;
   height: 500px;
   padding: 1rem;
+  z-index: 2;
+  /* background-color: #f4f4f4ee; */
   /* border-bottom: .1px solid rgb(200,200,200);
   border-right: .11px solid rgb(200, 200, 200) ; */
 }
@@ -79,8 +98,10 @@
   line-height: 1.9;
   margin: 0 !important;
   padding: 0;
-  color: white;
-  color: #d1d1d1;
+  color: #525252;
+  z-index: 2;
+
+  /* color: #d1d1d1; */
   /* color: #3659c0; */
 
 }
@@ -92,6 +113,7 @@
   background-color: white ;
   margin: 20px 0;
   padding: 0;
+  z-index: 2;
 }
 
 

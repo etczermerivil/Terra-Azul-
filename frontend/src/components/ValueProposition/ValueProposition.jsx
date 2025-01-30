@@ -29,92 +29,82 @@ const ValueProposition = () => {
 
       <div className="section-header">
         <h2>A Smarter Way to Clean Water</h2>
+        <p className="quick-p">
+          From advanced ozone systems to real-time monitoring, our water treatment solutions prioritize efficiency, sustainability, and global impact. Check out our services below to see how we can help turn water treatment challenges into sustainable solutions.
+
+        </p>
+
+
       </div>
 
-      <div className="boxes-container">
-    {/* Top Left Box */}
-    <div className="boxes left-box">
-    <h3>
-
-        <FontAwesomeIcon
-          icon={faLightbulb}
-          style={{ color: "orange", marginRight: "1rem" }} // Orange color for the icon
-        />
-      Our Technology
-      </h3>
+      <div className="value-proposition-container">
+  {/* Top Left Box */}
+  <div className="value-proposition-box left-box">
+    <div className="val-proposition-icon-container">
+      <FontAwesomeIcon icon={faLightbulb} style={{ color: "orange" }} />
+    </div>
+    <div className="content-container">
+      <h3>Advanced Technology</h3>
       <ul>
         <li>Produces 350% more ozone gas, lasting 450% longer.</li>
         <li>Prevents ozone loss for maximum cleaning power and efficiency.</li>
-        <li>Stabilized ozone (O3) targets that removes contaminants efficiently.</li>
-        <li>Tested and compliant with the Clean Water Act.</li>
-        <li>Improves water quality at scale while fostering a healthier planet.</li>
-
-      </ul>
-    </div>
-
-    {/* Top Right Box */}
-    <div className="boxes right-box">
-    <h3>
-
-        <FontAwesomeIcon
-          icon={faCogs}
-          style={{ color: "grey", marginRight: "1rem" }}
-        />
-      Our Innovations
-      </h3>
-      <ul>
-        <li>Scalable and sustainable solutions.</li>
-        <li>Packaged with long-term warranties.</li>
-        <li>Remote monitoring and real-time maintenance.</li>
-        <li>Serving small municipalities and enterprises.</li>
-        <li>Cleaned over 700 million gallons globally!</li>
+        <li>Compliant with the Clean Water Act.</li>
+        <li>Improves water quality while fostering a healthier planet.</li>
       </ul>
     </div>
   </div>
 
-    <div className="boxes-container">
-    {/* Bottom Left Box */}
-    <div className="boxes bottom-left-box">
-    <h3>
-
-        <FontAwesomeIcon
-          icon={faWifi}
-          style={{ color: " #3659c0", marginRight: "1rem" }}
-        />
-      Monitoring & Maintenance
-      </h3>
-        <p>Our real-time and monthly service to clients:</p>
-        <ul>
-            <li>Able to scale service contracts from self-serve to monthly onsite.</li>
-            <li>Offsite monitoring via remote sensors.</li>
-            <li>Packaged with long-term warranties.</li>
-            <li>Partnered with local engineers.</li>
-            <li>Able to run service at 120–240V or DC.</li>
-            <li>Can couple with leasing options for a single monthly cost.</li>
-            <li>Capable of pairing with other devices.</li>
-        </ul>
+  {/* Top Right Box */}
+  <div className="value-proposition-box right-box">
+    <div className="val-proposition-icon-container">
+      <FontAwesomeIcon icon={faCogs} style={{ color: "grey" }} />
     </div>
-
-    {/* Bottom Right Box */}
-    <div className="boxes bottom-right-box">
-    <h3>
-
-        <FontAwesomeIcon
-          icon={faHandshake}
-          style={{ color: "green", marginRight: "1rem" }}
-        />
-      Equipment Leasing
-      </h3>
-        <p>For clients that need options to reduce paperwork and risk:</p>
-        <ul>
-            <li>Able to provide equipment on site-specific contracts for 3–5 years.</li>
-            <li>Protects clients from liability on wear and tear.</li>
-            <li>Ensures access to up-to-date parts and service.</li>
-            <li>Bundles maintenance without the risk of equipment loss.</li>
-            <li>Low paperwork burden for small municipalities or enterprises starting with a low cost.</li>
-        </ul>
+    <div className="content-container">
+      <h3>Sustainable Innovations</h3>
+      <ul>
+        <li>Scalable and sustainable solutions.</li>
+        <li>Long-term warranties included.</li>
+        <li>Remote monitoring and real-time maintenance.</li>
+        <li>Serving municipalities and enterprises globally.</li>
+      </ul>
     </div>
+  </div>
+</div>
 
+<div className="value-proposition-container">
+  {/* Bottom Left Box */}
+  <div className="value-proposition-box bottom-left-box">
+    <div className="val-proposition-icon-container">
+      <FontAwesomeIcon icon={faWifi} style={{ color: "#3659c0" }} />
+    </div>
+    <div className="content-container">
+      <h3>Monitoring & Maintenance</h3>
+      <p>Our real-time and monthly service to clients:</p>
+      <ul>
+        <li>Offsite monitoring via remote sensors.</li>
+        <li>Packaged with long-term warranties.</li>
+        <li>Scalable service contracts for monthly onsite visits.</li>
+        <li>Capable of pairing with other devices and solutions.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Bottom Right Box */}
+  <div className="value-proposition-box bottom-right-box">
+    <div className="val-proposition-icon-container">
+      <FontAwesomeIcon icon={faHandshake} style={{ color: "green" }} />
+    </div>
+    <div className="content-container">
+      <h3>Equipment Leasing</h3>
+      <p>For clients that need options to reduce paperwork and risk:</p>
+      <ul>
+        <li>Site-specific contracts for 3–5 years.</li>
+        <li>Access to up-to-date parts and service.</li>
+        <li>Maintenance bundled into one simple plan.</li>
+        <li>Low-cost options for municipalities and enterprises.</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
     </section>

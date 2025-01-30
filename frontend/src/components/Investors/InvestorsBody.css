@@ -1,0 +1,381 @@
+/* General Styles */
+.investors-body {
+    margin: 0 auto;
+
+  }
+
+/* Summary Box Styling */
+.summary-box-invest {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  height: 300px;
+}
+
+.middle-header-invest {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5d5d5d;
+  margin-bottom: 35px;
+}
+
+.summary-box-invest p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #666;
+  text-align: justify;
+  max-width: 800px;
+  margin-bottom: 15px;
+}
+
+
+  /* Section Divider */
+  .section-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 40px 0;
+  }
+
+  /* Section: Market Opportunity */
+/* Market Opportunity Container */
+.market-opportunity-wrapper {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+
+  }
+
+.market-opportunity-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  /* Content Wrapper */
+  .market-opportunity-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+  }
+
+  /* Left Side */
+  .market-opportunity-left {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(200,200,200);
+  }
+
+  .market-opportunity-left {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(200, 200, 200);
+
+    overflow: hidden;
+  }
+
+  .market-opportunity-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+    z-index: 1;
+  }
+
+
+
+ .market-opportunity-inner {
+    text-align: left;
+    max-width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .market-opportunity-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #3f3f3f;
+    z-index: 2;
+  }
+
+  .market-opportunity-description {
+    font-size: 1.2rem;
+    font-weight: 399;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #525252;
+    text-align: justify;
+    z-index: 2;
+  }
+
+  .market-opportunity-cta {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 20px;
+    background-color: #525252 ;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .market-opportunity-cta:hover {
+    background-color: #0056b3;
+  }
+
+  /* Right Side */
+  .market-opportunity-right {
+    flex: 1;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .market-opportunity-box {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.415);
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .market-opportunity-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .market-opportunity-box h3 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #5d5d5d;
+  }
+
+  .market-opportunity-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+  }
+
+
+
+
+  /* Funding Plan Hero Section */
+ .funding-plan-section{
+    margin-top: 70px;
+    margin-bottom: 70px;
+ }
+
+.funding-plan-hero {
+    text-align: left;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .funding-plan-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #5d5d5d;
+    text-align: left;
+  }
+
+  .funding-plan-subtitle {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #5d5d5d;
+    text-align: left;
+  }
+
+  /* Funding Plan Grid */
+.funding-plan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Funding Plan Item */
+  .funding-plan-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    height: 300px;
+  }
+
+  .funding-plan-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+
+  /* Funding Plan Icon */
+  .funding-plan-icon {
+    font-size: 2.5rem;
+    color: #3659c0; /* Use blue for icons */
+    margin-bottom: 10px; /* Space below the icon */
+  }
+
+  /* Funding Plan Content */
+  .funding-plan-content h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #3659c0;
+  }
+
+  .funding-plan-content p {
+    font-size: 16px;
+    font-weight: 399;
+    line-height: 1.5;
+    color: #525252;
+  }
+
+
+
+
+
+/* The Ask Container */
+
+.requested-financing-wrapper {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+
+.funding-ask-container-invest {
+    max-width: 1350px;
+    margin: 0 auto; /* Center the section */
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light gray background for the section */
+    border-radius: 3px;
+    min-height: 500px;
+  }
+
+  /* Section Title */
+  .funding-ask-container-invest .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #5d5d5d;
+    text-align: left;
+  }
+
+  /* Two-Column Grid */
+  .funding-ask-two-column-invest {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Spacing between columns */
+    align-items: start;
+  }
+
+  /* Individual Column */
+  .funding-ask-two-column-invest div {
+    background-color: #ffffff; /* White box background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+  }
+
+  /* Column Titles */
+  .funding-ask-two-column-invest h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #595959; /* Blue color for titles */
+    margin-bottom: 15px;
+  }
+
+  /* Lists */
+  .founder-investments-list-invest,
+  .use-of-funds-list-invest {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* Equity Set-Asides */
+  .equity-set-aside-invest {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .InvestbodyH3 {
+    color: #595959;
+  }
+
+  .equity-set-aside-invest span {
+    color: #595959; /* Highlight key info in blue */
+  }
+
+  /* Flexible Text */
+  .flexible-invest-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .flexible-invest-text span {
+    font-weight: bold;
+    color: #595959;
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .funding-ask-two-column-invest {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+      gap: 20px;
+    }
+  }
+  }

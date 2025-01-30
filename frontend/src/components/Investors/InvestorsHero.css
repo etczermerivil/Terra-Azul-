@@ -1,13 +1,29 @@
 /* Hero Section */
 .hero-investors {
-    background-color: white;
-    color: white;
+    /* background-color: white; */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 600px;
     width: 100%;
+    background-image: url('./Images/Investors/1.jpg');
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
 }
+
+.hero-investors::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #353535ad;
+    z-index: 1;
+  }
 
 /* Hero Container */
 .hero-investors-container {
@@ -29,10 +45,10 @@
 }
 
 .hero-investors-title h1 {
-    font-size: 50px;
+    font-size: 110px;
     font-weight: 800;
     letter-spacing: 1.2px;
-    color: #5d5d5d;
+    color: white;
     text-transform: uppercase;
     margin: 0;
     z-index: 2;
@@ -56,6 +72,7 @@
     margin: 0 0 1rem;
     padding: 0;
     color: #525252;
+    /* color: white; */
     z-index: 2;
 }
 

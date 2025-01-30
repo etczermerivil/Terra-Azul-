@@ -15,14 +15,19 @@ const LandingPage = () => {
       {/* Quick Facts Section */}
       <QuickFactsSection />
 
+
+
+
       {/* Value Proposition */}
       <ValueProposition />
+
+
 
       {/* Proven Track Record*/}
       <ProvenTrackRecord/>
 
       {/* BragSection */}
-      <BragSection />
+      {/* <BragSection /> */}
 
       {/* Explore More Section */}
       <ExploreMoreSection />

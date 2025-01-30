@@ -106,11 +106,11 @@
 
 /* Specific Styling for Services Page */
 .navigation-header.services-active {
-  color: #525252; /* Change font color */
+  color: white; /* Change font color */
 }
 
 .navigation-header.services-active .nav-links a {
-  color: #525252;
+  color: white;
 }
 
 .navigation-header.services-active .nav-links a.active {
@@ -118,7 +118,7 @@
 }
 
 .navigation-header.services-active .profile-button {
-  color: #525252; /* Update profile button color */
+  color: white; /* Update profile button color */
 }
 
 /* Profile Button Section */
@@ -157,11 +157,11 @@
 
 /* Investors-specific styles */
 .navigation-header.investors-active .nav-links a {
-  color: #5d5d5d; /* Font color for navigation links */
+  color: white; /* Font color for navigation links */
 }
 
 .navigation-header.investors-active .profile-button .profile-icon-button svg {
-  color: #5d5d5d; /* Font color for profile button icon */
+  color: white; /* Font color for profile button icon */
 }
 
 

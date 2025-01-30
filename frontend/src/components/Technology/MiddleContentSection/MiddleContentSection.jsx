@@ -71,13 +71,16 @@ const MiddleContentSection = () => {
   return (
     <section className="middle-content">
       {/* Summary Box */}
+
       <div className="summary-box">
-        <h2 className="middle-header">Our six Step Process</h2>
-        {/* <p>
-          At Terra Technology, we utilize a six-step process to revolutionize the generation and application of oxygen
-          allotropes. Each step is designed to ensure precision, stability, and efficiency in providing cutting-edge
-          water treatment solutions.
-        </p> */}
+        <h2 className="middle-header">The Six-Step Solution</h2>
+
+        <p>
+          At Terra Technology, we have developed a cutting-edge six-step process to optimize the generation and application of oxygen allotropes for water treatment.
+        </p>
+        <p>
+          By leveraging state-of-the-art components we are paving the way for significant advancements in environmental sustainability. This groundbreaking offers a more effective and eco-friendly solution for global water treatment challenges.
+        </p>
       </div>
 
       {/* Steps */}

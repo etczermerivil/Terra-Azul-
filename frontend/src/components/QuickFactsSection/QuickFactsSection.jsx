@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import { FaExclamationTriangle, FaTint } from 'react-icons/fa';
 import './QuickFactsSection.css';
 
 import './Droplet.css';
@@ -197,28 +198,42 @@ const QuickFactsSection = () => {
 
       {/* Problems and Solutions */}
       <div className="info-container">
-        <div className="problems">
-          <h3>The Problem</h3>
-          <ul>
-            <li>Significant reduction in lifespans of exposed living beings.</li>
-            <li>Pandemics and droughts are more devastating, spreading quickly and completely.</li>
-            <li>
-              Until now, the only available options to treat this water have relied on expensive chemicals, dilution,
-              filtration, and reverse osmosis.
-            </li>
-          </ul>
-        </div>
-        <div className="solutions">
-          <h3>The Solution</h3>
-          <p>
-            Clean water is essential for life, yet billions lack access to it. Addressing this crisis requires innovative and sustainable solutions to remove contaminants and rejuvenate water systems worldwide.
-          </p>
+  {/* Problem Section */}
+  <div className="problems value-proposition-box">
+    <div className="val-proposition-icon-container">
+      <FaExclamationTriangle style={{ color: '#ff6347' }} />
+    </div>
+    <div className="content-container">
+      <h3>The Problem</h3>
+      <ul>
+        <li>Significant reduction in lifespans of exposed living beings.</li>
+        <li>Pandemics and droughts are more devastating, spreading quickly and completely.</li>
+        <li>
+          Until now, the only available options to treat this water have relied on expensive chemicals, dilution,
+          filtration, and reverse osmosis.
+        </li>
+      </ul>
+    </div>
+  </div>
 
-          <p>
-            The journey toward clean water begins with scalable, forward-thinking solutions that benefit communities and the environment alike.
-          </p>
-        </div>
-      </div>
+  {/* Solution Section */}
+  <div className="solutions value-proposition-box">
+    <div className="val-proposition-icon-container">
+      <FaTint style={{ color: '#3659c0' }} />
+    </div>
+    <div className="content-container">
+      <h3>The Solution</h3>
+      <ul>
+        <li>Innovative and sustainable solutions that remove contaminants effectively.</li>
+        <li>Rejuvenating water systems worldwide using scalable, forward-thinking approaches.</li>
+        <li>Providing solutions that benefit both communities and the environment.</li>
+        <li>Driving access to clean water through advanced and efficient water treatment technology.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
       </div>
     </section>
   );

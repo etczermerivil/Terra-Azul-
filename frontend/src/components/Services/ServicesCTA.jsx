@@ -2,18 +2,33 @@ import './ServicesCTA.css';
 
 const ServicesCTA = () => {
   return (
-    <section className="cta-container services-cta-section">
-      <div className="cta-text">
-        <h2 className="cta-title">
-          Consult With Us
-        </h2>
-        <p>
-          Need guidance on water treatment and purification services? Our experts are here to help. Contact us today to explore tailored solutions for your unique challenges.
+    <section className="join-us-section">
+      <div className="join-us-container">
+        <h2 className="join-us-header">Innovators Welcome: Join Us</h2>
+        <p className="join-us-description">
+          Become an investor today and join us in revolutionizing water treatment technology,
+          <br />
+          driving innovation, and creating a sustainable future together.
         </p>
+        <div className="join-us-form-group">
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="join-us-input-field"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="join-us-input-field"
+          />
+        </div>
+        <div className="join-us-button-group">
+          <button className="join-us-button">Partner With Us</button>
+        </div>
       </div>
-      <a href="/contact" className="cta-button-services">Contact Us</a>
     </section>
   );
+
 };
 
 export default ServicesCTA;
