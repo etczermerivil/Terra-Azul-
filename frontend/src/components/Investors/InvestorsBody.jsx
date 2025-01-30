@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faInfinity, faBuilding, faGlobe, faFlagUsa } from '@fortawesome/free-solid-svg-icons';
+import { faInfinity, faBuilding, faGlobe, faFlagUsa } from '@fortawesome/free-solid-svg-icons';
 
 import './InvestorsBody.css';
 
@@ -18,66 +18,94 @@ const InvestorsBody = () => {
 </div>
 
 
-{/* Section 1: Market Opportunity */}
 <div className="market-opportunity-wrapper">
   <div className="market-opportunity-container">
-    <div className="market-opportunity-content">
-
-      {/* Left Side */}
-      <div className="market-opportunity-left">
-        <div className="market-opportunity-inner">
-          <h2 className="market-opportunity-title">
-            <FontAwesomeIcon icon={faChartLine} style={{ marginRight: '10px', color: '#3659c0' }} />
-            Market Opportunity
-          </h2>
-          <p className="market-opportunity-description">
-            From municipal systems to industrial enterprises, the global demand for advanced water treatment solutions is on the rise.
-          </p>
-        </div>
-      </div>
-
-      {/* Right Side */}
-      <div className="market-opportunity-right">
-
-        <div className="market-opportunity-box">
-          <h3>
-            <FontAwesomeIcon icon={faInfinity} style={{ marginRight: '8px', color: '#3659c0' }} />
-            Endless Market
-          </h3>
-          <p>If the market is water, there’s no end. Fluids, even bigger.</p>
-        </div>
-
-        <div className="market-opportunity-box">
-          <h3>
-            <FontAwesomeIcon icon={faBuilding} style={{ marginRight: '8px', color: '#3659c0' }} />
-            Enterprise Focus
-          </h3>
-          <p>
-            Our target market over the next 3 years is <span>enterprise (municipal & industrial)</span>, regulated by
-            state, national, and international environmental protections.
-          </p>
-        </div>
-
-        <div className="market-opportunity-box">
-          <h3>
-            <FontAwesomeIcon icon={faGlobe} style={{ marginRight: '8px', color: '#3659c0' }} />
-            Global Growth
-          </h3>
-          <p>Global water and wastewater treatment will grow to <span>$956 billion by 2032</span>.</p>
-        </div>
-
-        <div className="market-opportunity-box">
-          <h3>
-            <FontAwesomeIcon icon={faFlagUsa} style={{ marginRight: '8px', color: '#3659c0' }} />
-            U.S. Market
-          </h3>
-          <p>Wastewater treatment in the United States alone: <span>$121 billion in 2024</span>.</p>
-        </div>
+    {/* Title and Intro Section */}
+    <div className="market-opportunity-header">
+      {/* Left: Title and Intro */}
+      <div className="market-opportunity-intro">
+        <h2 className="market-opportunity-title">
+          {/* <FontAwesomeIcon icon={faChartLine} style={{ marginRight: '10px', color: '#3659c0' }} /> */}
+          Market Opportunity
+        </h2>
 
       </div>
+      {/* Right: Placeholder for Image */}
+      <div className="market-opportunity-image-placeholder">
+        {/* Empty box for image */}
+      </div>
+      <p className="market-opportunity-description">
+          Market growth in water treatment is accelerating due to global demand for sustainable solutions. Increasing
+          regulations, climate challenges, and rising populations are fueling innovation and investment in this vital
+          sector. Below, we highlight four key drivers of this transformative growth.
+        </p>
+    </div>
+
+{/* Four Key Drivers */}
+<div className="market-opportunity-drivers">
+  <div className="market-opportunity-box">
+    <div className="icon-container">
+      <FontAwesomeIcon icon={faInfinity} style={{ color: '#890085', fontSize: '40px' }} />
+    </div>
+    <div className="content-container">
+      <h3 className="market-opportunity-header">Endless Market</h3>
+      <div className="underline"></div>
+      <p>
+        The need for water treatment spans across industries and geographies, with no limit to the potential
+        applications. From agricultural irrigation to industrial processing and municipal utilities, water is
+        essential everywhere. As water scarcity and pollution grow, the opportunities for innovative treatment
+        solutions are truly limitless.
+      </p>
+    </div>
+  </div>
+  <div className="market-opportunity-box">
+    <div className="icon-container">
+      <FontAwesomeIcon icon={faBuilding} style={{ color: '#7E7D80', fontSize: '40px' }} />
+    </div>
+    <div className="content-container">
+      <h3 className="market-opportunity-header">Enterprise Focus</h3>
+      <div className="underline"></div>
+      <p>
+        Municipalities and industrial enterprises are under growing pressure to meet stricter environmental
+        regulations at state, national, and international levels. These sectors must adopt scalable and sustainable
+        water treatment solutions to stay compliant while addressing operational efficiency, paving the way for
+        significant market expansion.
+      </p>
+    </div>
+  </div>
+  <div className="market-opportunity-box">
+    <div className="icon-container">
+      <FontAwesomeIcon icon={faGlobe} style={{ color: '#3659c0', fontSize: '40px' }} />
+    </div>
+    <div className="content-container">
+      <h3 className="market-opportunity-header">Global Growth</h3>
+      <div className="underline"></div>
+      <p>
+        Global water and wastewater treatment is projected to grow to <strong>$956 billion by 2032</strong>, driven by
+        rising environmental awareness and the need for clean water in developing and developed nations alike.
+      </p>
+    </div>
+  </div>
+  <div className="market-opportunity-box">
+    <div className="icon-container">
+      <FontAwesomeIcon icon={faFlagUsa} style={{ color: '#C60000', fontSize: '40px' }} />
+    </div>
+    <div className="content-container">
+      <h3 className="market-opportunity-header">U.S. Market</h3>
+      <div className="underline"></div>
+      <p>
+        In the United States alone, the wastewater treatment market is expected to reach <strong>$121 billion by
+        2024</strong>, reflecting robust demand for advanced solutions and government-backed initiatives to combat
+        water pollution.
+      </p>
     </div>
   </div>
 </div>
+
+  </div>
+</div>
+
+
 
 
 

@@ -38,153 +38,175 @@
 
 
 
-  /* Section: Market Opportunity */
-/* Market Opportunity Container */
-.market-opportunity-wrapper {
-    background-color: #f9f9f9;
-    padding: 40px 0;
 
-  }
+
+
+/* Section: Market Opportunity */
+.market-opportunity-wrapper {
+  background-color: rgb(251, 251, 251);
+  /* background-color: white; */
+  padding: 60px 20px;
+   /* border-top: 0.1px solid rgb(177, 177, 177); */
+}
 
 .market-opportunity-container {
-    max-width: 1350px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-  }
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
-  /* Content Wrapper */
-  .market-opportunity-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 100%;
-  }
+/* Title and Intro Section */
+.market-opportunity-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+}
 
-  /* Left Side */
-  .market-opportunity-left {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(200,200,200);
-  }
+.market-opportunity-intro {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
 
-  .market-opportunity-left {
-    position: relative;
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(200, 200, 200);
+}
 
-    overflow: hidden;
-  }
-
-  .market-opportunity-left::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f9f9f9;
-    z-index: 1;
-  }
+.market-opportunity-image-placeholder {
+  width: 100%;
+  height: 500px;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  background-image: url('./Images/Investors/9.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
+.market-opportunity-title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5d5d5d;
+  /* margin-bottom: 15px; */
+}
 
- .market-opportunity-inner {
-    text-align: left;
-    max-width: 400px;
-    height: 500px;
-    display: flex;
+.market-opportunity-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 0;
+  color: #525252;
+  text-align: justify;
+}
+
+
+/* Four Key Drivers Section */
+.market-opportunity-drivers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  gap: 40px; /* Space between boxes */
+}
+
+.market-opportunity-box {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: flex-start; /* Keeps content aligned to the left */
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 300px;
+}
+
+.market-opportunity-box .icon-container {
+  margin-right: 15px;
+  font-size: 30px;
+  color: #3659c0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.market-opportunity-box .content-container {
+  flex: 1; /* Fills remaining space */
+  display: flex;
+  flex-direction: column; /* Ensures text stacks vertically */
+  justify-content: center; /* Centers text vertically */
+}
+
+
+.market-opportunity-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.market-opportunity-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #5d5d5d;
+  text-align: left;
+  display: block;
+}
+
+.market-opportunity-box h3::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%; /* Line extends to the end of the paragraph */
+  background-color: #d3d3d3; /* Grey underline */
+  margin-top: 8px;
+}
+
+.market-opportunity-box p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #525252;
+  margin-bottom: 0;
+  text-align: justify;
+
+}
+
+
+
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .market-opportunity-header {
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
   }
 
-  .market-opportunity-title {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    color: #3f3f3f;
-    z-index: 2;
-  }
-
-  .market-opportunity-description {
-    font-size: 1.2rem;
-    font-weight: 399;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #525252;
-    text-align: justify;
-    z-index: 2;
-  }
-
-  .market-opportunity-cta {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 15px 20px;
-    background-color: #525252 ;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .market-opportunity-cta:hover {
-    background-color: #0056b3;
-  }
-
-  /* Right Side */
-  .market-opportunity-right {
-    flex: 1;
-    max-width: 50%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .market-opportunity-box {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.415);
-    border: 1px solid #e0e0e0;
-    border-radius: 3px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .market-opportunity-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  .market-opportunity-image-placeholder {
+    height: 150px;
   }
 
   .market-opportunity-box h3 {
-    font-size: 21px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #5d5d5d;
+    font-size: 18px;
   }
 
   .market-opportunity-box p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    text-align: justify;
+    font-size: 14px;
   }
+}
+
+
+
+
+
+
+
 
 
 
@@ -212,7 +234,7 @@
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #5d5d5d;
+    color:  #3659c0 ;
     text-align: left;
   }
 
@@ -260,17 +282,21 @@
   /* Funding Plan Content */
   .funding-plan-content h3 {
     font-size: 20px;
+    font-weight: 700;
     text-transform: uppercase;
-    font-weight: 600;
     margin-bottom: 10px;
-    color: #3659c0;
+    color: #5d5d5d;
+    text-align: left;
+    display: block;
   }
 
   .funding-plan-content p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 399;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #525252;
+    margin-bottom: 0;
+    text-align: justify;
   }
 
 
@@ -313,10 +339,11 @@
 
   /* Individual Column */
   .funding-ask-two-column-invest div {
-    background-color: #ffffff; /* White box background */
-    border: 1px solid #e0e0e0; /* Light border */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
     padding: 20px;
+    height: 450px;
   }
 
   /* Column Titles */
