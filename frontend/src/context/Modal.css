@@ -1,30 +1,124 @@
+/* Modal wrapper */
 #modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it appears above other elements */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
 }
 
+/* Semi-transparent background behind modal content */
 #modal-background {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 999; /* Slightly lower than #modal-content */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.737);
 }
 
+/* Modal content */
 #modal-content {
-  position: relative; /* Change from absolute to avoid stacking issues */
-  background-color: white;
-  padding: 20px; /* Add padding for spacing inside the modal */
-  border-radius: 3px; /* Optional: for a more polished look */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: add some depth */
-  z-index: 1001; /* Higher than the modal background */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1001;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  max-height: 80vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+/* Form wrapper */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px; /* Spacing between fields */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #5d5d5d;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Labels */
+form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  font-size: 14px;
+  font-weight: 350;
+  color: #464646;
+}
+
+/* Input fields */
+form input {
+  width: 100%;
+  height: 48px; /* Uniform height for all inputs */
+  padding: 10px 15px;
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #cccccc; /* Light gray border */
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333333; /* Dark gray text */
+  font-size: 1rem; /* Uniform font size */
+  box-sizing: border-box;
+}
+
+/* Focus Styling for Input */
+form input:focus {
+  outline: none;
+  border-color: #3659c0; /* Blue border on focus */
+  background-color: #ffffff; /* White background on focus */
+}
+
+/* Button Styling */
+form button {
+  width: 100%;
+  max-width: 400px; /* Match button width with input fields */
+  height: 48px; /* Match button height with input fields */
+  background: #3659c0; /* Blue background */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background: #2e4a9e; /* Darker blue on hover */
+}
+
+/* Error message styling */
+form p {
+  color: #ff4c4c; /* Red for error messages */
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
 }

@@ -36,26 +36,29 @@ function LoginFormModal() {
           Email
           <input
             type="text"
+            className="form-input"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
         </label>
-        {errors.email && <p>{errors.email}</p>}
+        {errors.email && <p className="error-text">{errors.email}</p>}
         <label>
           Password
           <input
             type="password"
+            className="form-input"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </label>
-        {errors.password && <p>{errors.password}</p>}
-        <button type="submit">Log In</button>
+        {errors.password && <p className="error-text">{errors.password}</p>}
+        <button type="submit" className="form-button">Log In</button>
       </form>
     </>
   );
+
 }
 
 export default LoginFormModal;
