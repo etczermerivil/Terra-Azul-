@@ -208,195 +208,255 @@
 
 
 
-
-
-
-  /* Funding Plan Hero Section */
- .funding-plan-section{
-    margin-top: 70px;
-    margin-bottom: 70px;
- }
+/* Funding Plan Hero Section */
+.funding-plan-section {
+  margin: 70px 0;
+}
 
 .funding-plan-hero {
-    text-align: left;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px 20px;
-    border-radius: 10px;
-    max-width: 1350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
+  text-align: left;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-  .funding-plan-title {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color:  #3659c0 ;
-    text-align: left;
-  }
+.funding-plan-titles {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #5d5d5d;
+}
 
-  .funding-plan-subtitle {
-    font-size: 17px;
-    line-height: 1.6;
-    color: #5d5d5d;
-    text-align: left;
-  }
+.funding-plan-subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #5d5d5d;
+}
 
-  /* Funding Plan Grid */
+/* Funding Plan Grid */
 .funding-plan-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    max-width: 1350px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  /* Funding Plan Item */
-  .funding-plan-item {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 3px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-    height: 300px;
-  }
+/* Funding Plan Item */
+.funding-plan-item {
+  background-color: #ffffff;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 3px;
+  padding: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
 
-  .funding-plan-item:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-  }
+.funding-plan-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
-  /* Funding Plan Icon */
-  .funding-plan-icon {
-    font-size: 2.5rem;
-    color: #3659c0; /* Use blue for icons */
-    margin-bottom: 10px; /* Space below the icon */
-  }
+/* Funding Plan Icon */
+.funding-plan-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #3659c0;
+  flex-shrink: 0;
+}
 
-  /* Funding Plan Content */
-  .funding-plan-content h3 {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #5d5d5d;
-    text-align: left;
-    display: block;
-  }
+/* Funding Plan Content */
+.funding-plan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .funding-plan-content p {
-    font-size: 15px;
-    font-weight: 399;
-    line-height: 1.6;
-    color: #525252;
-    margin-bottom: 0;
-    text-align: justify;
-  }
+.funding-plan-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #5d5d5d;
+}
+
+.funding-plan-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #525252;
+  margin-bottom: 0;
+  height: auto;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+}
+
 
 
 
 
 
 /* The Ask Container */
-
 .requested-financing-wrapper {
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-  }
+  background-color: white;
+  padding: 60px 20px;
+  border-top: .2px solid rgb(216, 216, 216);
+}
 
 .funding-ask-container-invest {
-    max-width: 1350px;
-    margin: 0 auto; /* Center the section */
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Light gray background for the section */
-    border-radius: 3px;
-    min-height: 500px;
-  }
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+}
 
-  /* Section Title */
-  .funding-ask-container-invest .section-title {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #5d5d5d;
-    text-align: left;
-  }
+/* Section Title */
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #5d5d5d;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  /* Two-Column Grid */
+/* Two-Column Grid */
+.funding-ask-two-column-invest {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Individual Column */
+.investment-column {
+  background-color: white;
+  /* border: 1px solid rgb(230, 230, 230); */
+  border-radius: 3px;
+  padding: 20px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.investment-column:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* Column Titles */
+.invest-column-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5d5d5d;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* Lists */
+.investment-list,
+.content-container ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Highlighted & Flexible Text */
+.investment-highlight,
+.investment-flexibility {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.investment-highlight span {
+  color: #0056b3;
+}
+
+.investment-flexibility {
+  color: #666;
+}
+
+.investment-flexibility span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Empty Column with Background Image */
+.empty-column {
+  background-image: url('./Images/Investors/4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Investment Item */
+.investment-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* background-color: #ffffff; */
+  padding: 20px;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 3px;
+  margin-bottom: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Icon & Content Containers */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 50px;
+  height: 50px;  */
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #5d5d5d;
+}
+
+.content-container ul li {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
   .funding-ask-two-column-invest {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Spacing between columns */
-    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  /* Individual Column */
-  .funding-ask-two-column-invest div {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 3px;
-    padding: 20px;
-    height: 450px;
+  .investment-column {
+    padding: 20px 15px;
   }
-
-  /* Column Titles */
-  .funding-ask-two-column-invest h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #595959; /* Blue color for titles */
-    margin-bottom: 15px;
-  }
-
-  /* Lists */
-  .founder-investments-list-invest,
-  .use-of-funds-list-invest {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    color: #555;
-    line-height: 1.5;
-  }
-
-  /* Equity Set-Asides */
-  .equity-set-aside-invest {
-    margin-top: 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .InvestbodyH3 {
-    color: #595959;
-  }
-
-  .equity-set-aside-invest span {
-    color: #595959; /* Highlight key info in blue */
-  }
-
-  /* Flexible Text */
-  .flexible-invest-text {
-    margin-top: 15px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-  }
-
-  .flexible-invest-text span {
-    font-weight: bold;
-    color: #595959;
-
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .funding-ask-two-column-invest {
-      grid-template-columns: 1fr; /* Single column for smaller screens */
-      gap: 20px;
-    }
-  }
-  }
+}

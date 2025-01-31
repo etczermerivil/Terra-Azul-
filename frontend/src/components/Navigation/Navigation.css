@@ -164,6 +164,20 @@
   color: white; /* Font color for profile button icon */
 }
 
+/* Specific Styling for Contact Page */
+.navigation-header.contact-active .nav-links a {
+  color: #3659c0; /* Updated color for navigation links */
+}
+
+.navigation-header.contact-active .nav-links a.active {
+  font-weight: bold; /* Bold the active link */
+}
+
+.navigation-header.contact-active .profile-button .profile-icon-button {
+  color: #3659c0; /* Updated color for profile button */
+}
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

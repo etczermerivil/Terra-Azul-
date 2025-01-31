@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfinity, faBuilding, faGlobe, faFlagUsa } from '@fortawesome/free-solid-svg-icons';
+import { faUserTie, faChartPie, faWallet, faInfinity, faTasks, faBuilding, faGlobe, faFlagUsa,  faDraftingCompass, faShieldAlt, faPiggyBank  } from '@fortawesome/free-solid-svg-icons';
+
+
 
 import './InvestorsBody.css';
 
@@ -109,11 +111,10 @@ const InvestorsBody = () => {
 
 
 
-
 {/* Section 2: How We Plan to Raise Money */}
 <div className="funding-plan-section">
   <div className="funding-plan-hero">
-    <h1 className="funding-plan-title">Innovative Ways to Raise Funding</h1>
+    <h1 className="funding-plan-titles">Innovative Ways to Raise Funding</h1>
     <p className="funding-plan-subtitle">
       Explore the strategies we use to build trust, drive collaboration, and secure impactful funding.
     </p>
@@ -123,12 +124,12 @@ const InvestorsBody = () => {
     {/* Engineering Partnerships */}
     <div className="funding-plan-item">
       <div className="funding-plan-icon">
-        <i className="fas fa-heartbeat"></i>
+        <FontAwesomeIcon icon={faDraftingCompass} style={{ color: '#5d5d5d', fontSize: '50px' }} />
       </div>
       <div className="funding-plan-content">
         <h3 className="funding-plan-title">Engineering Partnerships</h3>
         <p className="funding-plan-description">
-          We boast the endorsement of professional city and independent environmental engineers that make referrals for new municipal clients.
+          We boast endorsements from professional city and environmental engineers, who make valuable referrals for new municipal clients and ongoing collaborations.
         </p>
       </div>
     </div>
@@ -136,12 +137,12 @@ const InvestorsBody = () => {
     {/* Environmental Watchdogs */}
     <div className="funding-plan-item">
       <div className="funding-plan-icon">
-        <i className="fas fa-bullseye"></i>
+        <FontAwesomeIcon icon={faShieldAlt} style={{ color: '#007D00', fontSize: '50px' }} />
       </div>
       <div className="funding-plan-content">
         <h3 className="funding-plan-title">Environmental Watchdogs</h3>
         <p className="funding-plan-description">
-          We are in constant talks with local, regional, and national regulators and NGOs to address urgent wastewater issues that poison groundwater.
+          Our team collaborates with local, regional, and national regulators, as well as NGOs, to address critical wastewater issues affecting groundwater resources.
         </p>
       </div>
     </div>
@@ -149,25 +150,25 @@ const InvestorsBody = () => {
     {/* Demonstrations & Pilot Programs */}
     <div className="funding-plan-item">
       <div className="funding-plan-icon">
-        <i className="fas fa-check-square"></i>
+        <FontAwesomeIcon icon={faTasks} style={{ color: '#3659c0', fontSize: '50px' }} />
       </div>
       <div className="funding-plan-content">
         <h3 className="funding-plan-title">Demonstrations & Pilot Programs</h3>
         <p className="funding-plan-description">
-          We have shown the product off to dozens of prospective clients, showing the results of the technology in real time across Southern CA.
+          We have hosted numerous product demonstrations, showcasing the effectiveness of our technology in real time across Southern California and beyond.
         </p>
       </div>
     </div>
 
-    {/* Funding Programs */}
+    {/* Funding and Grant Programs */}
     <div className="funding-plan-item">
       <div className="funding-plan-icon">
-        <i className="fas fa-dollar-sign"></i>
+        <FontAwesomeIcon icon={faPiggyBank} style={{ color: '#D977D2', fontSize: '50px' }} />
       </div>
       <div className="funding-plan-content">
-        <h3 className="funding-plan-title">Funding Programs</h3>
+        <h3 className="funding-plan-title">Funding and Grant Programs</h3>
         <p className="funding-plan-description">
-          We’re working with Native American & nonprofit organizations to utilize public and private grants and loans in order to access our offerings.
+          Partnering with Native American and nonprofit organizations, we secure public and private grants and loans to expand access to our innovative offerings.
         </p>
       </div>
     </div>
@@ -177,40 +178,69 @@ const InvestorsBody = () => {
 
 
 
-{/* Section 3: The Ask */}
+
+
+
 <div className="requested-financing-wrapper">
   <div className="funding-ask-container-invest">
     <h2 className="section-title">Requested Financing</h2>
     <div className="funding-ask-two-column-invest">
-      {/* Column 1: Founder Investments */}
+      {/* Column 1: Content */}
       <div>
-        <h3 className='InvestbodyH3'>Founder Investments</h3>
-        <ul className="founder-investments-list-invest">
-          <li>130k - Robert Stone</li>
-          <li>50k - Emma Sakaguchi</li>
-          <li>50k - Carol Bedford</li>
-        </ul>
-        <h3 className='InvestbodyH3'>Equity Set-Asides</h3>
-        <p className="equity-set-aside-invest"><span>2 million</span> shares, valued at $1 per share.</p>
-        <p>Total shares: 10 million. Valuation: $10m</p>
+        <div className="investment-column">
+          <div className="investment-item">
+            <div className="icon-container">
+              <FontAwesomeIcon icon={faUserTie} style={{ fontSize: '75px', color: "#007D00" }} />
+            </div>
+            <div className="content-container">
+              <h3 className="invest-column-title">Founder Investments</h3>
+              <ul className="investment-list">
+                <li>130k - Robert Stone</li>
+                <li>50k - Emma Sakaguchi</li>
+                <li>50k - Carol Bedford</li>
+              </ul>
+            </div>
+          </div>
+          <div className="investment-item">
+            <div className="icon-container">
+              <FontAwesomeIcon icon={faChartPie} style={{ fontSize: '75px', color: "#FF9800" }} />
+            </div>
+            <div className="content-container">
+              <h3 className="invest-column-title">Equity Set-Asides</h3>
+              <p className="investment-highlight">
+                <span>2 million</span> shares, valued at $1 per share.
+              </p>
+              <p>Total shares: 10 million. Valuation: $10m</p>
+            </div>
+          </div>
+          <div className="investment-item">
+            <div className="icon-container">
+              <FontAwesomeIcon icon={faWallet} style={{ fontSize: '75px', color: "#A6723A" }} />
+            </div>
+            <div className="content-container">
+              <h3 className="invest-column-title">Use of Funds</h3>
+              <ul className="investment-list">
+                <li>50k - Cost of Goods Sold (Demo + Sale)</li>
+                <li>50k - Professional Team Overhead</li>
+                <li>20k - Facility & Office Expenses</li>
+                <li>20k - Marketing & Contracting</li>
+                <li>10k - Advisors & Contingency</li>
+              </ul>
+              <p className="investment-flexibility">
+                We are <span>flexible</span> and <span>open</span> to alternative terms at similar valuations.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      {/* Column 2: Use of Funds */}
-      <div>
-        <h3 className='InvestbodyH3'>Use of Funds</h3>
-        <ul className="use-of-funds-list-invest">
-          <li>50k - Cost of Goods Sold (Demo + Sale)</li>
-          <li>50k - Professional Team Overhead</li>
-          <li>20k - Facility & Office Expenses</li>
-          <li>20k - Marketing & Contracting</li>
-          <li>10k - Advisors & Contingency</li>
-        </ul>
-        <p className="flexible-invest-text">
-          We are <span>flexible</span> and <span>open</span> to alternative terms at similar valuations.
-        </p>
-      </div>
+      {/* Column 2: Empty for Picture */}
+      <div className="empty-column"></div>
     </div>
   </div>
 </div>
+
+
 
 
     </section>

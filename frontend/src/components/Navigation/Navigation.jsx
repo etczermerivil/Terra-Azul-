@@ -10,13 +10,22 @@ function Navigation() {
   const isHomePage = location.pathname === "/";
   const isServicesPage = location.pathname === "/services";
   const isInvestorsPage = location.pathname === "/investors";
+  const isContactPage = location.pathname === "/contact";
+
 
   return (
     <header
-      className={`navigation-header ${isHomePage ? "transparent" : "solid"} ${
-        isServicesPage ? "services-active" : ""
-      } ${isInvestorsPage ? "investors-active" : ""}`}
-    >
+    className={`navigation-header ${
+      isServicesPage
+        ? "services-active"
+        : isInvestorsPage
+        ? "investors-active"
+        : isContactPage
+        ? "contact-active"
+        : "solid"
+    }`}
+  >
+
       <div className="navigation-container">
         {/* Logo Section */}
         <div className="logo">
@@ -63,12 +72,14 @@ function Navigation() {
 
         {/* Profile Button Section */}
         <div
-          className={`profile-button ${
-            isServicesPage ? "services-profile" : ""
-          } ${isInvestorsPage ? "investors-profile" : ""}`}
-        >
-          <ProfileButton />
-        </div>
+        className={`profile-button ${
+          isServicesPage ? "services-profile" : ""
+        } ${isInvestorsPage ? "investors-profile" : ""} ${
+          isContactPage ? "contact-profile" : ""
+        }`}
+      >
+        <ProfileButton />
+      </div>
       </div>
     </header>
   );
