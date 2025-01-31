@@ -166,7 +166,7 @@
 
 /* Specific Styling for Contact Page */
 .navigation-header.contact-active .nav-links a {
-  color: #3659c0; /* Updated color for navigation links */
+  color: white; /* Updated color for navigation links */
 }
 
 .navigation-header.contact-active .nav-links a.active {
@@ -174,7 +174,7 @@
 }
 
 .navigation-header.contact-active .profile-button .profile-icon-button {
-  color: #3659c0; /* Updated color for profile button */
+  color: white; /* Updated color for profile button */
 }
 
 

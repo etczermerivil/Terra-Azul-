@@ -1,0 +1,71 @@
+/* Hero Section */
+.hero-contact {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background-image: url('./Images/Contact/1.jpg'); /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+
+  .hero-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3535357b;
+    z-index: 1;
+  }
+
+  /* Hero Container */
+  .hero-contact-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    max-width: 1350px;
+  }
+
+  /* Hero Title */
+  .hero-contact-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+  }
+
+  .hero-contact-title h1 {
+    font-size: 110px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    z-index: 2;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-contact-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-contact-title {
+      height: auto;
+    }
+
+    .hero-contact-title h1 {
+      font-size: 28px;
+    }
+  }

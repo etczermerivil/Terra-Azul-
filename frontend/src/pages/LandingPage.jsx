@@ -27,7 +27,7 @@ const LandingPage = () => {
       <ProvenTrackRecord/>
 
       {/* BragSection */}
-      {/* <BragSection /> */}
+      <BragSection />
 
       {/* Explore More Section */}
       <ExploreMoreSection />

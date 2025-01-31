@@ -7,7 +7,7 @@ function Navigation() {
   const location = useLocation();
 
   // Check if the current page is the home page ("/") or the services page ("/services")
-  const isHomePage = location.pathname === "/";
+  // const isHomePage = location.pathname === "/";
   const isServicesPage = location.pathname === "/services";
   const isInvestorsPage = location.pathname === "/investors";
   const isContactPage = location.pathname === "/contact";
@@ -42,11 +42,11 @@ function Navigation() {
                 Home
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/about" activeclassname="active">
                 About
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/contact" activeclassname="active">
                 Contact
