@@ -30,6 +30,6 @@ def undo_contact_us_inquiries():
     if environment == "production":
         db.session.execute(f"TRUNCATE table {SCHEMA}.contact_us_inquiries RESTART IDENTITY CASCADE;")
     else:
-        db.session.execute(text(f"DELETE FROM {SCHEMA}.contact_us_inquiries"))  # Added schema prefix
-
+        db.session.execute(text("DELETE FROM contact_us_inquiries"))
+        db.session.execute(text("DELETE FROM sqlite_sequence WHERE name='contact_us_inquiries';"))
     db.session.commit()

@@ -1,8 +1,11 @@
-from .db import db, SCHEMA
+from .db import db, SCHEMA,environment
 from datetime import datetime
 
 class ContactUsInquiry(db.Model):
     __tablename__ = f"{SCHEMA}.contact_us_inquiries" if SCHEMA else 'contact_us_inquiries'
+
+    if environment == "production":
+        __table_args__ = {'schema': SCHEMA}
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     first_name = db.Column(db.String(255), nullable=False)
