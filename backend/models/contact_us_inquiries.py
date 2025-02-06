@@ -1,7 +1,7 @@
 from .db import db, SCHEMA,environment
 from datetime import datetime
 
-class ContactUsInquiry(db.Model):
+class ContactUsInquiries(db.Model):
     __tablename__ = f"{SCHEMA}.contact_us_inquiries" if SCHEMA else 'contact_us_inquiries'
 
     if environment == "production":

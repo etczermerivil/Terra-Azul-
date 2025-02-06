@@ -7,8 +7,8 @@ def seed_partner_inquiries():
         PartnerInquiries(name="Alice Johnson", email="alice@example.com"),
         PartnerInquiries(name="Bob Smith", email="bob@example.com"),
     ]
-    for inquiry in inquiries:
-        db.session.add(inquiry)
+    for inquiries in inquiries:
+        db.session.add(inquiries)
 
     db.session.commit()
 

@@ -1,18 +1,18 @@
-from backend.models.contact_us_inquiry import ContactUsInquiry
+from backend.models.contact_us_inquiries import ContactUsInquiries
 from backend.models.db import db, environment, SCHEMA
 from sqlalchemy.sql import text
 
 def seed_contact_us_inquiries():
     # Example seed data
     inquiries = [
-        ContactUsInquiry(
+        ContactUsInquiries(
             first_name="Jane",
             last_name="Doe",
             email="jane@example.com",
             phone_number="123-456-7890",
             message="I am interested in partnering with Terra Azul Tech."
         ),
-        ContactUsInquiry(
+        ContactUsInquiries(
             first_name="John",
             last_name="Smith",
             email="john@example.com",
@@ -21,8 +21,8 @@ def seed_contact_us_inquiries():
         ),
     ]
 
-    for inquiry in inquiries:
-        db.session.add(inquiry)
+    for inquiries in inquiries:
+        db.session.add(inquiries)
 
     db.session.commit()
 
