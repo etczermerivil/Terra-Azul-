@@ -2,7 +2,7 @@ from .db import db, SCHEMA,environment
 from datetime import datetime
 
 class ContactUsInquiries(db.Model):
-    __tablename__ = f"{SCHEMA}.contact_us_inquiries" if SCHEMA else 'contact_us_inquiries'
+    __tablename__ = 'contact_us_inquiries'
 
     if environment == "production":
         __table_args__ = {'schema': SCHEMA}
