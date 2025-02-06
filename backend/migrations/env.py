@@ -6,7 +6,7 @@ from alembic import context
 # Import your database and models
 from models.db import db
 from models.user import User
-from models.partner_inquiry import PartnerInquiry
+from backend.models.partner_inquiries import PartnerInquiries
 from models.contact_us_inquiry import ContactUsInquiry
 
 # this is the Alembic Config object, which provides access to the .ini file in use.

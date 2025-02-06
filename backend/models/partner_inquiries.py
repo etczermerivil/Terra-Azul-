@@ -1,7 +1,7 @@
 from .db import db
 from datetime import datetime
 
-class PartnerInquiry(db.Model):
+class PartnerInquiries(db.Model):
     __tablename__ = 'partner_inquiries'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)

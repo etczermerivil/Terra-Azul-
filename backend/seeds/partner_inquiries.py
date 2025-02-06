@@ -1,11 +1,11 @@
-from backend.models.partner_inquiry import PartnerInquiry
+from backend.models.partner_inquiries import PartnerInquiries
 from backend.models.db import db
 
 def seed_partner_inquiries():
     # Example seed data
     inquiries = [
-        PartnerInquiry(name="Alice Johnson", email="alice@example.com"),
-        PartnerInquiry(name="Bob Smith", email="bob@example.com"),
+        PartnerInquiries(name="Alice Johnson", email="alice@example.com"),
+        PartnerInquiries(name="Bob Smith", email="bob@example.com"),
     ]
 
     for inquiry in inquiries:
