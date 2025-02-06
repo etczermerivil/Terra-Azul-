@@ -1,0 +1,74 @@
+/* Contact CFO Section */
+.contact-cfo-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 250px;
+  }
+
+  /* Contact CFO Container */
+  .contact-cfo-container {
+    background: transparent;
+    padding: 20px 30px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Contact CFO Header */
+  .contact-cfo-header {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #5d5d5d;
+    margin-bottom: 10px;
+  }
+
+  /* Contact CFO Info Paragraph */
+  .contact-cfo-info {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  /* Contact CFO Details */
+  .contact-cfo-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Contact CFO Name */
+  .contact-cfo-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin: 0;
+  }
+
+  /* Contact CFO Phone Number */
+  .contact-cfo-phone {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3659c0;
+  }
+
+  /* Contact CFO Phone Icon */
+  .contact-cfo-phone-icon {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #3659c0;
+  }

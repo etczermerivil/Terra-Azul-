@@ -1,32 +1,46 @@
 from backend.models import db, User, environment, SCHEMA
 from sqlalchemy.sql import text
+from werkzeug.security import generate_password_hash  # Ensure passwords are hashed
 
-
-# Adds a demo user, you can add other users here if you want
+# Adds demo users, checking if they already exist before inserting
 def seed_users():
-    demo = User(
-        username='Demo', email='demo@aa.io', password='password')
-    marnie = User(
-        username='marnie', email='marnie@aa.io', password='password')
-    bobbie = User(
-        username='bobbie', email='bobbie@aa.io', password='password')
+    existing_demo = User.query.filter_by(username="Demo").first()
+    existing_marnie = User.query.filter_by(username="marnie").first()
+    existing_bobbie = User.query.filter_by(username="bobbie").first()
 
-    db.session.add(demo)
-    db.session.add(marnie)
-    db.session.add(bobbie)
+    if not existing_demo:
+        demo = User(
+            username='Demo',
+            email='demo@aa.io',
+            password=generate_password_hash('password')  # Hash password
+        )
+        db.session.add(demo)
+
+    if not existing_marnie:
+        marnie = User(
+            username='marnie',
+            email='marnie@aa.io',
+            password=generate_password_hash('password')  # Hash password
+        )
+        db.session.add(marnie)
+
+    if not existing_bobbie:
+        bobbie = User(
+            username='bobbie',
+            email='bobbie@aa.io',
+            password=generate_password_hash('password')  # Hash password
+        )
+        db.session.add(bobbie)
+
     db.session.commit()
 
 
-# Uses a raw SQL query to TRUNCATE or DELETE the users table. SQLAlchemy doesn't
-# have a built in function to do this. With postgres in production TRUNCATE
-# removes all the data from the table, and RESET IDENTITY resets the auto
-# incrementing primary key, CASCADE deletes any dependent entities.  With
-# sqlite3 in development you need to instead use DELETE to remove all data and
-# it will reset the primary keys for you as well.
+# Deletes all users and resets primary keys for SQLite/PostgreSQL
 def undo_users():
     if environment == "production":
         db.session.execute(f"TRUNCATE table {SCHEMA}.users RESTART IDENTITY CASCADE;")
     else:
-        db.session.execute(text("DELETE FROM users"))
+        db.session.execute(text("DELETE FROM users;"))
+        db.session.execute(text("DELETE FROM sqlite_sequence WHERE name='users';"))  # Reset SQLite PK sequence
 
     db.session.commit()

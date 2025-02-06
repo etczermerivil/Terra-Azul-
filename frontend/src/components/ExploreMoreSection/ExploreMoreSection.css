@@ -1,6 +1,6 @@
 /* Explore More Section */
 .explore-more-section {
-  background-color: white;
+  background-color: rgb(250, 250, 250);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,18 +37,18 @@
   font-weight: 399;
   margin: 0;
   color: #525252;
-  text-align: left; /* Aligns text to the left */
-  line-height: 1.8; /* Better readability */
+  text-align: left;
+  line-height: 1.8;
   width: 100%;
 }
 
 /* Form Group */
 .form-group {
-  width: 100%; /* Stretches to container width */
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: flex-start; /* Aligns form fields to the left */
+  align-items: flex-start;
 }
 
 /* Input Fields */
@@ -90,4 +90,24 @@
 
 .button-group button:hover {
   transform: translateY(-2px);
+}
+
+/* Success Message Styling */
+.success-message {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #28a745; /* Green for success */
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out; /* Optional: Smooth fade-in effect */
+}
+
+/* Optional Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

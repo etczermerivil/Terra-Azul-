@@ -11,21 +11,23 @@ function Navigation() {
   const isServicesPage = location.pathname === "/services";
   const isInvestorsPage = location.pathname === "/investors";
   const isContactPage = location.pathname === "/contact";
+  const isAboutPage = location.pathname === "/about";
 
 
   return (
     <header
-    className={`navigation-header ${
-      isServicesPage
-        ? "services-active"
-        : isInvestorsPage
-        ? "investors-active"
-        : isContactPage
-        ? "contact-active"
-        : "solid"
-    }`}
-  >
-
+      className={`navigation-header ${
+        isServicesPage
+          ? "services-active"
+          : isInvestorsPage
+          ? "investors-active"
+          : isContactPage
+          ? "contact-active"
+          : isAboutPage
+          ? "about-active" // Apply the about-active class for About Us page
+          : "solid"
+      }`}
+    >
       <div className="navigation-container">
         {/* Logo Section */}
         <div className="logo">
@@ -42,11 +44,11 @@ function Navigation() {
                 Home
               </NavLink>
             </li>
-            {/* <li>
+            <li>
               <NavLink to="/about" activeclassname="active">
                 About
               </NavLink>
-            </li> */}
+            </li>
             <li>
               <NavLink to="/contact" activeclassname="active">
                 Contact
@@ -72,14 +74,20 @@ function Navigation() {
 
         {/* Profile Button Section */}
         <div
-        className={`profile-button ${
-          isServicesPage ? "services-profile" : ""
-        } ${isInvestorsPage ? "investors-profile" : ""} ${
-          isContactPage ? "contact-profile" : ""
-        }`}
-      >
-        <ProfileButton />
-      </div>
+          className={`profile-button ${
+            isServicesPage
+              ? "services-profile"
+              : isInvestorsPage
+              ? "investors-profile"
+              : isContactPage
+              ? "contact-profile"
+              : isAboutPage
+              ? "about-profile" // Apply about-specific profile class
+              : ""
+          }`}
+        >
+          <ProfileButton />
+        </div>
       </div>
     </header>
   );

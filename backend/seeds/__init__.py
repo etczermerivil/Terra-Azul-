@@ -1,28 +1,40 @@
 from flask.cli import AppGroup
 from .users import seed_users, undo_users
+from .partner_inquiries import seed_partner_inquiries, undo_partner_inquiries
+from .contact_us_inquiries import seed_contact_us_inquiries, undo_contact_us_inquiries
 
 from backend.models.db import db, environment, SCHEMA
 
 # Creates a seed group to hold our commands
-# So we can type `flask seed --help`
 seed_commands = AppGroup('seed')
-
 
 # Creates the `flask seed all` command
 @seed_commands.command('all')
 def seed():
     if environment == 'production':
-        # Before seeding in production, you want to run the seed undo
-        # command, which will  truncate all tables prefixed with
-        # the schema name (see comment in users.py undo_users function).
-        # Make sure to add all your other model's undo functions below
+        # Undo existing data before seeding in production
         undo_users()
-    seed_users()
-    # Add other seed functions here
+        undo_partner_inquiries()
+        undo_contact_us_inquiries()
 
+    # Seed tables
+    seed_users()
+    seed_partner_inquiries()
+    seed_contact_us_inquiries()
 
 # Creates the `flask seed undo` command
 @seed_commands.command('undo')
 def undo():
-    undo_users()
-    # Add other undo functions here
+    """Delete all records and reset primary keys in SQLite"""
+
+    # Delete data from each table
+    db.session.execute('DELETE FROM contact_us_inquiries;')
+    db.session.execute('DELETE FROM partner_inquiries;')
+    db.session.execute('DELETE FROM users;')
+
+    # Reset primary key counters (Only needed for SQLite)
+    db.session.execute("DELETE FROM sqlite_sequence WHERE name='contact_us_inquiries';")
+    db.session.execute("DELETE FROM sqlite_sequence WHERE name='partner_inquiries';")
+    db.session.execute("DELETE FROM sqlite_sequence WHERE name='users';")
+
+    db.session.commit()

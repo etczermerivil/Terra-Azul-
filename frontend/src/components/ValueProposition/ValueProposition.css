@@ -8,22 +8,23 @@
   border-radius: 3px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 3rem 0;
-    border-top: .1px solid #3659c0;
+    /* border-top: .1px solid #3659c0; */
+    max-width: 1350px;
 }
 
 .section-header {
-  max-width: 1500px;
+
   margin: 0 auto;
   box-sizing: border-box;
-  text-align: center; /* Centers child elements horizontally */
+  text-align: center;
 }
 
 .section-header h2 {
   font-size: 36px;
   font-weight: 700;
   color: #5d5d5d;
-  text-align: center; /* Centers the h2 text */
-  margin: 0 auto; /* Centers the element itself */
+  text-align: center;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -35,20 +36,20 @@
   font-weight: 300;
   margin: 0 auto;
   padding: 0;
-  text-align: justify; /* Centers the text inside the paragraph */
+  text-align: justify;
   padding-bottom: 60px;
-  max-width: 800px; /* Keeps the paragraph content narrow */
+  max-width: 800px;
 }
 
 
 /* Section Styling */
 .value-proposition-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   margin-top: 20px;
-  max-width: 1500px; /* Container width */
-  margin: 0 auto; /* Center the grid */
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 /* Value Proposition Box */
@@ -61,9 +62,9 @@
   padding: 20px;
   overflow: hidden;
   align-items: center;
-  height: 400px;
+  height: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .value-proposition-box:hover {
@@ -73,26 +74,26 @@
 
 /* Icon Container */
 .val-proposition-icon-container {
-  flex: 0 0 20%; /* Fixed width for the icon container */
+  flex: 0 0 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px; /* Rounded corners */
-  height: 100%; /* Full height of the box */
+  border-radius: 10px;
+  height: 100%;
 }
 
 /* Icon Styling */
 .val-proposition-icon-container svg {
-  font-size: 50px; /* Adjust icon size */
+  font-size: 50px;
 }
 
 /* Content Container */
 .content-container {
-  flex: 1; /* Take up remaining space */
+  flex: 1;
   display: flex;
-  flex-direction: column; /* Stack title and content vertically */
+  flex-direction: column;
   justify-content: center;
-  padding-left: 20px; /* Spacing between icon and content */
+  padding-left: 20px;
 }
 
 /* Title (h3) */
@@ -128,6 +129,8 @@
   color: #666;
   line-height: 1.6; /* Space between list items */
 }
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {

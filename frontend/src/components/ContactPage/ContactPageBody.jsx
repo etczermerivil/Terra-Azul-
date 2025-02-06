@@ -22,10 +22,10 @@ const ContactPageBody = () => {
           At Terra Azul Tech, we value your inquiries and partnerships. Feel free to reach out to us for more information or collaboration opportunities.
         </p>
         <div className="contact-info">
-          <p className="contact-name"><strong>Alexie Apeles</strong></p>
-          <p className="contact-role">CFO, Terra Azul Tech</p>
-          <p className="contact-phone">909-964-2438</p>
-          <p className="contact-email">alexie@terraazultech.com</p>
+          {/* <p className="contact-name"><strong>Robert Stone</strong></p>
+          <p className="contact-role">CFO, Terra Azul Tech</p> */}
+          <p className="contact-phone">760-884-1084</p>
+          <p className="contact-email">Info@terraazultech.com</p>
           <p className="contact-address">5173 Waring Rd #248</p>
           <p className="contact-address">San Diego, CA 92120</p>
         </div>

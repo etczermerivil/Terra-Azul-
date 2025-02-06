@@ -1,0 +1,113 @@
+/* About CTA Section */
+.about-cta-section {
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  /* Container for all elements */
+  .about-cta-container {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Title Styling */
+  .about-cta-header {
+    font-size: 30px;
+    font-weight: 700;
+    color: #525252;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+
+  /* Paragraph Styling */
+  .about-cta-description {
+    font-size: 16px;
+    font-weight: 399;
+    margin: 0;
+    color: #525252;
+    text-align: left;
+    line-height: 1.8;
+    width: 100%;
+  }
+
+  /* Form Group */
+  .about-cta-form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  /* Input Fields */
+  .about-cta-input {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-cta-input:focus {
+    outline: none;
+    border-color: #3659c0;
+    box-shadow: 0 0 5px rgba(54, 89, 192, 0.5);
+  }
+
+  /* Button Group */
+  .about-cta-button-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-cta-button {
+    margin: 0;
+    padding: 14px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #3659c0;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .about-cta-button:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Success Message */
+  .about-cta-success {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

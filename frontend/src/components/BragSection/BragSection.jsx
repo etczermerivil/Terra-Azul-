@@ -27,10 +27,10 @@ const BragSection = () => {
       description: 'Industrial filter expert, Total Equipment Mun. Mgr., 45-yr engineering expert',
       image: '/Images/Staff/5.png' },
 
-    { title: 'Tory Walker',
-      position: 'PE/QSD/QSP',
-      description: 'Certified Floodplain Manager, Stormwater Quality Expert',
-      image: '/Images/Staff/6.png' },
+    // { title: 'Tory Walker',
+    //   position: 'PE/QSD/QSP',
+    //   description: 'Certified Floodplain Manager, Stormwater Quality Expert',
+    //   image: '/Images/Staff/6.png' },
   ];
 
 
@@ -40,10 +40,10 @@ const BragSection = () => {
         <div className="brag-header">
           <h2>Meet The Team</h2>
           <p className="brag-paragraph">
-            The Terra Azul Tech team is a synergistic blend of passion, innovation, and dedication. Backed by two decades of
-            pioneering work in sustainable technology, our researchers, scientists, and field experts never cease their quest
-            for excellence in crafting efficient, eco-friendly water rejuvenation solutions.
+          <p>
+            We have a passionate team dedicated to restoring water ecosystems. With over 20 years of innovation and real-world expertise, we deliver sustainable solutions that make a difference. Meet the team!
           </p>
+</p>
         </div>
         <div className="brag-grid">
           {items.map((item, index) => (

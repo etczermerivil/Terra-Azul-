@@ -1,6 +1,6 @@
 import './ServicesMiddle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb, faCogs, faWifi, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faWater, faLeaf, faWifi, faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 const ServicesMiddle = () => {
   return (
@@ -9,42 +9,46 @@ const ServicesMiddle = () => {
       <h2 className="services-middle-header">Comprehensive Services</h2>
 
         <p>
-          We provide tailored consulting and advanced solutions to address your unique water purification challenges. Our services include cutting-edge technology, innovative solutions, and reliable maintenance to meet your needs efficiently and sustainably. Check below to see if our services meet your needs.
+        We provide tailored consulting and advanced solutions to address your unique water purification challenges. Our services include cutting-edge technology, innovative solutions, and reliable maintenance to meet your needs efficiently and sustainably. For added flexibility, our solar-powered trailers enable off-grid water treatment, making it easier to tackle purification projects in remote locations. Check below to see if our services meet your needs.
         </p>
       </div>
 
       <div className="services-grid">
   {/* Top Left Box */}
-  <div className="service-box service-left-box">
-    <div className="icon-container">
-      <FontAwesomeIcon icon={faLightbulb} style={{ color: 'orange' }} />
-    </div>
-    <div className="content-container">
-      <h3>Advanced Technology</h3>
-      <ul>
-        <li>Produces 350% more ozone gas, lasting 450% longer.</li>
-        <li>Prevents ozone loss for maximum cleaning power and efficiency.</li>
-        <li>Compliant with the Clean Water Act.</li>
-        <li>Improves water quality while fostering a healthier planet.</li>
-      </ul>
-    </div>
+{/* Top Left Box */}
+<div className="service-box service-left-box">
+  <div className="icon-container">
+    <FontAwesomeIcon icon={faWater} style={{ color: 'teal' }} />
   </div>
+  <div className="content-container">
+    <h3>Municipal Water Management</h3>
+    <ul>
+    <li>Drinking water purification for municipalities and private industries.</li>
+    <li>Stormwater and wastewater treatment solutions.</li>
+    <li>Potable water solutions for urban and rural areas.</li>
+    <li>Bacteria testing to ensure safe and clean drinking water.</li>
+    <li>Industrial runoff treatment to ensure compliance with regulations.</li>
+    </ul>
+  </div>
+</div>
 
-  {/* Top Right Box */}
-  <div className="service-box service-right-box">
-    <div className="icon-container">
-      <FontAwesomeIcon icon={faCogs} style={{ color: 'grey' }} />
-    </div>
-    <div className="content-container">
-      <h3>Sustainable Innovations</h3>
-      <ul>
-        <li>Scalable and sustainable solutions.</li>
-        <li>Long-term warranties included.</li>
-        <li>Remote monitoring and real-time maintenance.</li>
-        <li>Serving municipalities and enterprises globally.</li>
-      </ul>
-    </div>
+{/* Top Right Box */}
+<div className="service-box service-right-box">
+  <div className="icon-container">
+    <FontAwesomeIcon icon={faLeaf} style={{ color: 'green' }} />
   </div>
+  <div className="content-container">
+    <h3>Environmental Services</h3>
+    <ul>
+    <li>Rehabilitation of lakes, rivers, and reservoirs.</li>
+    <li>Wild habitat restoration for healthier ecosystems.</li>
+    <li>Algae bloom (HAB) control to improve water clarity and balance.</li>
+    <li>Environmental projects to restore degraded ecosystems.</li>
+    <li>Maintaining recreational reservoirs for sustainable use.</li>
+    </ul>
+  </div>
+</div>
+
 </div>
 
 <div className="services-grid">
@@ -68,7 +72,7 @@ const ServicesMiddle = () => {
   {/* Bottom Right Box */}
   <div className="service-box service-bottom-right-box">
     <div className="icon-container">
-      <FontAwesomeIcon icon={faHandshake} style={{ color: 'green' }} />
+      <FontAwesomeIcon icon={faHandshake} style={{ color: 'grey' }} />
     </div>
     <div className="content-container">
       <h3>Equipment Leasing</h3>

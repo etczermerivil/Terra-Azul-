@@ -3,10 +3,11 @@
   background-color: rgb(250, 250, 250);
   margin: 0 auto;
   box-sizing: border-box;
+  /* border-bottom: .1px solid #525252; */
 }
 
 .quick-facts {
-  max-width: 1500px;
+  max-width: 1350px;
   margin: 0 auto;
   background-color: rgb(250, 250, 250);
   margin-top: 30px;
@@ -20,25 +21,25 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-  text-align: center; /* Center the title text */
+  text-align: center;
 }
 
 .counters-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Ensure counters wrap on smaller screens */
-  gap: 20px; /* Add spacing between counters */
+  flex-wrap: wrap;
+  gap: 20px;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .counter {
-  flex: 1 1 200px; /* Adjust for responsiveness */
+  flex: 1 1 200px;
   text-align: center;
 }
 
 .counter-number {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   color: #3659c0;
   margin: 20px 0;
@@ -53,8 +54,8 @@
 /* Info Container */
 .info-container {
   display: grid;
-  grid-template-columns: 1fr; /* Single column layout by default */
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 10px;
   margin-top: 20px;
   max-width: 1500px;
   margin: 0 auto;
@@ -62,20 +63,22 @@
 
 @media (min-width: 768px) {
   .info-container {
-    grid-template-columns: 1fr 1fr; /* Two-column layout for larger screens */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .value-proposition-box {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   gap: 20px;
+  height: 350px;
+  padding: 20px;
+  display: flex;
+  background: #fff;
+  border-radius: 3px;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .value-proposition-box:hover {
@@ -84,14 +87,16 @@
 }
 
 .val-proposition-icon-container {
-  flex: 0 0 60px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  margin: 0 !important;
+}
+
+.val-proposition-icon-container svg {
   height: 60px;
-  width: 60px;
-  /* background-color: #f7f7f7; */
+  width: auto;
 }
 
 .content-container {

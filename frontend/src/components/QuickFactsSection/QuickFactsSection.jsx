@@ -71,7 +71,7 @@ const AnimatedCounter = ({ targetNumber, label }) => {
 
 const QuickFactsSection = () => {
   return (
-    <section className="quick-facts-section">
+    <section id="quick-facts"  className="quick-facts-section">
 
     <div className="quick-facts">
       {/* Title */}

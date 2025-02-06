@@ -1,9 +1,8 @@
-
 .proven-track-record {
-  /* background: linear-gradient(to bottom, #f9f9f9, #ececec); */
   background-color: rgb(250, 250, 250);
+  background-color: white;
   padding: 3rem;
-  border-top: .1px solid #525252;
+  /* border-top: 0.1px solid #525252; */
 }
 
 .proven-track {
@@ -11,23 +10,19 @@
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1350px;
   margin: 0 auto;
-  box-sizing: border-box;
   text-align: left;
   background-color: rgb(250, 250, 250);
+  background-color: white;
   padding-top: 30px;
-   /* padding: 2rem; */
-   /* background: linear-gradient(to bottom, #f9f9f9, #ececec); */
 }
 
 .proven-header {
   font-size: 36px;
   font-weight: 700;
   color: #5d5d5d;
-  text-align: center; /* Centers the h2 text */
-  margin: 0 auto; /* Centers the element itself */
-  padding: 0;
+  text-align: center;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -36,103 +31,71 @@
   font-size: 18px;
   color: #525252;
   font-weight: 300;
+  text-align: justify;
+  padding-bottom: 30px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0;
-  text-align: justify; /* Centers the text inside the paragraph */
-  padding-bottom: 60px;
-  max-width: 800px; /* Keeps the paragraph content narrow */
 }
 
-.proven-client-container {
-  background: #3659c0;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 1.5rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+/* Grid Layout */
+.proven-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
 }
 
-.proven-client-list ul {
+/* Card Styling */
+.category-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.proven-client-list li {
-  flex: 1 1 calc(50% - 1rem); /* Two-column layout */
-  font-size: 1rem;
-  color: white;
-  border-bottom: 1px solid #ddd;
-  padding: 0.5rem 0;
-}
-
-.proven-categories {
-  margin-top: 2rem;
-}
-
-.category-section {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
+/* Image */
 .category-image {
   width: 100%;
-  height: 440px;
+  height: 275px;
   background-size: cover;
   background-position: center;
   position: relative;
-  border-radius: 3px;
-  overflow: hidden;
 }
 
+/* Overlay */
 .image-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.19);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.category-image:hover .image-overlay {
+  opacity: 1;
 }
 
 .overlay-title {
-  font-size: 70px;
-  font-weight: bold;
-  color: orange;
+  font-size: 24px;
+  font-weight: 700;
   color: white;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 
-.category-text {
-  width: 50%;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  border-radius: 3px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.044);
-  border: 1px solid rgb(230, 230, 230);
-  background: rgba(250, 250, 250);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #525252;
-  box-sizing: border-box;
-}
-
-.category-text p {
-  max-width: 600px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #525252;
-  margin: 0;
-  text-align: justify;
+.overlay-description {
+  font-size: 14px;
+  color: white;
+  line-height: 1.4;
 }

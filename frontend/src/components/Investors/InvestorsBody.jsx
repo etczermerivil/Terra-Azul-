@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserTie, faChartPie, faWallet, faInfinity, faTasks, faBuilding, faGlobe, faFlagUsa,  faDraftingCompass, faShieldAlt, faPiggyBank  } from '@fortawesome/free-solid-svg-icons';
+import {  faInfinity, faTasks, faBuilding, faGlobe, faFlagUsa,  faDraftingCompass, faShieldAlt, faPiggyBank  } from '@fortawesome/free-solid-svg-icons';
 
+// import {faUserTie, faChartPie, faWallet} from '@fortawesome/free-solid-svg-icons';
 
-
-import './InvestorsBody.css';
+import './InvestorsBody.css'
 
 const InvestorsBody = () => {
   return (
@@ -96,8 +96,8 @@ const InvestorsBody = () => {
       <h3 className="market-opportunity-header">U.S. Market</h3>
       <div className="underline"></div>
       <p>
-        In the United States alone, the wastewater treatment market is expected to reach <strong>$121 billion by
-        2024</strong>, reflecting robust demand for advanced solutions and government-backed initiatives to combat
+        In the United States alone, the wastewater treatment market is expected to reach <strong>$11.5 billion by
+        2026</strong>, reflecting robust demand for advanced solutions and government-backed initiatives to combat
         water pollution.
       </p>
     </div>
@@ -121,7 +121,7 @@ const InvestorsBody = () => {
   </div>
 
   <div className="funding-plan-grid">
-    {/* Engineering Partnerships */}
+    {/* Joint Partnerships */}
     <div className="funding-plan-item">
       <div className="funding-plan-icon">
         <FontAwesomeIcon icon={faDraftingCompass} style={{ color: '#5d5d5d', fontSize: '50px' }} />
@@ -177,15 +177,14 @@ const InvestorsBody = () => {
 
 
 
+{/* Section 3 */}
 
-
-
-
-<div className="requested-financing-wrapper">
+{/* <div className="requested-financing-wrapper">
   <div className="funding-ask-container-invest">
     <h2 className="section-title">Requested Financing</h2>
     <div className="funding-ask-two-column-invest">
-      {/* Column 1: Content */}
+
+
       <div>
         <div className="investment-column">
           <div className="investment-item">
@@ -234,11 +233,11 @@ const InvestorsBody = () => {
         </div>
 
       </div>
-      {/* Column 2: Empty for Picture */}
+
       <div className="empty-column"></div>
     </div>
   </div>
-</div>
+</div> */}
 
 
 

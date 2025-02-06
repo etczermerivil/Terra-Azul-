@@ -37,9 +37,10 @@ const ValueProposition = () => {
 
       </div>
 
-      <div className="value-proposition-container">
-  {/* Top Left Box */}
-  <div className="value-proposition-box left-box">
+   <div className="value-proposition-container">
+
+  {/* First Box */}
+  <div className="value-proposition-box ">
     <div className="val-proposition-icon-container">
       <FontAwesomeIcon icon={faLightbulb} style={{ color: "orange" }} />
     </div>
@@ -54,8 +55,8 @@ const ValueProposition = () => {
     </div>
   </div>
 
-  {/* Top Right Box */}
-  <div className="value-proposition-box right-box">
+  {/* Second Box */}
+  <div className="value-proposition-box ">
     <div className="val-proposition-icon-container">
       <FontAwesomeIcon icon={faCogs} style={{ color: "grey" }} />
     </div>
@@ -69,11 +70,9 @@ const ValueProposition = () => {
       </ul>
     </div>
   </div>
-</div>
 
-<div className="value-proposition-container">
-  {/* Bottom Left Box */}
-  <div className="value-proposition-box bottom-left-box">
+  {/* Third Box */}
+  <div className="value-proposition-box ">
     <div className="val-proposition-icon-container">
       <FontAwesomeIcon icon={faWifi} style={{ color: "#3659c0" }} />
     </div>
@@ -89,8 +88,8 @@ const ValueProposition = () => {
     </div>
   </div>
 
-  {/* Bottom Right Box */}
-  <div className="value-proposition-box bottom-right-box">
+  {/* 4th Box */}
+  <div className="value-proposition-box ">
     <div className="val-proposition-icon-container">
       <FontAwesomeIcon icon={faHandshake} style={{ color: "green" }} />
     </div>
@@ -105,6 +104,8 @@ const ValueProposition = () => {
       </ul>
     </div>
   </div>
+
+
 </div>
 
     </section>
@@ -142,15 +143,6 @@ export default ValueProposition;
 
 
 
-{/* <iframe
-  width="100%"
-  height="100%"
-  src="https://www.youtube.com/embed/sEaKrsNeLfQ?enablejsapi=1&modestbranding=1&rel=0&showinfo=0&controls=1"
-  title="YouTube video"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-></iframe> */}
 
 
 

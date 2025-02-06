@@ -1,3 +1,8 @@
-from .db import db
+# from .db import db
+# from .user import User
+# from .db import environment, SCHEMA
+
+from .db import db, environment, SCHEMA
 from .user import User
-from .db import environment, SCHEMA
+from .partner_inquiry import PartnerInquiry
+from .contact_us_inquiry import ContactUsInquiry
