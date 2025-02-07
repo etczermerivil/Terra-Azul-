@@ -6,21 +6,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Adjusted height for spacing */
+    height: 400px;
     text-align: center;
     box-sizing: border-box;
-    padding: 20px; /* Added padding for mobile responsiveness */
+    padding: 20px;
   }
 
   /* Container for all elements */
   .investors-container {
-    max-width: 700px; /* Sets max width for better layout */
+    max-width: 700px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Creates space between elements */
+    gap: 20px;
   }
 
   /* Title Styling */
@@ -39,24 +39,24 @@
     font-weight: 399;
     margin: 0;
     color: whitesmoke;
-    text-align: left; /* Aligns text to the left */
-    line-height: 1.8; /* Better readability */
+    text-align: justify;
+    line-height: 1.8;
     width: 100%;
   }
 
   /* Form Group */
   .investors-form-group {
-    width: 100%; /* Stretches to container width */
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: flex-start; /* Aligns form fields to the left */
+    align-items: flex-start;
   }
 
   /* Input Fields */
   .investors-input-field {
     width: 100%;
-    max-width: 100%; /* Matches container width */
+    max-width: 100%;
     padding: 12px;
     font-size: 16px;
     border: 1px solid rgb(255, 255, 255);
@@ -97,10 +97,10 @@
   .success-message {
     margin-top: 15px;
     font-size: 16px;
-    color: #28a745; /* Green for success */
+    color: #28a745;
     font-weight: bold;
     text-align: center;
-    animation: fadeIn 0.5s ease-in-out; /* Optional: Smooth fade-in effect */
+    animation: fadeIn 0.5s ease-in-out;
   }
 
   /* Optional Fade-In Animation */

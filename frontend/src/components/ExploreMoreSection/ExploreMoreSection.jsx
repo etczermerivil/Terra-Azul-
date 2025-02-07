@@ -1,4 +1,4 @@
-import { useIframeModal } from "../../context/IframeModalContext"; // Use the correct modal context
+import { useIframeModal } from "../../context/IframeModalContext";
 import "./ExploreMoreSection.css";
 
 function ExploreMoreSection() {
@@ -25,12 +25,10 @@ function ExploreMoreSection() {
       <div className="explore-more-container">
         <h2>Become an Investor!</h2>
         <p>
-          Become an investor today and join us in revolutionizing water
-          treatment technology, driving innovation, and creating a sustainable
-          future together.
+        Join us in transforming water treatment technology—become an investor today and help drive innovation for a sustainable future.
         </p>
         <button onClick={openIframeFormModal} className="form-button">
-          Join Now
+        Partner With Us
         </button>
       </div>
     </section>
