@@ -1,32 +1,38 @@
-from flask import Blueprint, request, jsonify, current_app
-from flask_mail import Mail, Message
 import os
-from dotenv import load_dotenv
+import requests
+from flask import Blueprint, request, jsonify
 
-load_dotenv()
+email_routes = Blueprint("email_routes", __name__)
 
-email_routes = Blueprint('email_routes', __name__)
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
+SENDGRID_URL = "https://api.sendgrid.com/v3/mail/send"
 
-# Email Configuration
-mail = Mail()  # Create a mail instance (initialize later)
-
-@email_routes.route('/send-email', methods=['POST'])
+@email_routes.route("/send-email", methods=["POST"])
 def send_email():
-    try:
-        data = request.json
-        name = data.get('name')
-        email = data.get('email')
+    data = request.json
+    name = data.get("name")
+    email = data.get("email")
 
-        # Use current_app to access config inside Blueprint
-        msg = Message(
-            "New Partner Inquiry",
-            sender=current_app.config['MAIL_USERNAME'],  # Use current_app
-            recipients=["businessman.merivil@gmail.com"]
-        )
-        msg.body = f"Name: {name}\nEmail: {email}\nMessage: Interested in partnering with us."
+    # Prepare email content
+    subject = "New Partner Inquiry"
+    content = f"Name: {name}\nEmail: {email}\nMessage: Interested in partnering with us."
 
-        mail.send(msg)
+    headers = {
+        "Authorization": f"Bearer {SENDGRID_API_KEY}",
+        "Content-Type": "application/json"
+    }
 
+    email_data = {
+        "personalizations": [{"to": [{"email": "water@terraazultech.com"}]}],
+        "from": {"email": "water@terraazultech.com"},
+        "subject": subject,
+        "content": [{"type": "text/plain", "value": content}]
+    }
+
+    # Send email request to SendGrid
+    response = requests.post(SENDGRID_URL, headers=headers, json=email_data)
+
+    if response.status_code == 202:
         return jsonify({"message": "Email sent successfully!"}), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    else:
+        return jsonify({"error": "Failed to send email", "details": response.text}), 400
