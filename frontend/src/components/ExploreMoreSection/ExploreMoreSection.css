@@ -42,7 +42,8 @@ iframe {
   color: #525252;
   text-transform: uppercase;
   margin: 0;
-  text-align: left;
+  padding: 0;
+  text-align: center;
 }
 
 /* Paragraph Styling */
@@ -50,8 +51,9 @@ iframe {
   font-size: 16px;
   font-weight: 399;
   margin: 0;
+  padding: 0;
   color: #525252;
-  text-align: left;
+  text-align: center;
   line-height: 1.8;
   width: 100%;
 }
@@ -91,7 +93,7 @@ iframe {
 
 .button-group button {
   margin: 0;
-  padding: 14px 28px;
+  padding: 16px 32px;
   font-size: 18px;
   border: none;
   border-radius: 2px;
