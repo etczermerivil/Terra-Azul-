@@ -4,18 +4,36 @@ import "./AboutCTA.css";
 const AboutCTA = () => {
   const [formData, setFormData] = useState({ name: "", email: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(false); // Define error state
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    setIsSubmitted(true);
-    setFormData({ name: "", email: "" });
-    setTimeout(() => setIsSubmitted(false), 5000);
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/email/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true); // Success state
+        setError(false); // Clear error state
+        setFormData({ name: "", email: "" }); // Clear the form
+        setTimeout(() => setIsSubmitted(false), 5000); // Hide success message after 5 seconds
+      } else {
+        throw new Error("Failed to send email");
+      }
+    } catch (err) {
+      console.error("Error submitting form:", err);
+      setError(true); // Set error state
+    }
   };
 
   return (
@@ -33,6 +51,12 @@ const AboutCTA = () => {
             Thank you for reaching out to us!
           </div>
         )}
+
+        {error && (
+          <div className="error-message">
+            There was an error sending your message. Please try again.
+          </div>
+         )}
 
         <form className="about-cta-form-group" onSubmit={handleSubmit}>
           <input

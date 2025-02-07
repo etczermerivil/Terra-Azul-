@@ -25,7 +25,7 @@ const ContactPageBody = () => {
           {/* <p className="contact-name"><strong>Robert Stone</strong></p>
           <p className="contact-role">CFO, Terra Azul Tech</p> */}
           <p className="contact-phone">760-884-1084</p>
-          <p className="contact-email">Info@terraazultech.com</p>
+          <p className="contact-email">water@terraazultech.com</p>
           <p className="contact-address">5173 Waring Rd #248</p>
           <p className="contact-address">San Diego, CA 92120</p>
         </div>
