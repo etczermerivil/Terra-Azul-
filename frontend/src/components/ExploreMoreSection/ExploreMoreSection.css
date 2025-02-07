@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px; /* Adjusted height for spacing */
+  height: 300px;
   text-align: center;
   box-sizing: border-box;
   padding: 20px; /* Added padding for mobile responsiveness */
@@ -19,6 +19,20 @@
   justify-content: center;
   align-items: center;
   gap: 20px; /* Creates space between elements */
+}
+
+
+.iframe-container {
+  max-width: 600px; /* Set the maximum width for the form */
+  width: 100%; /* Allow responsiveness */
+  margin: 0 auto; /* Center the container */
+}
+
+iframe {
+  width: 100%; /* Make the iframe responsive */
+  height: 606px;
+  border: none;
+  border-radius: 3px;
 }
 
 /* Title Styling */
