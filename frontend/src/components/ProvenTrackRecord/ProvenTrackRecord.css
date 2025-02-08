@@ -100,25 +100,131 @@
   line-height: 1.4;
 }
 
-
-@media (max-width: 1024px) {
-
-  .proven-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* 1200px */
+@media (max-width: 1200px) {
+  .proven-header {
+    font-size: 32px;
   }
 
-  .image-overlay {
-    opacity: 1;
+  .proven-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .overlay-title {
+    font-size: 22px;
+  }
+
+  .overlay-description {
+    font-size: 13px;
   }
 }
 
-@media (max-width: 700px) {
-
+/* 1024px */
+@media (max-width: 1024px) {
   .proven-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .proven-header {
+    font-size: 28px;
+  }
+
+  .proven-paragraph {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+
+  .category-card {
+    box-shadow: none;
+  }
+
+  .overlay-title {
+    font-size: 20px;
+  }
+
+  .overlay-description {
+    font-size: 12px;
   }
 
   .image-overlay {
-    opacity: 1;
+    opacity: 1; /* Always show overlay */
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .proven-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .proven-header {
+    font-size: 25px;
+  }
+
+  .proven-paragraph {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .category-image {
+    height: 200px; /* Reduce image height */
+  }
+
+  .overlay-title {
+    font-size: 18px;
+  }
+
+  .overlay-description {
+    font-size: 11px;
+  }
+
+  .image-overlay {
+    padding: 15px;
+    opacity: 1; /* Ensure the overlay is always visible */
+  }
+}
+
+/* 545px */
+@media (max-width: 545px) {
+  .proven-header {
+    font-size: 22px;
+  }
+
+  .proven-paragraph {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .overlay-title {
+    font-size: 16px;
+  }
+
+  .overlay-description {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .proven-header {
+    font-size: 20px;
+  }
+
+  .proven-paragraph {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .overlay-title {
+    font-size: 14px;
+  }
+
+  .overlay-description {
+    font-size: 9px;
   }
 }

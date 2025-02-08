@@ -41,3 +41,64 @@
   height: 100%;
   border: none;
 }
+
+/* 1200px */
+@media (max-width: 1200px) {
+  .movie-title {
+    font-size: 26px;
+  }
+
+  .movie-container {
+    gap: 15px; /* Reduce spacing between title and video */
+  }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+  .movie-title {
+    font-size: 24px;
+  }
+
+  .movie-container {
+    padding: 0 20px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .movie-title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .movie-container {
+    gap: 10px;
+  }
+
+  .movie-video {
+    max-width: 100%;
+  }
+}
+
+/* 545px */
+@media (max-width: 545px) {
+  .movie-title {
+    font-size: 20px;
+  }
+
+  .movie-container {
+    padding: 0 15px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .movie-title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .movie-container {
+    gap: 8px;
+  }
+}
