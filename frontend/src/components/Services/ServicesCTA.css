@@ -110,3 +110,56 @@
     opacity: 1;
   }
 }
+
+/* 768px */
+@media (max-width: 768px) {
+  .join-us-header {
+    font-size: 36px; /* Adjust for tablets */
+    text-align: center; /* Center the title */
+  }
+
+  .join-us-description {
+    font-size: 16px; /* Adjust for tablets */
+    text-align: center; /* Center the paragraph text */
+  }
+
+  .join-us-form-group {
+    align-items: center; /* Center inputs and buttons */
+  }
+
+  .join-us-button {
+    font-size: 16px; /* Adjust button font size */
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .join-us-header {
+    font-size: 28px; /* Adjust for small phones */
+  }
+
+  .join-us-description {
+    font-size: 14px;
+  }
+
+  .join-us-button {
+    font-size: 14px;
+    padding: 12px 24px; /* Adjust button padding */
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .join-us-header {
+    font-size: 24px; /* Adjust for smallest screens */
+  }
+
+  .join-us-description {
+    font-size: 12px;
+  }
+
+  .join-us-button {
+    font-size: 12px;
+    padding: 10px 20px; /* Adjust button padding for smallest buttons */
+  }
+}

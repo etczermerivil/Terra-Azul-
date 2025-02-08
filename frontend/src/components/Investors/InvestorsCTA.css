@@ -112,3 +112,62 @@
       opacity: 1;
     }
   }
+
+  /* 768px */
+@media (max-width: 768px) {
+  .investors-section {
+    height: auto; /* Allow the section to adjust height dynamically */
+    padding: 20px; /* Maintain padding for smaller screens */
+  }
+
+  .investors-header {
+    font-size: 36px; /* Adjust title font size for tablets */
+    text-align: center; /* Center the title */
+  }
+
+  .investors-description {
+    font-size: 16px; /* Adjust paragraph font size for tablets */
+    text-align: center; /* Ensure text stays centered */
+  }
+
+  .investors-form-group {
+    align-items: center; /* Center inputs and buttons */
+  }
+
+  .investors-button {
+    font-size: 16px; /* Adjust button font size */
+    padding: 14px 28px; /* Maintain button padding */
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .investors-header {
+    font-size: 28px; /* Adjust title font size for small phones */
+  }
+
+  .investors-description {
+    font-size: 14px; /* Adjust paragraph font size for small phones */
+  }
+
+  .investors-button {
+    font-size: 14px; /* Adjust button font size */
+    padding: 12px 24px; /* Adjust padding for smaller buttons */
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .investors-header {
+    font-size: 24px; /* Adjust title font size for the smallest screens */
+  }
+
+  .investors-description {
+    font-size: 12px; /* Adjust paragraph font size for the smallest screens */
+  }
+
+  .investors-button {
+    font-size: 12px; /* Adjust button font size */
+    padding: 10px 20px; /* Adjust button padding for the smallest screens */
+  }
+}

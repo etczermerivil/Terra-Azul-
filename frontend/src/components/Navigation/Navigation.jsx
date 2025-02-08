@@ -61,7 +61,7 @@ function Navigation() {
             </li>
             <li>
               <NavLink to="/technology" activeclassname="active">
-                Our Technology
+                Technology
               </NavLink>
             </li>
             <li>

@@ -105,7 +105,7 @@
   }
 
 
-  @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .hero-content h1 {
       font-size: 90px;
   }
@@ -151,7 +151,7 @@
   }
 
   .hero-section::before {
-      height: 100%; /* Ensures overlay resizes properly */
+      height: 100%;
   }
 
   .hero-content h1 {

@@ -108,26 +108,160 @@
   line-height: 1.5;
   margin: 0;
   text-align: left;
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 
-/* Responsive Adjustments */
+/* 1200px */
+@media (max-width: 1200px) {
+  .brag-header h2 {
+    font-size: 48px;
+  }
+
+  .brag-item {
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+
+  .brag-header .brag-paragraph {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: justify;
+  }
+
+  .brag-header {
+    text-align: center;
+  }
+
+  .brag-info h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .brag-info h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .brag-info p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 100px;
+  }
+
+  .brag-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  }
+
+
+}
+
+/* 1024px */
 @media (max-width: 1024px) {
-  .brag-grid {
-    grid-template-columns: repeat(2, auto); /* Adjust columns for medium screens */
+  .brag-header h2 {
+    font-size: 48px;
   }
 
-  .brag-item {
-    height: 350px;
+  .brag-header .brag-paragraph {
+    font-size: 18px;
+  }
+
+  .brag-info h3 {
+    font-size: 24px;
+  }
+
+  .brag-info h4 {
+    font-size: 18px;
+  }
+
+  .brag-info p {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: auto;
+  }
+
+  .brag-grid {
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
   }
 }
 
+/* 768px */
 @media (max-width: 768px) {
-  .brag-grid {
-    grid-template-columns: 1fr; /* Single column layout for small screens */
+  .brag-header h2 {
+    font-size: 36px;
   }
 
-  .brag-item {
-    height: auto;
+  .brag-header .brag-paragraph {
+    font-size: 16px;
+
+  }
+
+  .brag-info h3 {
+    font-size: 20px;
+  }
+
+  .brag-info h4 {
+    font-size: 16px;
+  }
+
+  .brag-info p {
+    font-size: 16px;
+
+  }
+
+  .brag-grid {
+    grid-template-columns: 1fr; /* Single column */
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .brag-header h2 {
+    font-size: 28px;
+  }
+
+  .brag-header .brag-paragraph {
+    font-size: 14px;
+  }
+
+  .brag-info h3 {
+    font-size: 18px;
+  }
+
+  .brag-info h4 {
+    font-size: 14px;
+  }
+
+  .brag-info p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .brag-header h2 {
+    font-size: 24px;
+  }
+
+  .brag-header .brag-paragraph {
+    font-size: 12px;
+  }
+
+  .brag-info h3 {
+    font-size: 16px;
+  }
+
+  .brag-info h4 {
+    font-size: 12px;
+  }
+
+  .brag-info p {
+    font-size: 12px;
   }
 }

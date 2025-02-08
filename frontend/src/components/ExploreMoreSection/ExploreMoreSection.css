@@ -127,3 +127,74 @@ iframe {
     opacity: 1;
   }
 }
+
+/* 768px */
+@media (max-width: 768px) {
+  .explore-more-section {
+    height: auto; /* Allow the section to adjust height dynamically */
+    padding: 20px; /* Maintain padding for smaller screens */
+  }
+
+  .explore-more-container h2 {
+    font-size: 36px; /* Adjust title font size for tablets */
+    text-align: center; /* Keep the text centered */
+  }
+
+  .explore-more-container p {
+    font-size: 16px; /* Adjust paragraph font size for tablets */
+    text-align: center; /* Ensure text stays centered */
+  }
+
+  .iframe-container {
+    max-width: 100%; /* Allow the iframe to use full width on smaller screens */
+  }
+
+  iframe {
+    height: 400px; /* Reduce iframe height for tablets */
+  }
+
+  .button-group button {
+    font-size: 16px; /* Adjust button font size */
+    padding: 14px 28px; /* Adjust padding for buttons */
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .explore-more-container h2 {
+    font-size: 28px; /* Adjust title font size for small phones */
+  }
+
+  .explore-more-container p {
+    font-size: 14px; /* Adjust paragraph font size for small phones */
+  }
+
+  iframe {
+    height: 300px; /* Further reduce iframe height for small phones */
+  }
+
+  .button-group button {
+    font-size: 14px; /* Adjust button font size for small phones */
+    padding: 12px 24px; /* Adjust button padding */
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .explore-more-container h2 {
+    font-size: 24px; /* Adjust title font size for the smallest screens */
+  }
+
+  .explore-more-container p {
+    font-size: 12px; /* Adjust paragraph font size for the smallest screens */
+  }
+
+  iframe {
+    height: 250px; /* Adjust iframe height for very small screens */
+  }
+
+  .button-group button {
+    font-size: 12px; /* Adjust button font size */
+    padding: 10px 20px; /* Adjust button padding */
+  }
+}

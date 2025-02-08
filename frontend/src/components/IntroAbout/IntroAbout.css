@@ -41,4 +41,58 @@
     text-align: justify;
     max-width: 800px;
     margin-bottom: 15px;
+
+  }
+
+  @media (max-width: 768px) {
+    .intro-about-content {
+      max-width: 90%;
+    }
+
+    .intro-about-box {
+      text-align: center;
+    }
+
+    .intro-about-header {
+      font-size: 36px;
+    }
+
+    .intro-about-text {
+      font-size: 16px;
+      text-align: justify;
+      max-width: 100%;
+    }
+  }
+
+  /* 480px (Small Phones) */
+  @media (max-width: 480px) {
+    .intro-about-content {
+      max-width: 95%;
+    }
+
+
+    .intro-about-header {
+      font-size: 28px;
+    }
+
+    .intro-about-text {
+      font-size: 14px;
+      padding: 15px;
+
+    }
+  }
+
+  /* 320px (Smallest Screens) */
+  @media (max-width: 320px) {
+    .intro-about-content {
+      max-width: 100%;
+    }
+
+    .intro-about-header {
+      font-size: 24px;
+    }
+
+    .intro-about-text {
+      font-size: 12px;
+    }
   }
