@@ -460,3 +460,252 @@
     padding: 20px 15px;
   }
 }
+
+
+/* 1200px */
+@media (max-width: 1200px) {
+  .middle-header-invest {
+    font-size: 28px;
+  }
+
+  .summary-box-invest p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .market-opportunity-title,
+  .funding-plan-titles,
+  .section-title {
+    font-size: 28px;
+  }
+
+  .market-opportunity-description,
+  .funding-plan-subtitle,
+  .investment-flexibility,
+  .investment-highlight {
+    font-size: 15px;
+  }
+
+  .market-opportunity-box h3,
+  .funding-plan-title {
+    font-size: 18px;
+  }
+
+  .market-opportunity-box p,
+  .funding-plan-description {
+    font-size: 14px;
+  }
+
+  .investment-column {
+    padding: 25px;
+  }
+
+  .investment-column ul li {
+    font-size: 14px;
+  }
+
+  .market-opportunity-box {
+    height: auto;
+  }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+  .summary-box-invest {
+    padding: 0 15px;
+    height: auto;
+  }
+
+  .middle-header-invest {
+    font-size: 26px;
+  }
+
+  .summary-box-invest p {
+    font-size: 15px;
+  }
+
+  .market-opportunity-container {
+    padding: 0 15px;
+  }
+
+  .market-opportunity-title,
+  .funding-plan-titles,
+  .section-title {
+    font-size: 26px;
+  }
+
+  .market-opportunity-description,
+  .funding-plan-subtitle,
+  .investment-flexibility,
+  .investment-highlight {
+    font-size: 14px;
+  }
+
+  .market-opportunity-box h3,
+  .funding-plan-title {
+    font-size: 17px;
+  }
+
+  .market-opportunity-box p,
+  .funding-plan-description {
+    font-size: 14px;
+  }
+
+  .investment-column {
+    padding: 20px;
+  }
+
+  .investment-column ul li {
+    font-size: 13px;
+  }
+
+  .funding-plan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .market-opportunity-drivers {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .market-opportunity-title,
+  .funding-plan-titles,
+  .section-title {
+    font-size: 24px;
+  }
+
+  .market-opportunity-box {
+    height: auto;
+    padding: 20px;
+  }
+
+  .market-opportunity-box h3,
+  .funding-plan-title {
+    font-size: 16px;
+  }
+
+  .market-opportunity-box p,
+  .funding-plan-description {
+    font-size: 13px;
+  }
+
+  .investment-column {
+    padding: 15px;
+  }
+
+  .investment-column ul li {
+    font-size: 12px;
+  }
+
+  .funding-plan-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .market-opportunity-image-placeholder {
+    height: 300px;
+  }
+
+  .market-opportunity-drivers {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .market-opportunity-box .icon-container {
+    font-size: 24px;
+  }
+
+  .funding-ask-two-column-invest {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* 545px */
+@media (max-width: 545px) {
+  .market-opportunity-title,
+  .funding-plan-titles,
+  .section-title {
+    font-size: 22px;
+  }
+
+  .middle-header-invest {
+    font-size: 22px;
+  }
+
+  .summary-box-invest p {
+    font-size: 14px;
+  }
+
+  .market-opportunity-box h3,
+  .funding-plan-title {
+    font-size: 15px;
+  }
+
+  .market-opportunity-box p,
+  .funding-plan-description {
+    font-size: 12px;
+  }
+
+  .investment-column ul li {
+    font-size: 12px;
+  }
+
+  .investment-column {
+    padding: 12px;
+  }
+
+  .market-opportunity-drivers {
+    gap: 10px;
+  }
+
+  .market-opportunity-image-placeholder {
+    height: 250px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .market-opportunity-title,
+  .funding-plan-titles,
+  .section-title {
+    font-size: 20px;
+  }
+
+  .middle-header-invest {
+    font-size: 20px;
+  }
+
+  .summary-box-invest p {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .market-opportunity-box h3,
+  .funding-plan-title {
+    font-size: 14px;
+  }
+
+  .market-opportunity-box p,
+  .funding-plan-description {
+    font-size: 11px;
+  }
+
+  .investment-column ul li {
+    font-size: 11px;
+  }
+
+  .investment-column {
+    padding: 10px;
+  }
+
+  .market-opportunity-drivers {
+    gap: 8px;
+  }
+
+  .market-opportunity-image-placeholder {
+    height: 200px;
+  }
+}
