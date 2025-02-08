@@ -8,7 +8,7 @@ const ServicesMiddle = () => {
       <div className="services-header">
       <h2 className="services-middle-header">Comprehensive Services</h2>
 
-        <p>
+        <p className="services-description" >
         We provide tailored consulting and advanced solutions to address your unique water purification challenges. Our services include cutting-edge technology, innovative solutions, and reliable maintenance to meet your needs efficiently and sustainably. For added flexibility, our solar-powered trailers enable off-grid water treatment, making it easier to tackle purification projects in remote locations. Check below to see if our services meet your needs.
         </p>
       </div>

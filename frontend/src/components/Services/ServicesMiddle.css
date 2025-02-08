@@ -110,8 +110,10 @@
   font-size: 16px;
   font-weight: 400;
   color: #666;
-  margin-bottom: 10px; /* Space below the paragraph */
+  margin-bottom: 10px;
+  line-height: 1.8;
 }
+
 
 /* Unordered List (ul) */
 .content-container ul {
@@ -128,23 +130,229 @@
   line-height: 1.6; /* Space between list items */
 }
 
-  /* Responsive Adjustments */
-  @media (max-width: 1024px) {
-    .services-grid {
-      grid-template-columns: 1fr;
-    }
+/* Base Styles */
+.content-container {
+  flex: 1; /* Ensure it takes up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px; /* Add padding */
+}
 
-    .service-image {
-      height: 150px;
-    }
+.content-container h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #5d5d5d;
+  margin-bottom: 10px;
+}
+
+.content-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  padding-left: 20px; /* Indent for better readability */
+}
+
+.content-container ul li {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6; /* Proper spacing between list items */
+  margin-bottom: 5px; /* Add spacing */
+}
+
+.services-description {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 1200px) {
+  .services-header p {
+    font-size: 16px;
+    line-height: 1.8;
   }
 
-  @media (max-width: 768px) {
-    .services-header {
-      padding: 0 1rem;
-    }
-
-    .services-grid {
-      padding: 0 1rem;
-    }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+    margin-top: 20px;
   }
+
+  .content-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .content-container h3 {
+    font-size: 22px;
+  }
+
+  .content-container ul li {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+
+  .services-header p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .service-box {
+    height:auto;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+  }
+
+  .content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .content-container h3 {
+    font-size: 20px;
+  }
+
+  .content-container ul li {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+
+  .services-middle-section {
+    padding: 0 15px;
+  }
+
+}
+
+/* 768px */
+@media (max-width: 768px) {
+
+  .icon-container svg {
+    font-size: 25px; /* Adjust icon size */
+  }
+
+.services-header {
+  margin: 15px;
+  height: auto;
+}
+
+  .services-header p {
+    font-size: 16px;
+    line-height: 1.6;
+
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 15px;
+  }
+
+  .content-container {
+    padding: 0 10px;
+  }
+
+  .services-middle-section {
+    padding: 0 15px;
+  }
+
+  .services-grid .content-container h3 {
+    font-size: 18px; /* Adjust heading size */
+    margin-bottom: 10px; /* Add spacing below headings */
+  }
+
+  .services-grid .content-container ul li {
+    font-size: 12px; /* Adjust list item font size */
+    line-height: 1.5; /* Maintain readability */
+    margin-bottom: 8px; /* Add spacing between list items */
+  }
+
+  p {
+    margin-bottom: 30px; /* General paragraph adjustment */
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .services-middle-header {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .services-header p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px; /* Reduce gap for smaller screens */
+    margin-top: 50px;
+    padding: 0 10px;
+  }
+
+  .services-middle-section {
+    padding: 0 10px;
+  }
+  .services-grid .content-container p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .services-grid .content-container h3 {
+    font-size: 16px; /* Reduce heading size further */
+    margin-bottom: 8px; /* Adjust spacing */
+  }
+
+  .services-grid .content-container ul li {
+    font-size: 10px; /* Smaller font size for list items */
+    line-height: 1.4;
+    margin-bottom: 6px; /* Add spacing */
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 1.5; /* Adjust line height for readability */
+    margin-bottom: 50px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .services-header p {
+    font-size: 11px; /* Smallest paragraph size */
+    line-height: 1.4;
+  }
+
+  .services-grid {
+    gap: 10px; /* Minimal gap for small screens */
+    margin-top: 40px;
+  }
+
+  .services-grid .content-container h3 {
+    font-size: 14px; /* Minimum heading size */
+    margin-bottom: 6px; /* Adjust spacing */
+  }
+
+  .services-grid .content-container ul li {
+    font-size: 13px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+}
