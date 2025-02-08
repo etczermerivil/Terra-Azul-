@@ -207,7 +207,6 @@
     padding: 0 20px;
   }
 
-
 }
 
 @media (max-width: 1024px) {
@@ -220,8 +219,10 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+  }
 
-
+  .logo-image {
+    height: 30px;
   }
 
   .nav-links ul {
@@ -273,7 +274,6 @@
   }
 
 
-
   .profile-button {
     display: flex;
     order: 2;
@@ -283,75 +283,69 @@
 }
 
 
+/* 545px (Small screens) */
 @media (max-width: 545px) {
   .navigation-header {
-    height: 50px;
-    padding: 5px 0;
-    line-height: 1.2;
-    background-color: rgba(255, 255, 255, 0.95);
-  }
-
-  .hero-content {
-    margin-top: 50px;
+    height: auto;
+    padding: 15px 0; /* Adjust padding for smaller screens */
+    flex-direction: column;
+    align-items: center;
   }
 
   .navigation-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack the logo and nav-links */
     align-items: center;
     width: 100%;
-    gap: 15px;
+    gap: 15px; /* Space between elements */
   }
 
   .logo {
-    order: 0;
+    order: 0; /* Logo remains on top */
     margin-bottom: 10px;
   }
 
+
   .nav-links {
     display: flex;
-    order: 1;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    order: 1; /* Navigation links below the logo */
+    gap: 10px; /* Smaller gap between links */
+    justify-content: center;
+    margin: 0;
   }
 
   .nav-links ul {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
+    display: flex;
+    flex-direction: row; /* Keep links in a row */
+    justify-content: center;
+    gap: 8px; /* Reduce spacing for smaller screens */
   }
 
   .nav-links a {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 12px;
+    font-size: 12px; /* Smaller font size for links */
+    text-decoration: none;
+    padding: 5px; /* Adjust padding for better spacing */
   }
 
   .profile-button {
-    order: 2;
-    margin-top: 10px;
     display: flex;
+    order: 2; /* Keep profile button at the bottom */
     justify-content: center;
-    align-items: center;
+    margin-top: 10px;
   }
 }
-
-
 
 
 /* 480px (Small phones) */
 @media (max-width: 480px) {
   .navigation-container {
-    gap: 10px;
-    padding: 0 10px;
+    gap: 8px; /* Reduce gap further for very small screens */
+    padding: 0 8px;
   }
 
   .nav-links a {
-    font-size: 14px; /* Smaller font size for small screens */
-    padding: 5px;
+    font-size: 10px; /* Smaller font size for very small screens */
+    padding: 3px; /* Tighten padding for links */
   }
 
   .profile-button {
@@ -362,13 +356,13 @@
 /* 320px (Smallest phones) */
 @media (max-width: 320px) {
   .nav-links {
-    flex-wrap: wrap; /* Wrap links if they overflow */
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
   }
 
   .nav-links a {
-    font-size: 12px;
-    padding: 5px;
+    font-size: 9px;
+    padding: 2px;
   }
 
   .profile-button {

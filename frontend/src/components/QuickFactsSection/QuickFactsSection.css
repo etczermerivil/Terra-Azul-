@@ -25,16 +25,16 @@
 }
 
 .image-container-quick {
-  width: 100%; /* Adjust width to fit the container */
-  max-width: 1350px; /* Set a max width */
-  height: auto; /* Maintain aspect ratio */
-  aspect-ratio: 16 / 9; /* Enforce consistent aspect ratio */
+  width: 100%;
+  max-width: 1350px;
+  height: auto;
+  aspect-ratio: 16 / 9;
   background-image: url('/Images/2.jpg');
-  background-position: center 70%; /* Keep focus on important part of the image */
+  background-position: center 70%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto 20px; /* Center and add bottom margin */
-  box-sizing: border-box; /* Include padding and border in size calculations */
+  margin: 0 auto 20px;
+  box-sizing: border-box;
 }
 
 .counters-container {
@@ -138,9 +138,9 @@
 
 @media (max-width: 1024px) {
   .info-container {
-    grid-template-columns: 1fr; /* Stack items vertically */
-    gap: 20px; /* Increase spacing between rows */
-    padding: 0 10px; /* Add padding for smaller screens */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
   }
 
   .counters-container {
@@ -148,11 +148,13 @@
   }
 
   .value-proposition-box {
-    height: auto; /* Adjust height dynamically */
-    padding: 15px; /* Reduce padding for smaller screens */
-    flex-direction: column; /* Stack content within each box vertically */
-    align-items: flex-start; /* Align content to the start */
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: visible;
   }
+
 }
 
 
@@ -163,11 +165,22 @@
   }
   .counters-container {
     grid-template-columns: repeat(2, 1fr);
+
   }
   .profile-button {
     display: none;
     opacity: 0;
   }
+
+  .counter-number {
+    font-size: 70px;
+  }
+
+  .quick-section-title h2 {
+    font-size: 25px;
+  }
+
+
 }
 
 @media (max-width: 545px) {
@@ -175,5 +188,29 @@
   .counters-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .counter-number {
+    font-size: 50px;
+  }
+
+  .quick-section-title h2 {
+    font-size: 20px;
+  }
+
+  .counter-label{
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .content-container ul li {
+    font-size: 13px;
+    color: #666;
+  }
+
+  .content-container ul {
+    margin: 10px 0; /* Add vertical spacing */
+    padding: 0 15px; /* Add padding for smaller screens */
+  }
+
 
 }
