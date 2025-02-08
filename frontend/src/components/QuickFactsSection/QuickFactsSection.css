@@ -25,22 +25,26 @@
 }
 
 .image-container-quick {
-    width: 1350px;
-    height: 600px;
-    background-image: url('/Images/2.jpg');
-    background-position: center 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
+  width: 100%; /* Adjust width to fit the container */
+  max-width: 1350px; /* Set a max width */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 16 / 9; /* Enforce consistent aspect ratio */
+  background-image: url('/Images/2.jpg');
+  background-position: center 70%; /* Keep focus on important part of the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 20px; /* Center and add bottom margin */
+  box-sizing: border-box; /* Include padding and border in size calculations */
 }
 
 .counters-container {
-  display: flex;
+  display: grid;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 2rem;
   text-align: center;
+  grid-template-columns: repeat(4, 1fr)
 }
 
 .counter {
@@ -64,7 +68,7 @@
 /* Info Container */
 .info-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-top: 20px;
   max-width: 1500px;
@@ -132,8 +136,44 @@
   line-height: 1.6;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   .info-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 20px; /* Increase spacing between rows */
+    padding: 0 10px; /* Add padding for smaller screens */
   }
+
+  .counters-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value-proposition-box {
+    height: auto; /* Adjust height dynamically */
+    padding: 15px; /* Reduce padding for smaller screens */
+    flex-direction: column; /* Stack content within each box vertically */
+    align-items: flex-start; /* Align content to the start */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr;
+  }
+  .counters-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-button {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 545px) {
+
+  .counters-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }

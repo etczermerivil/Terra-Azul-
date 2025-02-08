@@ -103,3 +103,95 @@
     justify-content: center;
     margin-top: 20px;
   }
+
+
+  @media (max-width: 1200px) {
+    .hero-content h1 {
+      font-size: 90px;
+  }
+  }
+
+
+/* Responsive Hero Section for Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .hero-section {
+      height: auto;
+      min-height: 100vh;
+      padding: 60px 20px;
+  }
+
+  .hero-section::before {
+      height: 100%; /* Ensure overlay covers exact height */
+  }
+
+  .hero-content h1 {
+      font-size: 80px;
+  }
+
+  .hero-content p {
+      font-size: 16px;
+      padding: 0 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-content h1 {
+    font-size: 70px;
+    line-height: 1.1;
+}
+}
+/* Mobile Screens (768px and below) */
+@media (max-width: 768px) {
+  .hero-section {
+      height: auto;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 50px 20px;
+      background-attachment: scroll; /* Prevents background cutoff */
+  }
+
+  .hero-section::before {
+      height: 100%; /* Ensures overlay resizes properly */
+  }
+
+  .hero-content h1 {
+      font-size: 65px;
+      line-height: 1.1;
+  }
+
+  .hero-content p {
+      font-size: 15px;
+      padding: 0 15px;
+  }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .hero-section {
+      height: auto;
+      min-height: 100vh;
+      padding: 40px 15px;
+  }
+
+  .hero-section::before {
+      height: 100%; /* Ensures overlay stays within bounds */
+  }
+
+  .hero-content h1 {
+      font-size: 50px;
+  }
+
+  .hero-content p {
+      font-size: 14px;
+  }
+
+  .cta-button {
+      padding: 10px 20px;
+      font-size: 15px;
+  }
+
+  .hero-button-container {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

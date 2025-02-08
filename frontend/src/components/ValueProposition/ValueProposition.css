@@ -35,7 +35,7 @@
   color: #525252;
   font-weight: 300;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
   text-align: justify;
   padding-bottom: 60px;
   max-width: 800px;
@@ -145,20 +145,44 @@
 
 @media (max-width: 768px) {
   .value-proposition-container {
-    padding: 0 1rem;
+    grid-template-columns: 1fr; /* Stack the boxes in one column */
+    padding: 0 1rem; /* Add padding around the container */
   }
 
   .value-proposition-box {
-    height: auto; /* Adjust height for smaller screens */
-    flex-direction: column; /* Stack icon and content vertically */
+    flex-direction: column; /* Stack the icon and content vertically */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center text alignment */
+    height: auto; /* Let the height adjust dynamically */
+    padding: 20px; /* Ensure consistent padding */
   }
 
   .val-proposition-icon-container {
-    width: 100%; /* Full width for the icon container */
-    height: auto;
+    width: 100%; /* Full width for consistency */
+    height: auto; /* Adjust height dynamically */
+    margin-bottom: 20px; /* Add spacing below the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .content-container {
-    padding-left: 0; /* Remove left padding for smaller screens */
+    width: 100%; /* Full width for consistency */
+    padding-left: 0; /* Remove left padding */
   }
+
+  .content-container h3 {
+    text-align: center; /* Center-align the title */
+  }
+
+  .content-container ul {
+    text-align: left; /* Keep lists left-aligned */
+    margin-top: 10px; /* Add space above lists */
+  }
+}
+
+@media (max-width: 700px) {
+  .quick-p {
+    font-size: 15px;
+}
 }

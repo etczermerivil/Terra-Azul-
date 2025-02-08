@@ -11,7 +11,6 @@ const HeroSection = () => {
     }
   };
 
-
   return (
     <section className="hero-section">
       {/* Background Video */}
