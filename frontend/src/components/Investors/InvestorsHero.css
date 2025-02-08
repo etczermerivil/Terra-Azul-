@@ -86,23 +86,76 @@
     z-index: 2;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero-investors-container {
-        flex-direction: column;
-        text-align: center;
+/* 1200px */
+@media (max-width: 1200px) {
+    .hero-investors {
+      height: 70vh; /* Reduce height for better fit */
+      background-position: center;
     }
 
-    .hero-investors-title,
-    .hero-investors-text {
-        height: auto;
-    }
-
-    .hero-investors-title h1 {
-        font-size: 28px;
+    .hero-investors-container .hero-investors-title h1 {
+      font-size: 90px;
     }
 
     .hero-investors-text p {
-        font-size: 16px;
+      font-size: 16px;
     }
-}
+  }
+
+  /* 1024px */
+  @media (max-width: 1024px) {
+    .hero-investors {
+      height: 65vh;
+      background-position: center center;
+      background-size: cover; /* Ensure full coverage */
+    }
+
+    .hero-investors-container .hero-investors-title h1 {
+      font-size: 80px;
+    }
+
+    .hero-investors-text p {
+      font-size: 16px; /* Keep consistent with 1200px */
+    }
+  }
+
+  /* 768px */
+  @media (max-width: 768px) {
+    .hero-investors {
+      height: 60vh;
+      background-size: cover;
+    }
+
+    .hero-investors-container {
+      padding: 0 15px; /* More spacing for mobile */
+    }
+
+    .hero-investors-container .hero-investors-title h1 {
+      font-size: 65px;
+    }
+
+    .hero-investors-text p {
+      font-size: 15px;
+    }
+  }
+
+  /* 480px */
+  @media (max-width: 480px) {
+    .hero-investors {
+      height: 50vh;
+      background-size: cover;
+      background-attachment: scroll;
+    }
+
+    .hero-investors-container {
+      padding: 0 10px;
+    }
+
+    .hero-investors-container .hero-investors-title h1 {
+      font-size: 33px;
+    }
+
+    .hero-investors-text p {
+      font-size: 14px;
+    }
+  }

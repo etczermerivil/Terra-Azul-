@@ -69,3 +69,60 @@
       font-size: 28px;
     }
   }
+
+  @media (max-width: 1200px) {
+    .hero-contact {
+      height: 70vh; /* Reduce height for better fit */
+      background-position: center;
+    }
+
+    .hero-contact-container .hero-contact-title h1 {
+      font-size: 90px;
+    }
+  }
+
+  /* 1024px */
+  @media (max-width: 1024px) {
+    .hero-contact {
+      height: 65vh;
+      background-position: center center;
+      background-size: cover; /* Ensure full coverage */
+    }
+
+    .hero-contact-container .hero-contact-title h1 {
+      font-size: 80px;
+    }
+  }
+
+  /* 768px */
+  @media (max-width: 768px) {
+    .hero-contact {
+      height: 60vh;
+      background-size: cover;
+    }
+
+    .hero-contact-container {
+      padding: 0 15px; /* More spacing for mobile */
+    }
+
+    .hero-contact-container .hero-contact-title h1 {
+      font-size: 65px;
+    }
+  }
+
+  /* 480px */
+  @media (max-width: 480px) {
+    .hero-contact {
+      height: 50vh;
+      background-size: cover;
+      background-attachment: scroll;
+    }
+
+    .hero-contact-container {
+      padding: 0 10px;
+    }
+
+    .hero-contact-container .hero-contact-title h1 {
+      font-size: 33px;
+    }
+  }

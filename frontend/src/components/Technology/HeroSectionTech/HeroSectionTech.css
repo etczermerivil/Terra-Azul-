@@ -65,9 +65,9 @@
 .hero-container .hero-title h1 {
   /* font-size: 35px;
   font-weight: 700; */
-  font-size: 110px; /* Larger font size */
-  font-weight: 800; /* Bold and impactful */
-  letter-spacing: 1.2px; /* Slight spacing */
+  font-size: 110px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
   /* color:white; */
   color: #ffffff;
   /* color: white;
@@ -132,3 +132,78 @@
   z-index: 1;
   padding: 0 15px ;
 } */
+
+
+/* 1200px */
+@media (max-width: 1200px) {
+  .hero {
+    height: 70vh;
+    background-position: center;
+  }
+
+  .hero-container .hero-title h1 {
+    font-size: 90px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+  .hero {
+    height: 65vh;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .hero-container .hero-title h1 {
+    font-size: 80px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    background-size: cover;
+  }
+
+  .hero-container {
+    padding: 0 15px;
+  }
+
+  .hero-container .hero-title h1 {
+    font-size: 65px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .hero-container {
+    padding: 0 10px;
+  }
+
+  .hero-container .hero-title h1 {
+    font-size: 33px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+}
