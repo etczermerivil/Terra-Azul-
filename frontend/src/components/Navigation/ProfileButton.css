@@ -24,7 +24,7 @@
 
 .profile-dropdown {
   position: absolute;
-  top: 40px; /* Spacing below the profile button */
+  top: 40px;
   right: 0;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -85,4 +85,12 @@
 /* Services page-specific styling */
 .services-profile-icon svg {
   color: white; /* Change to gray on the services page */
+}
+
+@media (max-width: 600px) {
+  .profile-dropdown {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
 }
