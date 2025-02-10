@@ -38,7 +38,7 @@
   animation: fadeIn 0.3s ease;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-10px);
@@ -47,7 +47,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .profile-item {
   padding: 10px 15px;
