@@ -4,11 +4,9 @@ from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 from flask_login import LoginManager
-from flask_mail import Mail  # Import Flask-Mail
 from .models import db, User
 from .api.user_routes import user_routes
 from .api.auth_routes import auth_routes
-from .api.email_routes import email_routes  # Import the email route
 from .seeds import seed_commands
 from .config import Config
 from dotenv import load_dotenv
@@ -39,13 +37,13 @@ app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_USERNAME'] = os.getenv("EMAIL_USER")
 app.config['MAIL_PASSWORD'] = os.getenv("EMAIL_PASS")
 app.config['MAIL_DEFAULT_SENDER'] = os.getenv("EMAIL_USER")
-mail = Mail(app)  # Initialize mail after configuring
+
 
 
 # Register blueprints
 app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(auth_routes, url_prefix='/api/auth')
-app.register_blueprint(email_routes, url_prefix='/api/email')  # Register email API
+
 
 db.init_app(app)
 Migrate(app, db)
