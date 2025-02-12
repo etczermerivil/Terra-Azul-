@@ -27,7 +27,7 @@
 .image-container-quick {
   width: 100%;
   max-width: 1350px;
-  height: auto;
+  height: 500px;
   aspect-ratio: 16 / 9;
   background-image: url('/Images/2.jpg');
   background-position: center 70%;
@@ -164,6 +164,10 @@
     font-size: 15px;
     line-height: 1.6;
   }
+
+  .image-container-quick {
+    height: 500px;
+}
 }
 
 /* 1024px */
@@ -235,6 +239,9 @@
     font-size: 13px;
     line-height: 1.5;
   }
+  .image-container-quick {
+    height: auto;
+}
 }
 
 /* 545px */
