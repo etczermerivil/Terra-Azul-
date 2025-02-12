@@ -85,7 +85,7 @@ const MiddleContentSection = () => {
               At Terra Technology, we harness the power of the sun to revolutionize water treatment. Using ambient air, we convert it into oxygen and process it through our Quantum Electromagnetic Generator, which produces stable multiple oxygen allotropes. This innovative method, powered by renewable solar energy, unlocks new possibilities for efficient water treatment applications that were previously limited by conventional ozone technology.
             </p>
             <p>
-              Our ozone system is compact—about the size of a dishwasher—consumes less energy than a bread toaster, and can treat large volumes of water at a fraction of the cost.
+              Our technology is compact and requires a small footprint and utilizes very little energy when compared to your standard ozone technology.
             </p>
             <p>
             Learn more about our six-step process and how it drives significant advancements in environmental sustainability.

@@ -12,7 +12,7 @@ function IntroAbout() {
       </p>
 
       <p className="intro-about-text">
-      Led by CEO Robert Stone, who has worked on technology pilots which include the SDRWQCB, CA Coastal Commission, and the Army Corps of Engineers, amongst others—we are pioneers in solar-powered water treatment. Committed to sustainability, we continue driving advancements in wastewater management and environmental restoration.
+      CEO inventor Robert Stone has worked on multiple international water treatment projects with government, engineering firms and private applications. Committed to sustainability, we continue driving advancements in wastewater management and environmental restoration.
       </p>
 
       </div>

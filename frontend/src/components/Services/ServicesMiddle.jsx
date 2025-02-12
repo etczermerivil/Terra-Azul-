@@ -23,11 +23,14 @@ const ServicesMiddle = () => {
   <div className="content-container">
     <h3>Municipal Water Management</h3>
     <ul>
-    <li>Drinking water purification for municipalities and private industries.</li>
+    <li>Algae reservoir irrigation water treatment for municipal and private needs.</li>
     <li>Stormwater and wastewater treatment solutions.</li>
     <li>Potable water solutions for urban and rural areas.</li>
     <li>Bacteria testing to ensure safe and clean drinking water.</li>
     <li>Industrial runoff treatment to ensure compliance with regulations.</li>
+    <li>Recycled water and odor control (H₂S) solutions, including PFAS removal.</li>
+    <li>Hydroponic, agricultural, aquaponic, and aeroponic water treatment solutions.</li>
+    <li>Stormwater and floodwater treatment for safe irrigation applications.</li>
     </ul>
   </div>
 </div>
