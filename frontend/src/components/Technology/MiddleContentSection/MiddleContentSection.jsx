@@ -82,7 +82,7 @@ const MiddleContentSection = () => {
           By leveraging state-of-the-art components we are paving the way for significant advancements in environmental sustainability. This groundbreaking offers a more effective and eco-friendly solution for global water treatment challenges.
         </p> */}
         <p>
-              At Terra Technology, we harness the power of the sun to revolutionize water treatment. Using ambient air, we convert it into oxygen and process it through our Quantum Electromagnetic Generator, which produces stable multiple oxygen allotropes. This innovative method, powered by renewable solar energy, unlocks new possibilities for efficient water treatment applications that were previously limited by conventional ozone technology.
+              At Terra Azul Tech, we harness the power of the sun to revolutionize water treatment. Using ambient air, we convert it into oxygen and process it through our Quantum Electromagnetic Generator, which produces stable multiple oxygen allotropes. This innovative method, powered by renewable solar energy, unlocks new possibilities for efficient water treatment applications that were previously limited by conventional ozone technology.
             </p>
             <p>
               Our technology is compact and requires a small footprint and utilizes very little energy when compared to your standard ozone technology.
