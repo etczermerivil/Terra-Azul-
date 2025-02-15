@@ -22,4 +22,4 @@ COPY . .
 RUN flask db upgrade
 RUN flask seed all
 # CMD gunicorn app:app
-CMD gunicorn backend:app
+CMD gunicorn -w 4 -t 120 backend:app
