@@ -4,46 +4,46 @@ const ProvenTrackRecord = () => {
   const categories = [
     {
       title: 'Agriculture',
-      image: '/Images/agriculture/1.jpg',
+      image: '/Images/agriculture/1.webp',
       description: 'Boost crop yields with sustainable irrigation and soil solutions.',
     },
     {
       title: 'Aquaculture',
-      image: '/Images/Landing/2.jpg',
+      image: '/Images/Landing/2.webp',
       description: 'Improve water quality for healthier fish and shrimp farms.',
     },
     {
       title: 'Reservoir',
-      image: '/Images/Landing/3.jpg',
+      image: '/Images/Landing/3.webp',
       description: 'Maintain reservoir health by reducing sediment and algae.',
     },
     {
       title: 'Algae Blooms',
-      image: '/Images/Landing/9.jpg',
+      image: '/Images/Landing/9.webp',
       description: 'Control harmful algae blooms and restore water clarity.',
     },
     {
       title: 'Wastewater',
-      image: '/Images/Landing/8.jpg',
+      image: '/Images/Landing/8.webp',
       description: 'Treat wastewater to remove contaminants and enable recycling.',
     },
     {
       title: 'Mining',
-      image: '/Images/Landing/6.jpg',
+      image: '/Images/Landing/6.webp',
       description: 'Ensure clean water discharge and compliance in mining.',
     },
     {
       title: 'Bottled Water',
-      image: '/Images/Landing/5.jpg',
+      image: '/Images/Landing/5.webp',
       description: 'Deliver pure, safe water for the bottled water industry.',
     },
     {
       title: 'Gas and Oil',
-      image: '/Images/Landing/7.jpg',
+      image: '/Images/Landing/7.webp',
       description: 'Remove pollutants from produced water in gas and oil.',
     },
     {title: 'Municipal Water Runoff',
-    image: '/Images/Landing/10.jpg',
+    image: '/Images/Landing/10.webp',
     description: 'Manage urban runoff to prevent pollution and protect waterways.',
     },
   ];

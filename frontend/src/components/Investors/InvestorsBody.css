@@ -78,7 +78,7 @@
   height: 500px;
   background-color: #f0f0f0;
   border-radius: 2px;
-  background-image: url('/Images/Investors/9.jpg');
+  background-image: url('/Images/Investors/9.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -402,7 +402,7 @@
 
 /* Empty Column with Background Image */
 .empty-column {
-  background-image: url('/Images/Investors/4.jpg');
+  background-image: url('/Images/Investors/4.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -32,7 +32,7 @@ function Navigation() {
         {/* Logo Section */}
         <div className="logo">
           <NavLink to="/">
-            <img src={logo} alt="Terra Azul Tech Logo" className="logo-image" />
+            <img src={logo} alt="Terra Azul Tech Logo" className="logo-image" loading="lazy"/>
           </NavLink>
         </div>
 

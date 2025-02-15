@@ -50,7 +50,7 @@ const BragSection = () => {
             <div key={index} className="brag-item">
               {/* Replace the placeholder div with an img tag */}
               <div className="brag-image-container">
-                <img src={item.image} alt={item.title} className="brag-image" />
+                <img src={item.image} alt={item.title} className="brag-image" loading="lazy" />
               </div>
               <div className="brag-info">
                 <h3>{item.title}</h3>

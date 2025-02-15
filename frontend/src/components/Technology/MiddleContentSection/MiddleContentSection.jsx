@@ -7,37 +7,37 @@ const MiddleContentSection = () => {
     id: 1,
     title: 'Understanding Oxygen Allotropes',
     text: 'Oxygen exists in different forms, such as O₂ and O₃, each with unique properties and uses. These forms play a critical role in solutions for water and air treatment.',
-    photo: '/Images/Techpage/1.jpg', // Image specific to this step
+    photo: '/Images/Techpage/1.webp', // Image specific to this step
   },
   {
     id: 2,
     title: 'Engineered Quartz Technology',
     text: 'Advanced quartz crystal technology is used to create a controlled environment for oxygen transformation, ensuring precision and efficiency.',
-    photo: '/Images/Techpage/7.jpg', // Image specific to this step
+    photo: '/Images/Techpage/7.webp', // Image specific to this step
   },
   {
     id: 3,
     title: 'Corona Discharge Innovation',
     text: 'High-voltage corona discharge technology is employed to split oxygen molecules, enabling the creation of multiple oxygen forms.',
-    photo: '/Images/Techpage/8.jpg', // Image specific to this step
+    photo: '/Images/Techpage/8.webp', // Image specific to this step
   },
   {
     id: 4,
     title: 'UV Integration for Oxygen Effects',
     text: 'Ultraviolet (UV) technology is integrated to enhance the creation of specific oxygen forms, improving the generator’s performance.',
-    photo: '/Images/Techpage/9.jpg', // Image specific to this step
+    photo: '/Images/Techpage/9.webp', // Image specific to this step
   },
   {
     id: 5,
     title: 'Secondary UV Enhancement',
     text: 'A second UV process is added to refine and stabilize the desired oxygen forms, enhancing efficiency and effectiveness.',
-    photo: '/Images/Techpage/11.jpg', // Image specific to this step
+    photo: '/Images/Techpage/11.webp', // Image specific to this step
   },
   {
     id: 6,
     title: 'Pressure and Cooling System',
     text: 'Controlled pressure and self-cooling systems maintain stability and support the production of high-quality oxygen forms.',
-    photo: '/Images/Techpage/10.jpg', // Image specific to this step
+    photo: '/Images/Techpage/10.webp', // Image specific to this step
   },
 ];
 
@@ -110,7 +110,7 @@ const MiddleContentSection = () => {
             <p>{step.text}</p>
           </div>
           <div className="blue-box">
-          <img src={step.photo} alt={`Illustration for ${step.title}`} />
+          <img src={step.photo} alt={`Illustration for ${step.title}`} loading="lazy"/>
           </div> {/* Blue box */}
         </div>
 ))}
