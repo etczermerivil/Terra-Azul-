@@ -20,7 +20,6 @@ RUN pip install psycopg2-binary
 
 COPY . .
 
-RUN flask db stamp base
 RUN flask db upgrade
 RUN flask seed all
 # CMD gunicorn app:app
