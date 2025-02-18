@@ -25,6 +25,7 @@ const ValueProposition = () => {
   }, []);
 
   return (
+    <div className='Main'>
     <section className="value-proposition-section">
 
       <div className="section-header">
@@ -109,6 +110,7 @@ const ValueProposition = () => {
 </div>
 
     </section>
+    </div>
   );
 
 };
