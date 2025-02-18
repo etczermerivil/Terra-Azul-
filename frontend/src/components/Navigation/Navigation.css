@@ -369,3 +369,16 @@
     margin-top: 5px;
   }
 }
+
+/* Specific Styling for Admin Messages Page */
+.navigation-header.admin-messages-active .nav-links a {
+  color: #3659c0; /* Match other active pages */
+}
+
+.navigation-header.admin-messages-active .nav-links a.active {
+  font-weight: bold; /* Make the active link bold */
+}
+
+.navigation-header.admin-messages-active .profile-button .profile-icon-button {
+  color: #3659c0; /* Profile button matches other pages */
+}

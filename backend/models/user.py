@@ -2,7 +2,6 @@ from .db import db, environment, SCHEMA, add_prefix_for_prod
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 
-
 class User(db.Model, UserMixin):
     __tablename__ = 'users'
 
@@ -13,6 +12,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(40), nullable=False, unique=True)
     email = db.Column(db.String(255), nullable=False, unique=True)
     hashed_password = db.Column(db.String(255), nullable=False)
+    is_admin = db.Column(db.Boolean, default=False)
 
     @property
     def password(self):
@@ -29,5 +29,14 @@ class User(db.Model, UserMixin):
         return {
             'id': self.id,
             'username': self.username,
-            'email': self.email
+            'email': self.email,
+            "is_admin": self.is_admin,
         }
+
+    # ✅ Fix Flask-Login Issues:
+    def get_id(self):
+        return str(self.id)  # ✅ Flask-Login requires this method
+
+    @property
+    def is_authenticated(self):
+        return True  # ✅ Ensures Flask-Login marks this user as logged in

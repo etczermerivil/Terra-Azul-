@@ -7,6 +7,7 @@ import ContactPage from "../pages/ContactPage";
 import Technology from "../pages/Technology";
 import Services from "../pages/Services";
 import Investors from "../pages/Investors";
+import AdminMessages from "../pages/AdminMessages";
 import Layout from "./Layout";
 
 export const router = createBrowserRouter([
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignupFormPage />,
+      },
+      {
+      path: "admin/messages",
+      element: <AdminMessages />,
       },
     ],
   },

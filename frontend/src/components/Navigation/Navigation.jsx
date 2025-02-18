@@ -6,13 +6,12 @@ import logo from "/Images/Logo2.png";
 function Navigation() {
   const location = useLocation();
 
-  // Check if the current page is the home page ("/") or the services page ("/services")
-  // const isHomePage = location.pathname === "/";
+  // Active page checks
   const isServicesPage = location.pathname === "/services";
   const isInvestorsPage = location.pathname === "/investors";
   const isContactPage = location.pathname === "/contact";
   const isAboutPage = location.pathname === "/about";
-
+  const isAdminMessagesPage = location.pathname === "/admin/messages"; // New active check
 
   return (
     <header
@@ -24,7 +23,9 @@ function Navigation() {
           : isContactPage
           ? "contact-active"
           : isAboutPage
-          ? "about-active" // Apply the about-active class for About Us page
+          ? "about-active"
+          : isAdminMessagesPage
+          ? "admin-messages-active" // New class for admin messages
           : "solid"
       }`}
     >
@@ -32,7 +33,7 @@ function Navigation() {
         {/* Logo Section */}
         <div className="logo">
           <NavLink to="/">
-            <img src={logo} alt="Terra Azul Tech Logo" className="logo-image" loading="lazy"/>
+            <img src={logo} alt="Terra Azul Tech Logo" className="logo-image" loading="lazy" />
           </NavLink>
         </div>
 
@@ -40,35 +41,40 @@ function Navigation() {
         <nav className="nav-links">
           <ul>
             <li>
-              <NavLink to="/" exact="true" activeclassname="active">
+              <NavLink to="/" exact="true" activeclassname="active" className="nav-link">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeclassname="active">
+              <NavLink to="/about" activeclassname="active" className="nav-link">
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" activeclassname="active">
+              <NavLink to="/contact" activeclassname="active" className="nav-link">
                 Contact
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" activeclassname="active">
+              <NavLink to="/services" activeclassname="active" className="nav-link">
                 Services
               </NavLink>
             </li>
             <li>
-              <NavLink to="/technology" activeclassname="active">
+              <NavLink to="/technology" activeclassname="active" className="nav-link">
                 Technology
               </NavLink>
             </li>
             <li>
-              <NavLink to="/investors" activeclassname="active">
+              <NavLink to="/investors" activeclassname="active" className="nav-link">
                 Investors
               </NavLink>
             </li>
+            {/* <li>
+              <NavLink to="/admin/messages" activeclassname="active" className="nav-link admin-active">
+                Dashboard
+              </NavLink>
+            </li> */}
           </ul>
         </nav>
 
@@ -82,7 +88,9 @@ function Navigation() {
               : isContactPage
               ? "contact-profile"
               : isAboutPage
-              ? "about-profile" // Apply about-specific profile class
+              ? "about-profile"
+              : isAdminMessagesPage
+              ? "admin-profile" // New class for admin messages
               : ""
           }`}
         >
