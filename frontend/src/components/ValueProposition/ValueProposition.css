@@ -1,14 +1,20 @@
+.sectionMore {
+  background-color: rgb(250, 250, 250);
+  border-bottom: .1px solid #bababa;
+}
+
+
 .value-proposition-section {
   width: 100%;
   margin: 0 auto;
-
   /* background: linear-gradient(to bottom, #f9f9f9, #ececec); */
   background-color: #3659c0;
-  background-color: white;
+  background-color: rgb(250, 250, 250);
+  /* background-color: white; */
   border-radius: 3px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 3rem 0;
-    /* border-top: .1px solid #3659c0; */
+
     max-width: 1350px;
 }
 
