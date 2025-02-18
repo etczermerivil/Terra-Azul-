@@ -1,6 +1,6 @@
 # from .db import db
 # from .user import User
-# from .db import environment, SCHEMA
+# from .db import environment,
 
 from .db import db, environment, SCHEMA
 from .user import User

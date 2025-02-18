@@ -5,7 +5,7 @@ class ContactUsInquiries(db.Model):
     __tablename__ = 'contact_us_inquiries'
 
     if environment == "production":
-        __table_args__ = {'schema': SCHEMA}
+        __table_args__ = {'schema': }
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     first_name = db.Column(db.String(255), nullable=False)
