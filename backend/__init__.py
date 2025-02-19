@@ -11,6 +11,8 @@ from .seeds import seed_commands
 from .config import Config
 from dotenv import load_dotenv
 from backend.api.admin_routes import admin_routes
+from backend.api.contact_routes import contact_routes
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -44,6 +46,7 @@ app.config['MAIL_DEFAULT_SENDER'] = os.getenv("EMAIL_USER")
 app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(auth_routes, url_prefix='/api/auth')
 app.register_blueprint(admin_routes, url_prefix='/api/admin')
+app.register_blueprint(contact_routes, url_prefix="/api")
 
 db.init_app(app)
 Migrate(app, db)

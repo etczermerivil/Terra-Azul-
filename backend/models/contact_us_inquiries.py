@@ -14,3 +14,14 @@ class ContactUsInquiries(db.Model):
     phone_number = db.Column(db.String(20), nullable=True)
     message = db.Column(db.String(500), nullable=False)
     submitted_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def to_dict(self):
+            return {
+                "id": self.id,
+                "first_name": self.first_name,
+                "last_name": self.last_name,
+                "email": self.email,
+                "phone_number": self.phone_number,
+                "message": self.message,
+                "submitted_at": self.submitted_at.strftime('%Y-%m-%d %H:%M:%S') if self.submitted_at else None
+            }
