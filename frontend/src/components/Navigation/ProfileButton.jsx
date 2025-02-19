@@ -14,7 +14,7 @@ function ProfileButton() {
   const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
   const ulRef = useRef();
-  const adminEmails = ["demo@aa.io", "water@terraazultech.com"];
+  const adminEmails = ["businessman.merivil@gmail.com", "water@terraazultech.com"];
 
   const user = useSelector((store) => store.session.user);
 
