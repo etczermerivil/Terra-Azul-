@@ -1,22 +1,22 @@
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useLocation } from "react-router-dom"; // Import useLocation
 import { thunkLogout } from "../../redux/session";
 import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
 import SignupFormModal from "../SignupFormModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./ProfileButton.css";
 
 function ProfileButton() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
-  const user = useSelector((store) => store.session.user);
   const ulRef = useRef();
-  const location = useLocation(); // Access the current route
+  const adminEmails = ["demo@aa.io", "water@terraazultech.com"];
 
-  const isServicesPage = location.pathname === "/services"; // Check if the current page is the services page
+  const user = useSelector((store) => store.session.user);
 
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
@@ -32,7 +32,6 @@ function ProfileButton() {
     };
 
     document.addEventListener("mousedown", closeMenu);
-
     return () => {
       document.removeEventListener("mousedown", closeMenu);
     };
@@ -42,17 +41,13 @@ function ProfileButton() {
     e.preventDefault();
     dispatch(thunkLogout());
     setShowMenu(false);
+    navigate("/"); // Redirect to home immediately after logout
   };
 
   return (
     <div className="profile-button-container">
-      <button
-        className={`profile-icon-button ${
-          isServicesPage ? "services-profile-icon" : ""
-        }`}
-        onClick={toggleMenu}
-      >
-        <FontAwesomeIcon icon={faBars} />
+    <button className="profile-icon-button" onClick={toggleMenu}>
+        <FontAwesomeIcon icon={faBars} /> {/* ✅ Restored faBars icon */}
       </button>
       {showMenu && (
         <ul className="profile-dropdown" ref={ulRef}>
@@ -60,6 +55,13 @@ function ProfileButton() {
             <>
               <li className="profile-item">{user.username}</li>
               <li className="profile-item">{user.email}</li>
+
+              {adminEmails.includes(user?.email) && (
+                <li className="profile-item">
+                  <a href="/admin/messages">Contact Messages</a>
+                </li>
+              )}
+
               <li className="profile-item">
                 <button className="logout-button" onClick={logout}>
                   Log Out
@@ -68,6 +70,7 @@ function ProfileButton() {
             </>
           ) : (
             <>
+              {/* ✅ Open Login Modal instead of navigating */}
               <li className="profile-item">
                 <OpenModalMenuItem
                   itemText="Log In"
@@ -75,6 +78,8 @@ function ProfileButton() {
                   modalComponent={<LoginFormModal />}
                 />
               </li>
+
+              {/* ✅ Open Signup Modal instead of navigating */}
               <li className="profile-item">
                 <OpenModalMenuItem
                   itemText="Sign Up"

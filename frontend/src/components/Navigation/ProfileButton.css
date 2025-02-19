@@ -6,7 +6,8 @@
   z-index: 300;
 }
 
-.profile-icon-button{
+/* Button Styling */
+.profile-icon-button {
   background: none;
   border: none;
   cursor: pointer;
@@ -17,28 +18,37 @@
   padding: 0;
 }
 
-.services-profile .profile-icon-button svg {
-  fill: #525252;
+/* Services Page: Fix class mismatch */
+.services-profile-icon svg {
+  fill: #525252; /* Matches services page styling */
   transition: fill 0.3s ease;
 }
 
+/* Dropdown Menu */
 .profile-dropdown {
   position: absolute;
   top: 40px;
   right: 0;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   list-style: none;
   margin: 0;
   padding: 10px 0;
-  width: 200px;
+  width: 230px;
   z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Fade in animation for dropdown */
+.profile-dropdown {
   animation: fadeIn 0.3s ease;
 }
 
-/* @keyframes fadeIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-10px);
@@ -47,10 +57,11 @@
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
+/* Individual Profile Items */
 .profile-item {
-  padding: 10px 15px;
+  padding: 12px 16px;
   color: #333;
   font-size: 14px;
   text-align: left;
@@ -58,11 +69,30 @@
   border: none;
 }
 
+.profile-item {
+  padding: 12px 16px;
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+  word-break: break-word;
+  white-space: normal;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.profile-item a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Ensures it matches the parent element’s color */
+}
+
+
+
 .profile-item:hover {
   background-color: #f5f5f5;
   cursor: pointer;
 }
 
+/* Logout Button */
 .logout-button {
   background: none;
   border: none;
@@ -77,16 +107,12 @@
   color: #d9534f;
 }
 
+/* Separators */
 .profile-dropdown li + li {
   border-top: 1px solid #ddd;
 }
 
-
-/* Services page-specific styling */
-.services-profile-icon svg {
-  color: white; /* Change to gray on the services page */
-}
-
+/* Responsive Fix */
 @media (max-width: 600px) {
   .profile-dropdown {
     left: 50%;
