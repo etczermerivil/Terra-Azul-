@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { thunkLogout } from "../../redux/session";
-import "./ProfileButton.css"; // Ensure CSS file is properly linked
+import "./ProfileButton.css";
 
 function ProfileButton() {
   const dispatch = useDispatch();
