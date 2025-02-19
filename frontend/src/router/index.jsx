@@ -8,6 +8,7 @@ import Technology from "../pages/Technology";
 import Services from "../pages/Services";
 import Investors from "../pages/Investors";
 import Layout from "./Layout";
+import AdminMessages from "../pages/AdminMessages";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignupFormPage />,
+      },
+      {
+        path: "admin/messages",
+        element: <AdminMessages />,
       },
     ],
   },
