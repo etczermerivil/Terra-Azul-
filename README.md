@@ -17,10 +17,14 @@ This website improves **usability, investor engagement, and service presentation
 ---
 
 ## 🌟 Features
-✅ **Redesigned website** to improve usability, showcase services, and attract investors.
+✅ **Redesigned website** to improve usability, showcase services, and attract investors. 
+<br>
 ✅ **Developed key pages**, including **Services, Investors, and Technology** sections, ensuring clear communication of offerings.
+<br>
 ✅ **Integrated messaging refinements**, aligning site content with the company's **mission and long-term vision**.
+<br>
 ✅ **Enhanced investor engagement**, providing a structured way to explore funding opportunities.
+<br>
 
 ---
 
