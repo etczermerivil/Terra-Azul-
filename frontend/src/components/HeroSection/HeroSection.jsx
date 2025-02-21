@@ -1,15 +1,8 @@
-import { useState, useEffect } from "react";
-import "./HeroSection.css";
+
+import './HeroSection.css';
+
 
 const HeroSection = () => {
-  const [videoError, setVideoError] = useState(false);
-
-  useEffect(() => {
-    const video = document.querySelector(".hero-video");
-    if (video) {
-      video.onerror = () => setVideoError(true);
-    }
-  }, []);
 
   const scrollToQuickFacts = () => {
     const quickFactsSection = document.getElementById("quick-facts");
@@ -19,17 +12,15 @@ const HeroSection = () => {
   };
 
   return (
-    <section
-      className="hero-section"
-      style={{ backgroundImage: videoError ? "url('/Images/image.webp')" : "none" }}
-    >
-      {!videoError && (
-        <video autoPlay loop muted playsInline className="hero-video">
-          <source src="/home.mp4" type="video/mp4" />
-          {/* <source src="/Videos/7.mp4" type="video/mp4" /> */}
-          Your browser does not support the video tag.
-        </video>
-      )}
+    <section className="hero-section">
+      {/* Background Video */}
+      <video autoPlay loop muted playsInline className="hero-video">
+       {/* <source src="/Videos/7.webm" type="video/webm"/> */}
+       <source src="/Videos/home.mp4" type="video/mp4" />
+        {/* <source src="/Videos/7.mp4" type="video/mp4" /> */}
+
+        Your browser does not support the video tag.
+      </video>
 
       {/* Content Overlay */}
       <div className="hero-content">
