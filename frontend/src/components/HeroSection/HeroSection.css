@@ -1,9 +1,9 @@
 .hero-section {
     height: 100vh; /* Full viewport height */
     /* background: linear-gradient(to right, #0056b3, #00b0ff); */
-    /* background-image: url('/Images/image.webp');
+    /* background-image: url('/Images/image.webp'); */
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
