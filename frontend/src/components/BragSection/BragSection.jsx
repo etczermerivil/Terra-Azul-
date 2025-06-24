@@ -14,7 +14,7 @@ const BragSection = () => {
 
     { title: 'Christopher Baber',
       position: 'CFO',
-      description: '25-yr commercial finance, Real estate professional, VP, PrimeStar Capital',
+      description: '35-yr finance, real estate and system design professional',
       image: '/Images/Staff/7.png' },
 
     { title: 'Nichole Stevenson',
