@@ -12,10 +12,10 @@ const Contact = () => {
 
         <div className="contact-cfo-details">
           <p className="contact-cfo-name">
-             Alexie Apeles
+          Christopher Baber
           </p>
           <p className="contact-cfo-phone">
-             1 (909) 964-2438
+          828-275-1315
           </p>
         </div>
       </div>

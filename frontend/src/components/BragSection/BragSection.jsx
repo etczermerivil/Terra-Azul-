@@ -12,10 +12,10 @@ const BragSection = () => {
       description: 'International business, Certified translator, Hino Motors corp trainer',
       image: '/Images/Staff/2.png' },
 
-    { title: 'Alexie Apeles, JD',
+    { title: 'Christopher Baber',
       position: 'CFO',
       description: '25-yr commercial finance, Real estate professional, VP, PrimeStar Capital',
-      image: '/Images/Staff/3.png' },
+      image: '/Images/Staff/7.png' },
 
     { title: 'Nichole Stevenson',
       position: 'CMO',
